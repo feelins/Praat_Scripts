@@ -10,6 +10,7 @@
 #		 
 # Version History:
 # 2014/5/28: Praat script is created.
+# 2019/3/14: can do it.
 ##################################################
 form dialogue
 	comment 请输入源声音文件和标注文件所在目录：
