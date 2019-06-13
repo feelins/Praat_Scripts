@@ -3,7 +3,7 @@
 # (See the Praat manual for details on resampling.)
 # 
 # This script is distributed under the GNU General Public License.
-# Copyright 2019.03.15 feelins[feipengshao@163.com]
+# Copyright 2019.03.15 feelins[feipengshao@163.com] 
 
 form ReSample sound files
    sentence Sound_file_extension .wav
