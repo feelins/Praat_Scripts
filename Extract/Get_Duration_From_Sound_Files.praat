@@ -3,12 +3,13 @@
 # 
 # This script is distributed under the GNU General Public License.
 # Copyright 2019.03.26 feelins[feipengshao@163.com]
+# 2019.06.13 set the sample dir 
 
 form dialogue
 	comment Directory path of input files:
-	sentence input_directory /home/shaopf/study/HTS_Demo/HTS-demo_biaobei/HTS-demo_CMU-ARCTIC-SLT/data/raw/
+	sentence input_directory /home/shaopf/test/wav/
 	comment Path of output result file:
-	sentence save_result /home/shaopf/study/HTS_Demo/HTS-demo_biaobei/HTS-demo_CMU-ARCTIC-SLT/data_raw_duration.txt
+	sentence save_result /home/shaopf/test/duration_result.txt
 endform
 
 if (praatVersion < 6001)
@@ -30,5 +31,5 @@ for i from 1 to fileNumber
 endfor
 selectObject: "Strings fileList"
 Remove
-exit It's over!Thank you!-shaopf
+exit Done!Thank you!-shaopf
 
