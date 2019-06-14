@@ -1,0 +1,82 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 2.66 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "000001.interval" 
+        xmin = 0 
+        xmax = 2.66 
+        intervals: size = 17 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.27958612055419324 
+            text = "##" 
+        intervals [2]:
+            xmin = 0.27958612055419324 
+            xmax = 0.406291189066745 
+            text = "k" 
+        intervals [3]:
+            xmin = 0.406291189066745 
+            xmax = 0.5165142974475827 
+            text = "a2" 
+        intervals [4]:
+            xmin = 0.5165142974475827 
+            xmax = 0.6143759357296349 
+            text = "er2" 
+        intervals [5]:
+            xmin = 0.6143759357296349 
+            xmax = 0.743141249258651 
+            text = "p" 
+        intervals [6]:
+            xmin = 0.743141249258651 
+            xmax = 0.8997198705099344 
+            text = "u3" 
+        intervals [7]:
+            xmin = 0.8997198705099344 
+            xmax = 0.9749188136108798 
+            text = "p" 
+        intervals [8]:
+            xmin = 0.9749188136108798 
+            xmax = 1.115 
+            text = "ei2" 
+        intervals [9]:
+            xmin = 1.115 
+            xmax = 1.3273592045513642 
+            text = "uai4" 
+        intervals [10]:
+            xmin = 1.3273592045513642 
+            xmax = 1.42213047530872 
+            text = "s" 
+        intervals [11]:
+            xmin = 1.42213047530872 
+            xmax = 1.6137332618398958 
+            text = "uen1" 
+        intervals [12]:
+            xmin = 1.6137332618398958 
+            xmax = 1.795 
+            text = "uan2" 
+        intervals [13]:
+            xmin = 1.795 
+            xmax = 1.883703275695522 
+            text = "h" 
+        intervals [14]:
+            xmin = 1.883703275695522 
+            xmax = 2.0567638570785194 
+            text = "ua2" 
+        intervals [15]:
+            xmin = 2.0567638570785194 
+            xmax = 2.1927400281651606 
+            text = "t" 
+        intervals [16]:
+            xmin = 2.1927400281651606 
+            xmax = 2.395762379712556 
+            text = "i1" 
+        intervals [17]:
+            xmin = 2.395762379712556 
+            xmax = 2.66 
+            text = "##" 

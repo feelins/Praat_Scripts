@@ -1,0 +1,82 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 2.6 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "000004.interval" 
+        xmin = 0 
+        xmax = 2.6 
+        intervals: size = 17 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.27590941377692524 
+            text = "##" 
+        intervals [2]:
+            xmin = 0.27590941377692524 
+            xmax = 0.3222262002372871 
+            text = "d" 
+        intervals [3]:
+            xmin = 0.3222262002372871 
+            xmax = 0.4863487261729172 
+            text = "eng4" 
+        intervals [4]:
+            xmin = 0.4863487261729172 
+            xmax = 0.5517963592147328 
+            text = "x" 
+        intervals [5]:
+            xmin = 0.5517963592147328 
+            xmax = 0.7149119984881811 
+            text = "iao3" 
+        intervals [6]:
+            xmin = 0.7149119984881811 
+            xmax = 0.8196282113550861 
+            text = "p" 
+        intervals [7]:
+            xmin = 0.8196282113550861 
+            xmax = 1.0733636502248947 
+            text = "ing2" 
+        intervals [8]:
+            xmin = 1.0733636502248947 
+            xmax = 1.2931763691827107 
+            text = "v3" 
+        intervals [9]:
+            xmin = 1.2931763691827107 
+            xmax = 1.3827892821168892 
+            text = "s" 
+        intervals [10]:
+            xmin = 1.3827892821168892 
+            xmax = 1.5224418441023513 
+            text = "a4" 
+        intervals [11]:
+            xmin = 1.5224418441023513 
+            xmax = 1.619102963671802 
+            text = "q" 
+        intervals [12]:
+            xmin = 1.619102963671802 
+            xmax = 1.6810545046059908 
+            text = "ie4" 
+        intervals [13]:
+            xmin = 1.6810545046059908 
+            xmax = 1.849204577190348 
+            text = "er3" 
+        intervals [14]:
+            xmin = 1.849204577190348 
+            xmax = 1.9488863567463441 
+            text = "h" 
+        intervals [15]:
+            xmin = 1.9488863567463441 
+            xmax = 2.1302121834979855 
+            text = "uei4" 
+        intervals [16]:
+            xmin = 2.1302121834979855 
+            xmax = 2.337630835907432 
+            text = "u4" 
+        intervals [17]:
+            xmin = 2.337630835907432 
+            xmax = 2.6 
+            text = "##" 

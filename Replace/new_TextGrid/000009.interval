@@ -1,0 +1,98 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.17 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "000009.interval" 
+        xmin = 0 
+        xmax = 3.17 
+        intervals: size = 21 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.292208594828807 
+            text = "##" 
+        intervals [2]:
+            xmin = 0.292208594828807 
+            xmax = 0.5033604731703429 
+            text = "i2" 
+        intervals [3]:
+            xmin = 0.5033604731703429 
+            xmax = 0.6034120899426405 
+            text = "s" 
+        intervals [4]:
+            xmin = 0.6034120899426405 
+            xmax = 0.7691598415532868 
+            text = "an3" 
+        intervals [5]:
+            xmin = 0.7691598415532868 
+            xmax = 0.8428174735328923 
+            text = "j" 
+        intervals [6]:
+            xmin = 0.8428174735328923 
+            xmax = 0.9496210399033204 
+            text = "v1" 
+        intervals [7]:
+            xmin = 0.9496210399033204 
+            xmax = 1.1265215277496736 
+            text = "er2" 
+        intervals [8]:
+            xmin = 1.1265215277496736 
+            xmax = 1.247442806916193 
+            text = "t" 
+        intervals [9]:
+            xmin = 1.247442806916193 
+            xmax = 1.4475520113694933 
+            text = "ong2" 
+        intervals [10]:
+            xmin = 1.4475520113694933 
+            xmax = 1.53778261054451 
+            text = "h" 
+        intervals [11]:
+            xmin = 1.53778261054451 
+            xmax = 1.6648420257093297 
+            text = "e2" 
+        intervals [12]:
+            xmin = 1.6648420257093297 
+            xmax = 1.8744118348903431 
+            text = "iou4" 
+        intervals [13]:
+            xmin = 1.8744118348903431 
+            xmax = 1.978760146861451 
+            text = "t" 
+        intervals [14]:
+            xmin = 1.978760146861451 
+            xmax = 2.09 
+            text = "uo1" 
+        intervals [15]:
+            xmin = 2.09 
+            xmax = 2.2330086630105748 
+            text = "er2" 
+        intervals [16]:
+            xmin = 2.2330086630105748 
+            xmax = 2.325 
+            text = "t" 
+        intervals [17]:
+            xmin = 2.325 
+            xmax = 2.517418511933124 
+            text = "ong2" 
+        intervals [18]:
+            xmin = 2.517418511933124 
+            xmax = 2.669108799633777 
+            text = "uei2" 
+        intervals [19]:
+            xmin = 2.669108799633777 
+            xmax = 2.7366282956150823 
+            text = "zh" 
+        intervals [20]:
+            xmin = 2.7366282956150823 
+            xmax = 3.012340664286245 
+            text = "u3" 
+        intervals [21]:
+            xmin = 3.012340664286245 
+            xmax = 3.17 
+            text = "##" 

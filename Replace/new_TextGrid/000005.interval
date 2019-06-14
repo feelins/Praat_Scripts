@@ -1,0 +1,90 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.09 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "000005.interval" 
+        xmin = 0 
+        xmax = 3.09 
+        intervals: size = 19 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.29563654047020493 
+            text = "##" 
+        intervals [2]:
+            xmin = 0.29563654047020493 
+            xmax = 0.33632250690436566 
+            text = "l" 
+        intervals [3]:
+            xmin = 0.33632250690436566 
+            xmax = 0.5110328333569379 
+            text = "ao2" 
+        intervals [4]:
+            xmin = 0.5110328333569379 
+            xmax = 0.6139443955139325 
+            text = "h" 
+        intervals [5]:
+            xmin = 0.6139443955139325 
+            xmax = 0.7383955869596005 
+            text = "u3" 
+        intervals [6]:
+            xmin = 0.7383955869596005 
+            xmax = 0.971741570920228 
+            text = "iou4" 
+        intervals [7]:
+            xmin = 0.971741570920228 
+            xmax = 1.0363604587862478 
+            text = "z" 
+        intervals [8]:
+            xmin = 1.0363604587862478 
+            xmax = 1.336718622756081 
+            text = "ai3" 
+        intervals [9]:
+            xmin = 1.336718622756081 
+            xmax = 1.4180905556244023 
+            text = "sp" 
+        intervals [10]:
+            xmin = 1.4180905556244023 
+            xmax = 1.567755842342931 
+            text = "v2" 
+        intervals [11]:
+            xmin = 1.567755842342931 
+            xmax = 1.689813741645413 
+            text = "ch" 
+        intervals [12]:
+            xmin = 1.689813741645413 
+            xmax = 1.841787792737719 
+            text = "ong3" 
+        intervals [13]:
+            xmin = 1.841787792737719 
+            xmax = 1.96743563025498 
+            text = "u4" 
+        intervals [14]:
+            xmin = 1.96743563025498 
+            xmax = 2.075427380722363 
+            text = "q" 
+        intervals [15]:
+            xmin = 2.075427380722363 
+            xmax = 2.2393678925305984 
+            text = "van3" 
+        intervals [16]:
+            xmin = 2.2393678925305984 
+            xmax = 2.4832683065046552 
+            text = "uan2" 
+        intervals [17]:
+            xmin = 2.4832683065046552 
+            xmax = 2.5837664331191816 
+            text = "sh" 
+        intervals [18]:
+            xmin = 2.5837664331191816 
+            xmax = 2.850638650483694 
+            text = "ua3" 
+        intervals [19]:
+            xmin = 2.850638650483694 
+            xmax = 3.09 
+            text = "##" 

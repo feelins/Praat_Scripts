@@ -1,0 +1,98 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.61 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "000006.interval" 
+        xmin = 0 
+        xmax = 3.61 
+        intervals: size = 21 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.29 
+            text = "##" 
+        intervals [2]:
+            xmin = 0.29 
+            xmax = 0.3986893463818296 
+            text = "sh" 
+        intervals [3]:
+            xmin = 0.3986893463818296 
+            xmax = 0.5587630261431864 
+            text = "en1" 
+        intervals [4]:
+            xmin = 0.5587630261431864 
+            xmax = 0.672002921869561 
+            text = "ch" 
+        intervals [5]:
+            xmin = 0.672002921869561 
+            xmax = 0.9485657290657872 
+            text = "ang2" 
+        intervals [6]:
+            xmin = 0.9485657290657872 
+            xmax = 1.2432414106913916 
+            text = "ve1" 
+        intervals [7]:
+            xmin = 1.2432414106913916 
+            xmax = 1.4277805000232613 
+            text = "u2" 
+        intervals [8]:
+            xmin = 1.4277805000232613 
+            xmax = 1.541020395749636 
+            text = "ch" 
+        intervals [9]:
+            xmin = 1.541020395749636 
+            xmax = 1.6060284840369992 
+            text = "iii3" 
+        intervals [10]:
+            xmin = 1.6060284840369992 
+            xmax = 1.8185346492222525 
+            text = "er4" 
+        intervals [11]:
+            xmin = 1.8185346492222525 
+            xmax = 1.9261824513325096 
+            text = "c" 
+        intervals [12]:
+            xmin = 1.9261824513325096 
+            xmax = 2.13929006170478 
+            text = "uen4" 
+        intervals [13]:
+            xmin = 2.13929006170478 
+            xmax = 2.2672092031734623 
+            text = "u3" 
+        intervals [14]:
+            xmin = 2.2672092031734623 
+            xmax = 2.3713619467736464 
+            text = "f" 
+        intervals [15]:
+            xmin = 2.3713619467736464 
+            xmax = 2.5980856150233893 
+            text = "en1" 
+        intervals [16]:
+            xmin = 2.5980856150233893 
+            xmax = 2.726703768194086 
+            text = "h" 
+        intervals [17]:
+            xmin = 2.726703768194086 
+            xmax = 2.888419349961466 
+            text = "uo4" 
+        intervals [18]:
+            xmin = 2.888419349961466 
+            xmax = 3.0394058775966317 
+            text = "i3" 
+        intervals [19]:
+            xmin = 3.0394058775966317 
+            xmax = 3.1547428084290505 
+            text = "sh" 
+        intervals [20]:
+            xmin = 3.1547428084290505 
+            xmax = 3.3666309867842323 
+            text = "ang4" 
+        intervals [21]:
+            xmin = 3.3666309867842323 
+            xmax = 3.61 
+            text = "##" 
