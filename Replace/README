@@ -27,4 +27,4 @@
         000003.interval,15,sp1->sp
 
 说明：
-    示例数据来自标贝开源，文件扩展名为interval，如果是TextGrid，修改脚本第39行即可。
+    示例数据来自标贝开源[http://www.data-baker.com/open_source.html]，文件扩展名为interval，如果是TextGrid，修改脚本第39行即可。
