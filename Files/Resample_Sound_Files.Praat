@@ -28,7 +28,7 @@ for ifile from 1 to numberOfFiles
 	selectObject: "Strings fileList"
 	fileName$ = Get string: ifile
 	Read from file: input_directory$ + fileName$
-	objectName$ = selected$ ("Sound", 1)
+	objectName$ = selected$("Sound", 1)
 	Resample: new_sample_rate, precision
 	Save as WAV file: output_directory$ + objectName$  + ".wav"
 	Remove
