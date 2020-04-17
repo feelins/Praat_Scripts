@@ -4,3 +4,5 @@ Some basic praat scripts.
 -Infos:从标注里查找一些信息，替换等；  
 -Extract:从标注里提取参数，基频，共振峰，时长等；  
 -Picture:简单的作图；  
+
+![image](images\tiers_process.png)
