@@ -3,6 +3,7 @@
 
 ![image](../images/tiers_process.png)
 
+<div align=center><img width="150" height="150" src="../images/tiers_process.png"/></div>
 
 Some basic praat scripts.  
 -Files:包括声音和标注文件的操作，如提取文件名；检查一致性；将大文件切分；小文件合并；将声音文件按条件删除；  
