@@ -1,4 +1,4 @@
-# Praat_Scripts  
+# Praat_Scripts - 层(Tier)操作
 我们希望通过批处理的方式处理TextGrid的层，比如可以批量增加层，删除层，修改层的名称，以及将某一层复制一下，这些操作依赖于Praat的Tiers操作：  
 
 <div align=center><img width="338" height="301" src="../images/tiers_process.png"/></div>
