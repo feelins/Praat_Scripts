@@ -22,4 +22,4 @@ Some basic praat scripts. 每一个目录里，有每个脚本的详细说明。
 
 >DrawVowelMap:根据提取的大量共振峰数据，画出F1, F2的声学元音分布图
 >>`draw_vowel_map.Praat`:根据提取的大量共振峰数据，画出F1, F2的声学元音分布图
-<div align=center><img width="720" height="480" src="../images/vowel.png"/></div>
+<div align=center><img width="720" height="480" src="images/vowel.png"/></div>
