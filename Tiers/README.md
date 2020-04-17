@@ -5,4 +5,4 @@ Some basic praat scripts.
 -Extract:从标注里提取参数，基频，共振峰，时长等；  
 -Picture:简单的作图；  
 
-![image](./images/tiers_process.png)
+![image](../images/tiers_process.png)
