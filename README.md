@@ -1,4 +1,7 @@
-# Praat_Scripts
+# Praat_Scripts  
+
+### Praat常用脚本及结合Praat进行语音实验的步骤
+--- 
 Some basic praat scripts. 每一个目录里，有每个脚本的详细说明。 
 
 >Files:文件操作;  
