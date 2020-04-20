@@ -8,9 +8,9 @@
 form ReSample sound files
    sentence Sound_file_extension .wav
    comment Directory path of input files:
-   text input_directory  /home/shaopf/study/test/wav48k/
+   text input_directory  E:\003_ProgramLanguage\Praat_Scripts\01-resample_sound_files\wavs_48k\
    comment Directory path of resampled files (old files will be overwritten!):
-   text output_directory  /home/shaopf/study/test/wavresampled/
+   text output_directory  E:\003_ProgramLanguage\Praat_Scripts\01-resample_sound_files\wavs_16k\
    positive New_sample_rate_(Hz) 16000
    positive Precision_(samples) 50
    comment (See the Praat manual for details on resampling.)
