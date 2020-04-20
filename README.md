@@ -25,15 +25,16 @@
     * [文件操作](#文件操作)
     * [标注内容](#标注内容)
     * [提取数据](#提取数据)
-* [实例一](#实例一)
-* [实例二](#实例二)
-* [实例三](#实例三)
+* [语音研究步骤](#语音研究步骤)
+* [实例一_绘制中文声调图](#实例一_绘制中文声调图)
+* [实例二_元音分布图](#实例二_元音分布图)
+* [实例三_句子语调图](#实例三_句子语调图)
  
 
 ## 背景  
 
 ##### 命名  
-Praat在荷兰语中是说话或交谈的意思，而`doing phonetics by computer`即使用计算机研究语音学。作为软件的名称，简便起见，合起来翻译作`Praat`语音学软件。  
+        Praat在荷兰语中是说话或交谈的意思，而`doing phonetics by computer`即使用计算机研究语音学。作为软件的名称，简便起见，合起来翻译作`Praat`语音学软件。  
 
 ##### 作者  
 Praat的作者是荷兰阿姆斯特丹大学人文学院语音科学研究所的主席保罗·博尔斯马（*Paul Boersma*）教授和大卫·威宁克（*David Weenink*）助教授。  
@@ -70,7 +71,7 @@ Praat官方网站[http://www.fon.hum.uva.nl/praat/](http://www.fon.hum.uva.nl/pr
 5. 这时，主窗口就会有一对同样名字的文件，一个是音频文件，一个是标注文件，同时选中这两个文件，再点右侧的View & Edit，这时会打开标注窗口，音频文件在上方，会显示出声波图和频谱图，下方是标注区域，即是新建的TextGrid文件，并有两层，Word和Phoneme层，先用鼠标找到合成的声音边界位置，再用鼠标点击如图位置的小圆点，则会增加一个边界，两个边界之间可以填写标注内容，如图，标注了前三个汉字部分
 <div align=center><img width="922" height="495" border="1px" src="images/praat_open_5.png"/></div>
 
-<sup>注: 示例所使用数据为标贝开源女声数据</sup>
+<sup>注: 示例所使用数据为[标贝开源女声数据](https://www.data-baker.com/open_source.html)</sup>
 
 6. 每一句标注完成之后，回到主窗口，这时的标注文件并未自动保存，需要点击Save, Save as text file...，保存到相应的位置
 <div align=center><img width="314" height="417" border="1px" src="images/praat_open_6.png"/></div>
@@ -118,4 +119,8 @@ Praat官方网站[http://www.fon.hum.uva.nl/praat/](http://www.fon.hum.uva.nl/pr
 >>`draw_vowel_map.Praat`:根据提取的大量共振峰数据，画出F1, F2的声学元音分布图  
 <div align=center><img width="720" height="480" src="images/vowel.png"/></div>
 
-## 实例一：绘制中文声调图
+## 实例一_绘制中文声调图
+
+## 实例二_元音分布图
+
+## 实例三_句子语调图
