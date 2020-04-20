@@ -1,7 +1,21 @@
-# Praat_Scripts  
+# Praat_Scripts 
 
-### Praat常用脚本及结合Praat进行语音实验的步骤
---- 
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+
+该项目包括一些Praat常用脚本，并结合简单实例说明结合Praat进行语音实验的大概步骤，适用于已经对Praat基本操作有些了解，对时长，基频，共振峰等基本声学参数有所了解的初学者，所有的脚本操作都相当于Praat基本操作的批处理。  
+
+该项目包括以下内容：
+
+1. Praat对文件，包括标注文件、音频文件的操作；
+2. Praat对具体的标注信息的操作，比如tier, interval操作；
+3. 实例一：完成中文普通话四个声调图；
+4. 实例二：完成元音分布图；
+5. 实例三：完成平行语料句的语调对比图；
+
+希望能够对想通过Praat入门实验语音学的初学者有所帮助。  
+
+### Table of Contents
+
 Some basic praat scripts. 每一个目录里，有每个脚本的详细说明。 
 
 >Files:文件操作;  
