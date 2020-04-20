@@ -5,11 +5,11 @@
 # Copyright 2019.03.15 feelins[feipengshao@163.com] 
 
 form Information
-   sentence file_extension .wav
+   sentence file_extension .png
    comment Directory path of input files:
-   text input_directory /home/shaopf/test/wav/
+   text input_directory E:\003_ProgramLanguage\Praat_Scripts\images\
    comment Result path:
-   text result_path  /home/shaopf/test/file_names.txt
+   text result_path E:\003_ProgramLanguage\Praat_Scripts\02-get_file_names\file_names_images.txt
 endform
 
 if (praatVersion < 6001)

@@ -1,0 +1,15 @@
+add_remove_copy_set_tier_dialogue.png
+add_tiers_dialogue.png
+praat_open.png
+praat_open_10.png
+praat_open_2.png
+praat_open_3.png
+praat_open_4.png
+praat_open_5.png
+praat_open_6.png
+praat_open_7.png
+praat_open_8.png
+praat_open_9.png
+praat_run_01.png
+tiers_process.png
+vowel.png
