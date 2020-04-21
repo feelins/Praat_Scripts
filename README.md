@@ -56,7 +56,7 @@
 
 ## Praat基本操作
 
-##### 打开保存
+#### 打开保存
 1.  打开软件，双击已经下载的`Praat.exe`  
 <div align=center><img width="314" height="417" border="1px" src="images/praat_open.png"/></div>
 
@@ -72,30 +72,30 @@
 5. 这时，主窗口就会有一对同样名字的文件，一个是音频文件`Sound`，一个是标注文件`TextGrid`，同时选中这两个文件，再点右侧的`View & Edit`，这时会打开标注窗口，音频文件在上方，会显示声波图和频谱图，下方是标注区域，即是新建的`TextGrid`文件，并有两层`Word`和`Phoneme`层，先用鼠标找到合成的声音边界位置，再用鼠标点击如图位置的**小圆点**，则会增加一个**边界**，两个边界之间可以填写标注内容，如图前三个汉字部分
 <div align=center><img width="650" height="347" border="1px" src="images/praat_open_5.png"/></div>
 
-<div align=right><sup>注: 示例所使用数据为[标贝开源女声数据](https://www.data-baker.com/open_source.html)</sup></div>
+<div align=center><sup>注: 示例所使用数据为[标贝开源女声数据](https://www.data-baker.com/open_source.html)</sup></div>
 
 6. 每一句标注完成之后，回到主窗口，这时的标注文件并未自动保存，需要点击`Save`, `Save as text file...`，保存到相应的位置
 <div align=center><img width="314" height="417" border="1px" src="images/praat_open_6.png"/></div>
 
-7. 标注文件可以采用重复以上步骤二次打开，再次修改等操作，其它详细的操作，都可以参考社科院熊子瑜老师的《Praat 语音软件使用手册》
+7. 标注文件可以采用重复以上步骤二次打开，再次修改等操作，其它详细的操作，都可以参考社科院熊子瑜老师的《Praat语音软件使用手册》
 
-##### 脚本运行
+#### 脚本运行
 
-在掌握了Praat的基本操作之后，要知道如何运行一个脚本。  
+在掌握了`Praat`的基本操作之后，要知道如何运行一个脚本。  
 
-1. 先打开Praat软件
+1. 先打开`Praat`软件
 <div align=center><img width="314" height="417" border="1px" src="images/praat_open.png"/></div>
 
-2. 点击Praat, Open praat script...，
+2. 点击`Praat`, `Open praat script...`，
 <div align=center><img width="314" height="417" border="1px" src="images/praat_open_7.png"/></div>
 
-3. 找到需要打开的脚本，这里用简单的例子，[`test/test.Praat`](test/test.Praat)，这个脚本只有一句话，是在屏幕上打印Hello World!
+3. 找到需要打开的脚本，这里用简单的例子，[`00-test\test.Praat`](00-test\test.Praat)，这个脚本只有一句话，是在屏幕上打印`Hello World!`
 <div align=center><img width="400" height="300" border="1px" src="images/praat_open_8.png"/></div>
 
-4. 点击这个窗口的Run, Run
+4. 点击这个窗口的`Run`, `Run`
 <div align=center><img width="400" height="300" border="1px" src="images/praat_open_9.png"/></div>
 
-5. 脚本运行的结果是显示一句话，Hello World!，代表脚本运行成功
+5. 脚本运行的结果是显示一句话，`Hello World!`，代表脚本运行成功
 <div align=center><img width="400" height="300" border="1px" src="images/praat_open_10.png"/></div>
 
 ## Praat常用脚本  
@@ -109,7 +109,7 @@
 * 脚本: [`02-get_file_names\Get_FileNames_of_One_Directory.Praat`](02-get_file_names\Get_FileNames_of_One_Directory.Praat)
 * 描述: 运行这个脚本，第一个选项可以设置要提取的目录里的文件扩展名，默认为.wav；第二个选项是设置输入目录；第三个选项是要保存的文件名结果文件。  
 >第一个例子是提取01-resample_sound_files/wavs_48k里的文件名。 
-```Javascript
+```Java
 form Information
    sentence file_extension .wav
    comment Directory path of input files:
