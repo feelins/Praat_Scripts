@@ -420,3 +420,35 @@ output$ = output$ + fixed$(formant3, 0)
 <div align=center><img width="624" height="457" src="images/vowel.png"/></div>
 
 ##### 12-画平行句语调图
+* 脚本: [`12-intonation_pattern\Get_Duration_and_Pitch_Sentence.Praat`](12-intonation_pattern\Get_Duration_and_Pitch_Sentence.Praat)
+* 描述: 这个脚本是[09-提取时长和基频](#09-提取时长和基频)的一个变化，09中提取的基频是一个音节一行，而这里需要对多个同样内容的句子，提取的基频序列，画出对比的语调图，所以每一句提取的所有基频需要在同一行，适用的情况如下，给定例子目录里有5句话，是5个人的语音，是同样的内容She is much too busy!，语料来源于[http://www.phon.ox.ac.uk/files/apps/IViE/](http://www.phon.ox.ac.uk/files/apps/IViE/)，该网站有一个很多人读的Cinderella的语料，由很多不同英国方言的人语音组成。这些句子都被标注了音素边界，如下图是两句话的示例。  
+<div align=center><img width="600" height="380" src="images/praat_run_07.png"/></div>
+
+* 先设置输入wavs的目录
+* 设置输入TextGrid的目录
+* 音素层所在的层数是2
+* 结果文件所在的路径
+
+```JavaScript
+form Information
+	comment Directory path of input wav files:
+	text input_wav_directory E:\003_ProgramLanguage\Praat_Scripts\12-intonation_pattern\input_data\
+	comment Directory path of input TextGrid files:
+	text input_directory E:\003_ProgramLanguage\Praat_Scripts\12-intonation_pattern\input_data\
+	comment Target Tier:
+	positive reference_tier 2
+	comment Path of output result file:
+	text save_result E:\003_ProgramLanguage\Praat_Scripts\12-intonation_pattern\result_duration_pitch.txt
+endform
+```
+* 设置完成后，点击**Run**，运行脚本可以得到结果文件，这里的一句话所有结果是在一行内的
+>fileName	name	duration	Pitch1	Pitch2	Pitch3	Pitch4	Pitch5	Pitch6	Pitch7	Pitch8	Pitch9	Pitch10
+>j-rea5-f3_016.TextGrid	ax	0.107	166	166	166	165	165	165	166	167	169	172	sh	0.262	172	180	189	197	205	214	222	230	238	246	ih	0.095	246	247	248	248	246	244	241	236	231	225	z	0.051	225	222	219	216	213	211	209	207	207	206	m	0.135	206	205	204	202	201	200	202	205	209	211	ah	0.087	211	212	213	213	213	214	214	215	215	215	*ch(sh)	0.106	215	216	216	216	216	216	216	216	215	215	t	0.094	215	215	215	215	214	214	212	209	205	201	uw	0.069	201	197	194	191	188	186	184	182	181	180	(b-)	0.036	180	179	179	178	178	178	178	178	178	178	ih	0.065	178	178	178	178	177	176	176	175	174	174	z	0.076	174	174	175	176	177	177	177	177	176	175	ih	0.141	175	171	167	164	163	162	163	165	166	167	sp	0.050	167	167	167	167	167	167	167	167	167	167
+
+* 下面的工作应该是整理这些数据，要做到每句话都显示同样的音节数，经过整理，得到如Excel的结果
+>j-rea5-f3_016.TextGrid	246	247	248	248	246	244	241	236	231	225		225	222	219	216	213	211	209	207	207	206		211	212	213	213	213	214	214	215	215	215		201	197	194	191	188	186	184	182	181	180		178	178	178	178	177	176	176	175	174	174		175	171	167	164	163	162	163	165	166	167	  	>j-rea5-f5_016.TextGrid	299	301	304	308	313	319	324	328	330	331		330	326	320	312	302	293	284	277	273	272		285	285	285	285	285	285	286	286	287	288		285	283	280	276	271	266	261	257	256	259		295	297	298	298	298	297	295	293	291	290		267	255	244	235	228	222	217	213	210	209	  	>j-rea5-f6_016.TextGrid	323	319	316	313	311	309	306	303	299	293		293	287	279	271	263	253	244	235	227	221		232	235	237	239	240	241	242	242	241	241		217	209	201	192	185	179	174	171	169	170		140	133	127	121	117	113	111	111	113	115		143	120	103	94	90	87	85	83	82	82	>j-rea5-m1_016.TextGrid	169	173	176	177	177	176	175	172	168	164		164	162	158	155	152	148	145	142	139	137		161	162	163	166	170	176	186	198	213	230		166	158	151	145	141	137	135	133	131	130		143	143	142	140	139	137	137	136	135	135		141	140	138	137	135	134	134	134	134	135		>j-rea5-m2_016.TextGrid	127	128	130	130	130	130	129	127	123	121		121	121	121	120	120	120	120	119	119	119		107	107	106	104	103	101	99	97	95	94		99	98	96	95	93	92	91	90	91	93		119	119	119	118	117	115	114	112	111	109		110	110	110	110	110	110	110	110	110	110		
+
+* 在Excel里画拆线图，得到如下的结果
+<div align=center><img width="600" height="352" src="images/praat_run_08.png"/></div>
+
+# 相关工作
