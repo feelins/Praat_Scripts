@@ -109,7 +109,7 @@
 * 脚本: [`02-get_file_names\Get_FileNames_of_One_Directory.Praat`](02-get_file_names\Get_FileNames_of_One_Directory.Praat)
 * 描述: 运行这个脚本，第一个选项可以设置要提取的目录里的文件扩展名，默认为.wav；第二个选项是设置输入目录；第三个选项是要保存的文件名结果文件。  
 >第一个例子是提取01-resample_sound_files/wavs_48k里的文件名。 
-```Java
+```Python
 form Information
    sentence file_extension .wav
    comment Directory path of input files:
