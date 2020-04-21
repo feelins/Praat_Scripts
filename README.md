@@ -90,26 +90,47 @@
 <div align=center><img width="314" height="417" border="1px" src="images/praat_open_7.png"/></div>
 
 3. 找到需要打开的脚本，这里用简单的例子，[`00-test\test.Praat`](00-test\test.Praat)，这个脚本只有一句话，是在屏幕上打印`Hello World!`
-<div align=center><img width="400" height="300" border="1px" src="images/praat_open_8.png"/></div>
+<div align=center><img width="650" height="488" border="1px" src="images/praat_open_8.png"/></div>
 
 4. 点击这个窗口的`Run`, `Run`
-<div align=center><img width="400" height="300" border="1px" src="images/praat_open_9.png"/></div>
+<div align=center><img width="650" height="488" border="1px" src="images/praat_open_9.png"/></div>
 
 5. 脚本运行的结果是显示一句话，`Hello World!`，代表脚本运行成功
-<div align=center><img width="400" height="300" border="1px" src="images/praat_open_10.png"/></div>
+<div align=center><img width="650" height="488" border="1px" src="images/praat_open_10.png"/></div>
 
 ## Praat常用脚本  
 
 ##### 01-重采样音频文件  
-* 脚本: [`01-resample_sound_files\Resample_Sound_Files.Praat`](01-resample_sound_files/Resample_Sound_Files.Praat)  
-* 描述: 运行脚本之后，第一个选项可以设置音频的格式，默认为.wav；第二个选项是原始的输入音频文件所在的目录，比如这里设置为wavs_48k目录，请修改为自己电脑相应的目录；第三个选项是重采样之后的音频所在的目录，比如这里设置的是wavs_16k，请修改为自己电脑相应的目录；第四个选项是重采样率，这里设置为16000，其它选项可以有44100, 24000, 22050, 8000等；第五个选项是采样精度，这里无需改动；设置完成，点击OK运行脚本，结果文件在wavs_16k中。
-<div align=center><img width="400" height="255" border="1px" src="images/praat_run_01.png"/></div>
+* 脚本: [`01-resample_sound_files\Resample_Sound_Files.Praat`](01-resample_sound_files/Resample_Sound_Files.Praat) 
+* 描述: 对给定目录里的音频，重新采样。
+* 第一个选项可以设置音频的格式，默认为`.wav`；
+* 第二个选项是原始的输入音频文件所在的目录，比如这里设置为`wavs_48k`目录，请修改为自己电脑相应的目录；
+* 第三个选项是重采样之后的音频所在的目录，比如这里设置的是`wavs_16k`，请修改为自己电脑相应的目录；
+* 第四个选项是重采样率，这里设置为`16000`，其它选项可以有`44100, 24000, 22050, 8000`等；
+* 第五个选项是采样精度，这里无需改动；
+* 设置完成，点击`Run`运行脚本，结果文件在`wavs_16k`中；
+```
+form ReSample sound files
+   sentence Sound_file_extension .wav
+   comment Directory path of input files:
+   text input_directory  E:\003_ProgramLanguage\Praat_Scripts\01-resample_sound_files\wavs_48k\
+   comment Directory path of resampled files (old files will be overwritten!):
+   text output_directory  E:\003_ProgramLanguage\Praat_Scripts\01-resample_sound_files\wavs_16k\
+   positive New_sample_rate_(Hz) 16000
+   positive Precision_(samples) 50
+   comment (See the Praat manual for details on resampling.)
+endform
+```
+<div align=left><sup>注: 可以直接在脚本里直接修改相应的目录，参数再Run，也可以先Run之后输入</sup></div>
 
 ##### 02-获取目录内文件名
 * 脚本: [`02-get_file_names\Get_FileNames_of_One_Directory.Praat`](02-get_file_names\Get_FileNames_of_One_Directory.Praat)
-* 描述: 运行这个脚本，第一个选项可以设置要提取的目录里的文件扩展名，默认为.wav；第二个选项是设置输入目录；第三个选项是要保存的文件名结果文件。  
->第一个例子是提取01-resample_sound_files/wavs_48k里的文件名。 
-```cpp
+* 描述: 提取一个目录里所有文件名，并保存，代码简单，只是为了让初学者更熟悉脚本。
+* 第一个选项可以设置要提取的目录里的文件扩展名，默认为`.wav`；
+* 第二个选项是设置输入目录`01-resample_sound_files\wavs_48k`；
+* 第三个选项是要保存的文件名结果文件`02-get_file_names\file_names_wavs_48k.txt`。  
+>第一个例子是提取`01-resample_sound_files/wavs_48k`里的文件名。 
+```
 form Information
    sentence file_extension .wav
    comment Directory path of input files:
@@ -118,8 +139,8 @@ form Information
    text result_path E:\003_ProgramLanguage\Praat_Scripts\02-get_file_names\file_names_wavs_48k.txt
 endform
 ```
->第二个例子是提取images目录里的文件名，注意这里修改扩展名为.png。
-```Javascript
+>第二个例子是提取`images`目录里的文件名，注意这里修改扩展名为`.png`。
+```
 form Information
    sentence file_extension .png
    comment Directory path of input files:
@@ -131,15 +152,17 @@ endform
 
 ##### 03-长音频文件切分
 * 脚本: [`03-long_sound_splits\Split_Long_Sound_Files.Praat`](03-long_sound_splits\Split_Long_Sound_Files.Praat)
-* 描述: 将长文件切分成小文件；适用于录音时条件限制，只能保存到一个文件里，在做处理的时候，通过这个脚本可以辅助快速的将长文件切分成一个个的小文件，便于检索和标注。 首先，要把长的音频文件，在Praat里手工标出需要切分的小句，如下例将需要切的部分标出边界，图示的`s`符号自定义，如图空白的部分则不会被切分出来，也可以用具体的语音内容，第二个例子手工标出了具体的语音内容，保存的时候也会将这个内容提取出来保存：
->第一个例子，需要手工做如下标注：
-<div align=center><img width="400" height="216" border="1px" src="images/praat_run_02.png"/></div> 
+* 描述: 将长文件切分成小文件；适用于录音条件限制，只能保存到一个文件里，在做处理的时候，通过这个脚本可以辅助快速的将长文件切分成一个个的小文件，便于检索和标注。 
+* 首先，要把长的音频文件，在`Praat`里手工标出需要切分的小句，如下例将需要切的部分标出边界，图示的`s`符号自定义，如图空白的部分则不会被切分出来，也可以用具体的语音内容；
+* 第二个例子手工标出了具体的语音内容，保存的时候也会将这个内容提取出来保存；
+>第一个例子，需要对长音频文件手工做如下标注：
+<div align=center><img width="650" height="352" border="1px" src="images/praat_run_02.png"/></div> 
 
->第二个例子，需要手工做如下标注：
-<div align=center><img width="400" height="216" border="1px" src="images/praat_run_03.png"/></div> 
+>第二个例子，需要对长音频文件手工做如下标注：
+<div align=center><img width="650" height="352" border="1px" src="images/praat_run_03.png"/></div> 
 
 >第一个例子：切出来的小句子按序号排列。输入要切分的长文件和标注所在的目录**LongWavToDo_1**，输入切分出来的文件所在的目录**small_wavs_1**，输入标注的符号所在的层，一般只有**1**层，这里因为只保存标出来**s**的位置，所以这个**mark_string**设置为**s**，保存的文件名选项**file_mark**设置为**2**，即用原来的文件名带上新的序号，最后的**4**表示序号是几位，这里**4位**表示为**0001**这样子。
-```Javascript
+```
 form dialogue
 	comment Please input the source wav and textgrid files:
 	text input_directory E:\003_ProgramLanguage\Praat_Scripts\03-long_sound_splits\LongWavToDo_1\
@@ -155,13 +178,15 @@ form dialogue
 	positive limit 4
 endform
 ```
-运行之后，查看small_wavs_1目录，可以看到切分出来的文件是这样的，每个文件baizhai是源文件名，后面的1，2，3，4就是需要切分出来的标s的部分，共4部分
->baozhai_0001.wav
->baozhai_0002.wav
->baozhai_0003.wav
->baozhai_0004.wav
+运行之后，查看`small_wavs_1`目录，可以看到切分出来的文件是这样的，每个文件`baizhai`是源文件名，后面的`1，2，3，4`就是需要切分出来的标`s`的部分，共`4`部分
+```
+baozhai_0001.wav
+baozhai_0002.wav
+baozhai_0003.wav
+baozhai_0004.wav
+```
 
-另外注意，在切分的时候，相对边界在代码里有设置是切分边界前，后各延长0.3秒，用户可自定义设置这个长度
+另外注意，在切分的时候，相对边界在代码里有设置是切分边界前，后各延长`0.3`秒，用户可自定义设置这个长度
 ```Javascript
 ##### extend 0.3 seconds at the begin and end boundary
 start = start - 0.3
@@ -185,12 +210,14 @@ form dialogue
 	positive limit 4
 endform
 ```
-运行之后，查看small_wavs_2目录，可以看到切分出来的文件是这样的，每个文件000001是源文件名，后面的已经保存了相应的内容共3句话，最后带上了序号1，2，3
->000001_卡尔普_0001.wav
->000001_陪外孙_0002.wav
->000001_玩滑梯_0003.wav
+运行之后，查看`small_wavs_2`目录，可以看到切分出来的文件是这样的，每个文件`000001`是源文件名，后面的已经保存了相应的内容共`3`句话，最后带上了序号`1，2，3`
+```
+000001_卡尔普_0001.wav
+000001_陪外孙_0002.wav
+000001_玩滑梯_0003.wav
+```
 
-另外注意，在切分的时候，相对边界在代码里有设置是切分边界前，后各延长0.3秒，用户可自定义设置这个长度
+另外注意，在切分的时候，相对边界在代码里有设置是切分边界前，后各延长`0.3`秒，用户可自定义设置这个长度
 ```Javascript
 ##### extend 0.3 seconds at the begin and end boundary
 start = start - 0.3
