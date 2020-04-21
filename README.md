@@ -226,13 +226,16 @@ end = end + 0.3
 
 ##### 04-替换标注内容
 * 脚本: [`04-replace_labels\Replace_Intervals.praat`](04-replace_labels\Replace_Intervals.praat)
-* 描述: 替换标注内容，首先建立一个替换列表，将所有列表里的映射全部替换，输入原标注文件所在的目录**old_TextGrid**，再输入替换列表所在的文件路径，**replace_list.txt**，这个文件的格式是：
->old	new
->sil	##
->sp1	sp
-
-第一行是表头，第一列是原来的标注内容，第二列是要替换的内容。第三个选项**reference_tier**表示要替换第几层，这里是替换第**1**层，最后是输入替换后的文件保存路径**new_TextGrid**，另外最后在这个目录下会生成一个**log.txt**，这里面记录了被替换的所有信息。
-```Javascript
+* 描述: 替换标注内容，首先建立一个替换列表，将所有列表里的映射全部替换，输入原标注文件所在的目录**old_TextGrid**，再输入替换列表所在的文件路径，**replace_list.txt**，这个文件的格式是，第一行是表头，第一列是原来的标注内容，第二列是要替换的内容：
+```
+old	new
+sil	##
+sp1	sp
+```
+* 第三个选项`reference_tier`表示要替换第几层，这里是替换第`1`层；
+* 最后是输入替换后的文件保存路径`new_TextGrid`；
+* 另外最后在这个目录下会生成一个`log.txt`，这里面记录了被替换的所有信息；
+```
 form Information
 	comment Directory path of input files:
 	text input_directory E:\003_ProgramLanguage\Praat_Scripts\04-replace_labels\old_TextGrid\
@@ -247,15 +250,15 @@ endform
 
 ##### 05-标注文件增加多层
 * 脚本: [`05-add_some_tiers\add_tiers.Praat`](05-add_some_tiers\add_tiers.Praat)
-* 描述: 可以增加很多层，以及指定增加的层类型是interval还是point：
-    * 指定包括原始TextGrid的输入目录`input_directory`  
-    * 指定需要保存TextGrid的输出目录`output_directory`  
-    * 关于增加选项`add_option`的一些例子说明
-        * `add_option: hello good morning`表示在原来TextGrid的最底部分别增加名称为hello, good, morning的三个层；
-        * `add_option: hello good| morning`表示在原来TextGrid的最底部分别增加名称为hello, good, morning的三个层, 请注意`good`后面的`|`，表示这个层需要增加point层；
-        * `add_option: 2(hello) good 1(morning|)`表示在原来TextGrid的第2层的位置增加名称为hello的interval层，在最底部增加名称为good的层, 在第1层的位置增加名称为morning的point层；
+* 描述: 可以增加很多层，以及指定增加的层类型是`interval`还是`point`：
+* 指定包括原始`TextGrid`的输入目录`input_directory`  
+* 指定需要保存`TextGrid`的输出目录`output_directory`  
+* 关于增加选项`add_option`的一些例子说明
+    * `add_option: hello good morning`表示在原来`TextGrid`的最底部分别增加名称为`hello, good, morning`的三个层；
+    * `add_option: hello good| morning`表示在原来`TextGrid`的最底部分别增加名称为`hello, good, morning`的三个层, 请注意`good`后面的`|`，表示这个层需要增加`point`层；
+    * `add_option: 2(hello) good 1(morning|)`表示在原来`TextGrid`的第`2`层的位置增加名称为`hello`的`interval`层，在最底部增加名称为`good`的层, 在第`1`层的位置增加名称为`morning`的`point`层；
 
-```Javascript
+```
 form dialogue
 	sentence input_directory E:\003_ProgramLanguage\Praat_Scripts\05-add_some_tiers\old_TextGrid\
 	sentence output_directory E:\003_ProgramLanguage\Praat_Scripts\05-add_some_tiers\new_TextGrid\
@@ -266,14 +269,14 @@ endform
 ##### 06-标注文件修改某层
 * 脚本: [`06-modify_one_tier\add_remove_duplicate_set_tier.Praat`](06-modify_one_tier\add_remove_duplicate_set_tier.Praat)
 * 描述: 该脚本可以一次进行增加，删除，复制，修改层名称这四个操作，但是每一种操作一次只进行一层：
-    * 指定包括原始TextGrid的输入目录`input_directory`  
-    * 指定需要保存TextGrid的输出目录`output_directory`  
-    * 需要增加层，选中`add_option`，以及选择interval或者point，其它选项参考Praat增加层的操作
-    * 需要删除层，选中`remove_option`, 只需提供删除第几层即可
-    * 需要复制层，选中`copy_option`，具体操作参考Praat复制层的操作
-    * 需要修改层的名称，选中`set_option`，具体操作参考Praat设置层名称的操作
+* 指定包括原始`TextGrid`的输入目录`input_directory`  
+* 指定需要保存`TextGrid`的输出目录`output_directory`  
+* 需要增加层，选中`add_option`，以及选择`interval`或者`point`，其它选项参考`Praat`增加层的操作
+* 需要删除层，选中`remove_option`, 只需提供删除第几层即可
+* 需要复制层，选中`copy_option`，具体操作参考`Praat`复制层的操作
+* 需要修改层的名称，选中`set_option`，具体操作参考`Praat`设置层名称的操作
 
-```Javascript
+```
 form dialogue
 	sentence input_directory E:\003_ProgramLanguage\Praat_Scripts\06-modify_one_tier\old_TextGrid\
 	sentence output_directory E:\003_ProgramLanguage\Praat_Scripts\06-modify_one_tier\new_TextGrid\
@@ -298,15 +301,19 @@ form dialogue
 	sentence set_tier_name good
 endform
 ```
+
 ##### 07-计算目录里音频总时长
 * 脚本: [`07-compute_total_duration\Get_Duration_From_Sound_Files.praat`](07-compute_total_duration\Get_Duration_From_Sound_Files.praat)
 * 描述: 该脚本计算给定目录里所有音频文件的总时长，可用于统计录音的数据，给出的结果既包括每个文件的时长，也包括最后的总时长。
-    * 这里的输入目录是01例子中的wavs目录**01-resample_sound_files\wavs_48k**
-    * 结果文件在**07-compute_total_duration\duration_result.txt**，结果文件格式为如下，总时长单位也是**秒**：
-    >000001.wav,2.66
-    >000002.wav,2.86
-    >Total: 5.52
-```Javascript
+* 这里的输入目录是`01`例子中的`wavs`目录`01-resample_sound_files\wavs_48k`
+* 结果文件在`07-compute_total_duration\duration_result.txt`，结果文件格式为如下，总时长单位也是`秒`：
+```
+000001.wav,2.66
+000002.wav,2.86
+Total: 5.52
+```
+
+```
 form dialogue
 	comment Directory path of input files:
 	sentence input_directory E:\003_ProgramLanguage\Praat_Scripts\01-resample_sound_files\wavs_48k\
@@ -317,12 +324,12 @@ endform
 
 ##### 08-提取某一层的时长
 * 脚本: [`08-get_duration_of_one_tier\Get_Duration_of_One_Tier.praat`](08-get_duration_of_one_tier\Get_Duration_of_One_Tier.praat)
-* 描述: 该脚本提取标注里给定某层的所有interval的时长统计，假定我们有如下的标注文件，利用这个脚本可以提取第1层或者第2层的内容及对应的时长:  
+* 描述: 该脚本提取标注里给定某层的所有`interval`的时长统计，假定我们有如下的标注文件，利用这个脚本可以提取第`1`层或者第`2`层的内容及对应的时长:  
 <div align=center><img width="400" height="216" border="1px" src="images/praat_run_04.png"/></div>
 
-* 这里的输入目录是**08-get_duration_of_one_tier\input_data**
-* reference_tier为1表示提取第1层，同理可以提取第2层
-```Javascript
+* 这里的输入目录是`08-get_duration_of_one_tier\input_data`
+* `reference_tier`为`1`表示提取第`1`层，同理可以提取第`2`层
+```
 form Information
 	comment Directory path of input files:
 	text input_directory E:\003_ProgramLanguage\Praat_Scripts\08-get_duration_of_one_tier\input_data\
@@ -332,33 +339,38 @@ form Information
 	text save_result E:\003_ProgramLanguage\Praat_Scripts\08-get_duration_of_one_tier\result_duration_tier_1.txt
 endform
 ```
-* 结果文件在**08-get_duration_of_one_tier\result_duration_tier_1.txt**，结果文件格式为如下，单位是**秒**：
->fileName,IntervalName,duration
->000001.TextGrid,sil,0.27958612055419324
->000001.TextGrid,k,0.12670506851255176
->000001.TextGrid,a2,0.11022310838083771
->000001.TextGrid,er2,0.09786163828205219
->000001.TextGrid,p,0.1287653135290161
->......
-将reference_tier改为2之后，结果文件**08-get_duration_of_one_tier\result_duration_tier_2.txt**如下：
->fileName,IntervalName,duration
->000001.TextGrid,卡,0.23692817689338946
->000001.TextGrid,尔,0.09786163828205219
->000001.TextGrid,普,0.2853439347802995
->000001.TextGrid,陪,0.21528012949006559
->000001.TextGrid,外,0.21235920455136426
->000001.TextGrid,孙,0.2863740572885316
->......
+* 结果文件在`08-get_duration_of_one_tier\result_duration_tier_1.txt`，结果文件格式为如下，单位是`秒`：
+```
+fileName,IntervalName,duration
+000001.TextGrid,sil,0.27958612055419324
+000001.TextGrid,k,0.12670506851255176
+000001.TextGrid,a2,0.11022310838083771
+000001.TextGrid,er2,0.09786163828205219
+000001.TextGrid,p,0.1287653135290161
+......
+```
+
+将`reference_tier`改为`2`之后，结果文件`08-get_duration_of_one_tier\result_duration_tier_2.txt`如下：
+```
+fileName,IntervalName,duration
+000001.TextGrid,卡,0.23692817689338946
+000001.TextGrid,尔,0.09786163828205219
+000001.TextGrid,普,0.2853439347802995
+000001.TextGrid,陪,0.21528012949006559
+000001.TextGrid,外,0.21235920455136426
+000001.TextGrid,孙,0.2863740572885316
+......
+```
 
 ##### 09-提取时长和基频
 * 脚本: [`09-get_duration_and_pitch\Get_Duration_and_Pitch.Praat`](09-get_duration_and_pitch\Get_Duration_and_Pitch.Praat)
-* 描述: 该脚本提取标注里音素层(基频在浊音段比较稳定)的所有interval的时长和基频，基频为通过音频文件自动生成Pitch文件，并根据音素边界平均归一化10个点，提取这10个点的值:  
+* 描述: 该脚本提取标注里音素层(基频在浊音段比较稳定)的所有`interval`的时长和基频，基频为通过音频文件自动生成`Pitch`文件，并根据音素边界平均归一化`10个点`，提取这`10个点`的值:  
 
-* 第一个参数input_wav_directory，设置输入的wav目录**09-get_duration_and_pitch\input_wav**
-* 第二个参数input_directory，设置输入的TextGrid目录**09-get_duration_and_pitch\input_TextGrid**
-* 当前实例音素层为第**1**层，**reference_tier**设置为**1**
-* 结果文件**save_result**，设置为**09-get_duration_and_pitch\result_duration_pitch.txt**
-```Javascript
+* 第一个参数`input_wav_directory`，设置输入的`wav`目录`09-get_duration_and_pitch\input_wav`
+* 第二个参数`input_directory`，设置输入的`TextGrid`目录`09-get_duration_and_pitch\input_TextGrid`
+* 当前实例音素层为`第1层`，`reference_tier`设置为`1`
+* 结果文件`save_result`，设置为`09-get_duration_and_pitch\result_duration_pitch.txt`
+```
 form Information
 	comment Directory path of input wav files:
 	text input_wav_directory E:\003_ProgramLanguage\Praat_Scripts\09-get_duration_and_pitch\input_wav\
@@ -370,7 +382,7 @@ form Information
 	text save_result E:\003_ProgramLanguage\Praat_Scripts\09-get_duration_and_pitch\result_duration_pitch.txt
 endform
 ```
-* 设置完成后，点击**Run**，运行脚本可以得到结果结果文件，请注意可以通过拷贝在**Excel表**里排序的方式，<font color="red">删除非元音部分</font>：
+* 设置完成后，点击`Run`，运行脚本可以得到结果结果文件，请注意可以通过拷贝在**Excel表**里排序的方式，<font color="red">删除非元音部分</font>：
 >fileName	name	duration	Pitch1	Pitch2	Pitch3	Pitch4	Pitch5	Pitch6	Pitch7	Pitch8	Pitch9	Pitch10
 >000001.TextGrid	sil	0.280	262	262	262	262	262	262	262	262	262	262
 >000001.TextGrid	k	0.127	262	262	262	262	262	262	262	262	262	262
@@ -379,18 +391,18 @@ endform
 >000001.TextGrid	p	0.129	328	324	320	318	315	312	310	306	300	291
 >000001.TextGrid	u3	0.157	291	271	247	225	211	204	200	199	198	199
 
-* **扩展实例：利用这个结果画中文普通话的声调图**这句话选自标贝开源数据集，中文内容是`卡尔普陪外孙玩滑梯`，这9个汉字，包括5个2声调，2个1声调，1个3声调，1个4声调，我们将结果数据拷贝到Excel里，`删除非韵母部分`(理论上韵母是主要的声调携带部分)，将多个声调的取平均，这样得到`4个声调的各10个Pitch点的值`，将这10个值在Excel里画一个**带数据标记的拆线图**，则可以得到比较形象的普通话四个声调描述图，由于这里数据量较少，而且是在语流中，四个声调的表现并不象我们常规在教科书里那样，如果学习者有兴趣将数据量增加，该描述图将会越来越准确，参考**09-get_duration_and_pitch\中文声调图.xlsx**
+* **扩展实例：利用这个结果画中文普通话的声调图**这句话选自标贝开源数据集，中文内容是`卡尔普陪外孙玩滑梯`，这9个汉字，包括5个2声调，2个1声调，1个3声调，1个4声调，我们将结果数据拷贝到Excel里，`删除非韵母部分`(理论上韵母是主要的声调携带部分)，将多个声调的取平均，这样得到`4个声调的各10个Pitch点的值`，将这10个值在Excel里画一个`带数据标记的拆线图`，则可以得到比较形象的普通话四个声调描述图，由于这里数据量较少，而且是在语流中，四个声调的表现并不象我们常规在教科书里那样，如果学习者有兴趣将数据量增加，该描述图将会越来越准确，参考`09-get_duration_and_pitch\中文声调图.xlsx`
 <div align=center><img width="800" height="298" border="1px" src="images/praat_run_06.png"/></div>
 
 ##### 10-提取时长和共振峰
 * 脚本: [`10-get_duration_and_formant\Get_Duration_and_Formant.Praat`](10-get_duration_and_formant\Get_Duration_and_Formant.Praat)
-* 描述: 该脚本提取标注里音素层的所有interval的时长和共振峰，并根据音素边界提取平均值，只提取第1，第2，第3共振峰，即F1, F2, F3:  
+* 描述: 该脚本提取标注里音素层的所有`interval`的时长和共振峰，并根据音素边界提取平均值，只提取第1，第2，第3共振峰，即`F1, F2, F3`:  
 
-* 第一个参数input_wav_directory，设置输入的wav目录**10-get_duration_and_formant\input_wav**
-* 第二个参数input_directory，设置输入的TextGrid目录**10-get_duration_and_formant\input_TextGrid**
-* 当前实例音素层为第**1**层，**reference_tier**设置为**1**
-* 结果文件**save_result**，设置为**10-get_duration_and_formant\result_duration_formant.txt**
-```Javascript
+* 第一个参数`input_wav_directory`，设置输入的`wav`目录`10-get_duration_and_formant\input_wav`
+* 第二个参数`input_directory`，设置输入的`TextGrid`目录`10-get_duration_and_formant\input_TextGrid`
+* 当前实例音素层为第`1`层，`reference_tier`设置为`1`
+* 结果文件`save_result`，设置为`10-get_duration_and_formant\result_duration_formant.txt`
+```
 form Information
 	comment Directory path of input wav files:
 	text input_wav_directory E:\003_ProgramLanguage\Praat_Scripts\10-get_duration_and_formant\input_wav\
@@ -402,20 +414,22 @@ form Information
 	text save_result E:\003_ProgramLanguage\Praat_Scripts\10-get_duration_and_formant\result_duration_formant.txt
 endform
 ```
-* 设置完成后，点击**Run**，运行脚本可以得到结果结果文件，请注意可以通过拷贝在**Excel表**里排序的方式，<font color="red">删除非元音部分</font>：
->fileName	name	duration	F1	F2	F3
->000001.TextGrid	sil	0.280	1058	2317	3145
->000001.TextGrid	k	0.127	1202	2000	2792
->000001.TextGrid	a2	0.110	998	1587	2535
->000001.TextGrid	er2	0.098	620	1607	2334
->000001.TextGrid	p	0.129	914	1850	2902
->000001.TextGrid	u3	0.157	413	984	3334
->000001.TextGrid	p	0.075	756	1953	2924
->000001.TextGrid	ei2	0.140	491	2140	3096
->000001.TextGrid	uai4	0.212	622	1905	3285
->000001.TextGrid	s	0.095	1004	2089	3029
-* 如果有需要提取第4，第5等共振峰，可修改以下位置：
-```Javascript
+* 设置完成后，点击`Run`，运行脚本可以得到结果结果文件，请注意可以通过拷贝在**Excel表**里排序的方式，<font color="red">删除非元音部分</font>：
+```
+fileName	name	duration	F1	F2	F3
+000001.TextGrid	sil	0.280	1058	2317	3145
+000001.TextGrid	k	0.127	1202	2000	2792
+000001.TextGrid	a2	0.110	998	1587	2535
+000001.TextGrid	er2	0.098	620	1607	2334
+000001.TextGrid	p	0.129	914	1850	2902
+000001.TextGrid	u3	0.157	413	984	3334
+000001.TextGrid	p	0.075	756	1953	2924
+000001.TextGrid	ei2	0.140	491	2140	3096
+000001.TextGrid	uai4	0.212	622	1905	3285
+000001.TextGrid	s	0.095	1004	2089	3029
+```
+* 如果有需要提取`第4，第5`等共振峰，可修改脚本以下位置：
+```
 formant1 = Get mean: 1, sTime, eTime, "hertz"
 output$ = output$ + fixed$(formant1, 0) + tab$
 formant2 = Get mean: 2, sTime, eTime, "hertz"
@@ -426,35 +440,37 @@ output$ = output$ + fixed$(formant3, 0)
 
 ##### 11-画元音分布图
 * 脚本: [`11-draw_vowel_map\Draw_Vowel_Map.Praat`](11-draw_vowel_map\Draw_Vowel_Map.Praat)
-* 描述: 根据提取的大量共振峰数据，画出F1, F2的声学元音分布图，即把F1和F2分别作为坐标图里的x轴，y轴:   
+* 描述: 根据提取的大量共振峰数据，画出`F1, F2`的声学元音分布图，即把`F1和F2`分别作为坐标图里的`x轴，y轴`:   
 * 需要准备好输入的文件，格式如下，第一行为表头，第一列是元音名称，第二，三列分别是第一，二共振峰
->label	F1	F2
->u	320	630
->a	780	1300
->o	500	940
->\as	720	1060
->\o/	430	1580
->i	280	2300
->y	320	1680
->e	420	2000
->\yc	420	1540
-* 注意元音名称，有一些转化符号，这部分符号的表示可以参考Praat的**Phonetic symbols**说明
+```
+label	F1	F2
+u	320	630
+a	780	1300
+o	500	940
+\as	720	1060
+\o/	430	1580
+i	280	2300
+y	320	1680
+e	420	2000
+\yc	420	1540
+...
+```
+* 注意元音名称，有一些转化符号，这部分符号的表示可以参考`Praat`的`Phonetic symbols`说明
 <div align=center><img width="300" height="349" src="images/praat_run_05.png"/></div>
 
-* 设置完成后，点击**Run**，在Praat的Picture窗口会生成结果分布图，这个图可以在**Picture**点击**Edit**，**Copy to clipboard**再拷贝到其它地方使用
+* 设置完成后，点击`Run`，在`Praat`的`Picture`窗口会生成结果分布图，这个图可以在`Picture`点击`Edit，Copy to clipboard`再拷贝到其它地方使用
 <div align=center><img width="624" height="457" src="images/vowel.png"/></div>
 
 ##### 12-画平行句语调图
 * 脚本: [`12-intonation_pattern\Get_Duration_and_Pitch_Sentence.Praat`](12-intonation_pattern\Get_Duration_and_Pitch_Sentence.Praat)
-* 描述: 这个脚本是[09-提取时长和基频](#09-提取时长和基频)的一个变化，09中提取的基频是一个音节一行，而这里需要对多个同样内容的句子，提取的基频序列，画出对比的语调图，所以每一句提取的所有基频需要在同一行，适用的情况如下，给定例子目录里有5句话，是5个人的语音，是同样的内容She is much too busy!，语料来源于[http://www.phon.ox.ac.uk/files/apps/IViE/](http://www.phon.ox.ac.uk/files/apps/IViE/)，该网站有一个很多人读的Cinderella的语料，由很多不同英国方言的人语音组成。这些句子都被标注了音素边界，如下图是两句话的示例。  
+* 描述: 这个脚本是[09-提取时长和基频](#09-提取时长和基频)的一个变化，`09`中提取的基频是一个音节一行，而这里需要对多个同样内容的句子，提取的基频序列，画出对比的语调图，所以每一句提取的所有基频需要在同一行，适用的情况如下，给定例子目录里有5句话，是`5个人`的语音，是同样的内容`She is much too busy!`，语料来源于[http://www.phon.ox.ac.uk/files/apps/IViE/](http://www.phon.ox.ac.uk/files/apps/IViE/)，该网站有一个很多人读的`Cinderella的语料`，由很多不同英国方言的人语音组成。这些句子都被标注了音素边界，如下图是两句话的示例。  
 <div align=center><img width="600" height="380" src="images/praat_run_07.png"/></div>
 
-* 先设置输入wavs的目录
-* 设置输入TextGrid的目录
-* 音素层所在的层数是2
-* 结果文件所在的路径
-
-```JavaScript
+* 先设置输入`wavs`的目录`12-intonation_pattern\input_data`
+* 设置输入`TextGrid`的目录`12-intonation_pattern\input_data`
+* 提取层`reference_tier`是音素层所在的层数是`2`
+* 结果文件所在的路径`12-intonation_pattern\result_duration_pitch.txt`
+```
 form Information
 	comment Directory path of input wav files:
 	text input_wav_directory E:\003_ProgramLanguage\Praat_Scripts\12-intonation_pattern\input_data\
@@ -466,14 +482,22 @@ form Information
 	text save_result E:\003_ProgramLanguage\Praat_Scripts\12-intonation_pattern\result_duration_pitch.txt
 endform
 ```
-* 设置完成后，点击**Run**，运行脚本可以得到结果文件，这里的一句话所有结果是在一行内的
->fileName	name	duration	Pitch1	Pitch2	Pitch3	Pitch4	Pitch5	Pitch6	Pitch7	Pitch8	Pitch9	Pitch10
->j-rea5-f3_016.TextGrid	ax	0.107	166	166	166	165	165	165	166	167	169	172	sh	0.262	172	180	189	197	205	214	222	230	238	246	ih	0.095	246	247	248	248	246	244	241	236	231	225	z	0.051	225	222	219	216	213	211	209	207	207	206	m	0.135	206	205	204	202	201	200	202	205	209	211	ah	0.087	211	212	213	213	213	214	214	215	215	215	*ch(sh)	0.106	215	216	216	216	216	216	216	216	215	215	t	0.094	215	215	215	215	214	214	212	209	205	201	uw	0.069	201	197	194	191	188	186	184	182	181	180	(b-)	0.036	180	179	179	178	178	178	178	178	178	178	ih	0.065	178	178	178	178	177	176	176	175	174	174	z	0.076	174	174	175	176	177	177	177	177	176	175	ih	0.141	175	171	167	164	163	162	163	165	166	167	sp	0.050	167	167	167	167	167	167	167	167	167	167
+* 设置完成后，点击`Run`，运行脚本可以得到结果文件，这里的一句话所有结果是在一行内的
+```
+fileName	name	duration	Pitch1	Pitch2	Pitch3	Pitch4	Pitch5	Pitch6	Pitch7	Pitch8	Pitch9	Pitch10
+j-rea5-f3_016.TextGrid	ax	0.107	166	166	166	165	165	165	166	167	169	172	sh	0.262	172	180	189	197	205	214	222	230	238	246	ih	0.095	246	247	248	248	246	244	241	236	231	225	z	0.051	225	222	219	216	213	211	209	207	207	206	m	0.135	206	205	204	202	201	200	202	205	209	211	ah	0.087	211	212	213	213	213	214	214	215	215	215	*ch(sh)	0.106	215	216	216	216	216	216	216	216	215	215	t	0.094	215	215	215	215	214	214	212	209	205	201	uw	0.069	201	197	194	191	188	186	184	182	181	180	(b-)	0.036	180	179	179	178	178	178	178	178	178	178	ih	0.065	178	178	178	178	177	176	176	175	174	174	z	0.076	174	174	175	176	177	177	177	177	176	175	ih	0.141	175	171	167	164	163	162	163	165	166	167	sp	0.050	167	167	167	167	167	167	167	167	167	167
+```
 
 * 下面的工作应该是整理这些数据，要做到每句话都显示同样的音节数，经过整理，得到如Excel的结果
->j-rea5-f3_016.TextGrid	246	247	248	248	246	244	241	236	231	225		225	222	219	216	213	211	209	207	207	206		211	212	213	213	213	214	214	215	215	215		201	197	194	191	188	186	184	182	181	180		178	178	178	178	177	176	176	175	174	174		175	171	167	164	163	162	163	165	166	167	  	>j-rea5-f5_016.TextGrid	299	301	304	308	313	319	324	328	330	331		330	326	320	312	302	293	284	277	273	272		285	285	285	285	285	285	286	286	287	288		285	283	280	276	271	266	261	257	256	259		295	297	298	298	298	297	295	293	291	290		267	255	244	235	228	222	217	213	210	209	  	>j-rea5-f6_016.TextGrid	323	319	316	313	311	309	306	303	299	293		293	287	279	271	263	253	244	235	227	221		232	235	237	239	240	241	242	242	241	241		217	209	201	192	185	179	174	171	169	170		140	133	127	121	117	113	111	111	113	115		143	120	103	94	90	87	85	83	82	82	>j-rea5-m1_016.TextGrid	169	173	176	177	177	176	175	172	168	164		164	162	158	155	152	148	145	142	139	137		161	162	163	166	170	176	186	198	213	230		166	158	151	145	141	137	135	133	131	130		143	143	142	140	139	137	137	136	135	135		141	140	138	137	135	134	134	134	134	135		>j-rea5-m2_016.TextGrid	127	128	130	130	130	130	129	127	123	121		121	121	121	120	120	120	120	119	119	119		107	107	106	104	103	101	99	97	95	94		99	98	96	95	93	92	91	90	91	93		119	119	119	118	117	115	114	112	111	109		110	110	110	110	110	110	110	110	110	110		
+```
+j-rea5-f3_016.TextGrid	246	247	248	248	246	244	241	236	231	225		225	222	219	216	213	211	209	207	207	206		211	212	213	213	213	214	214	215	215	215		201	197	194	191	188	186	184	182	181	180		178	178	178	178	177	176	176	175	174	174		175	171	167	164	163	162	163	165	166	167	  	
+j-rea5-f5_016.TextGrid	299	301	304	308	313	319	324	328	330	331		330	326	320	312	302	293	284	277	273	272		285	285	285	285	285	285	286	286	287	288		285	283	280	276	271	266	261	257	256	259		295	297	298	298	298	297	295	293	291	290		267	255	244	235	228	222	217	213	210	209	  	
+j-rea5-f6_016.TextGrid	323	319	316	313	311	309	306	303	299	293		293	287	279	271	263	253	244	235	227	221		232	235	237	239	240	241	242	242	241	241		217	209	201	192	185	179	174	171	169	170		140	133	127	121	117	113	111	111	113	115		143	120	103	94	90	87	85	83	82	82	
+j-rea5-m1_016.TextGrid	169	173	176	177	177	176	175	172	168	164		164	162	158	155	152	148	145	142	139	137		161	162	163	166	170	176	186	198	213	230		166	158	151	145	141	137	135	133	131	130		143	143	142	140	139	137	137	136	135	135		141	140	138	137	135	134	134	134	134	135		
+j-rea5-m2_016.TextGrid	127	128	130	130	130	130	129	127	123	121		121	121	121	120	120	120	120	119	119	119		107	107	106	104	103	101	99	97	95	94		99	98	96	95	93	92	91	90	91	93		119	119	119	118	117	115	114	112	111	109		110	110	110	110	110	110	110	110	110	110	
+```	
 
-* 在Excel里画拆线图，得到如下的结果
+* 在Excel里画折线图，得到如下的结果
 <div align=center><img width="600" height="352" src="images/praat_run_08.png"/></div>
 
 # 相关工作
