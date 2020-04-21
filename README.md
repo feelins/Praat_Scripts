@@ -2,15 +2,14 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-该项目包括一些Praat常用脚本，并结合简单实例说明结合Praat进行语音实验的大概步骤，适用于已经对Praat基本操作有些了解，对时长，基频，共振峰等基本声学参数有所了解的初学者，所有的脚本操作都相当于Praat基本操作的批处理。  
+该项目包括一些Praat常用脚本，并结合简单实例说明如何使用这些脚本，整个项目的结构是一个脚本一个独立的目录，里面有示例文件以及结果文件，适用于已经对Praat基本操作有些了解，对时长，基频，共振峰等基本声学参数有所了解的初学者，所有的脚本都相当于Praat基本操作的批处理。  
 
 该项目包括以下内容：
 
-1. Praat对文件，包括标注文件、音频文件的操作；
-2. Praat对具体的标注信息的操作，比如tier, interval修改，增加，删除等操作；
-3. 实例一：完成中文普通话四个声调图；
-4. 实例二：完成元音分布图；
-5. 实例三：完成平行语料句的语调对比图；
+1. Praat基本操作；
+2. Praat对文件，包括标注文件、音频文件的操作；
+3. Praat对具体的标注信息的操作，比如tier, interval修改，增加，删除等操作；
+4. 使用Praat提取主要的声学参数，时长，基频，共振峰；
 
 希望能够对想通过Praat入门实验语音学的初学者有所帮助。  
 
@@ -22,38 +21,42 @@
     * [打开保存](#打开保存)
     * [脚本运行](#脚本运行)
 * [常用脚本](#常用操作)
-    * [文件操作](#文件操作)
-    * [标注内容](#标注内容)
-    * [提取数据](#提取数据)
-* [语音研究步骤](#语音研究步骤)
-* [实例一_绘制中文声调图](#实例一_绘制中文声调图)
-* [实例二_元音分布图](#实例二_元音分布图)
-* [实例三_句子语调图](#实例三_句子语调图)
+    * [01-重采样音频文件](#01-重采样音频文件)
+    * [02-获取目录内文件名](#02-获取目录内文件名)
+    * [03-长音频文件切分](#03-长音频文件切分)
+    * [04-替换标注内容](#04-替换标注内容)
+    * [05-标注文件增加多层](#05-标注文件增加多层)
+    * [06-标注文件修改某层](#06-标注文件修改某层)
+    * [07-计算目录里音频总时长](#07-计算目录里音频总时长)
+    * [08-提取某一层的时长](#08-提取某一层的时长)
+    * [09-提取时长和基频](#09-提取时长和基频)
+    * [10-提取时长和共振峰](#10-提取时长和共振峰)
+    * [11-画元音分布图](#11-画元音分布图)
+    * [12-画平行句语调图](#12-画平行句语调图)
  
 
 ## 背景  
 
 ##### 命名  
-        Praat在荷兰语中是说话或交谈的意思，而`doing phonetics by computer`即使用计算机研究语音学。作为软件的名称，简便起见，合起来翻译作`Praat`语音学软件。  
+>Praat在荷兰语中是说话或交谈的意思，而`doing phonetics by computer`即使用计算机研究语音学。作为软件的名称，简便起见，合起来翻译作`Praat`语音学软件。  
 
 ##### 作者  
-Praat的作者是荷兰阿姆斯特丹大学人文学院语音科学研究所的主席保罗·博尔斯马（*Paul Boersma*）教授和大卫·威宁克（*David Weenink*）助教授。  
+>Praat的作者是荷兰阿姆斯特丹大学人文学院语音科学研究所的主席保罗·博尔斯马（*Paul Boersma*）教授和大卫·威宁克（*David Weenink*）助教授。  
 
 ##### 版本  
-Praat最早的版本发布于1993年。起初用户还无法自由地下载使用，但从2003年6月5日的4.1版起，作者取消了专门的授权并开放了绝大部分源代码。进一步，从2004年3月4日的4.2版起，作者开放了全部源代码，使Praat成为采用GNU通用公共许可证授权的开源软件。相隔短则一天，长则月余，作者就会发布最近修订的版本，消除旧的故障，增添新的功能。2007年12月10日发布了5.0版。  
-Praat目前支持在多种计算机平台上运行，包括：  
-* 作者为以上平台的用户提供已编译好的目标文件。高级用户还可以在其他操作系统平台上修改并编译源代码后运行Praat程序。
-* Praat能够在图形和命令行两种用户界面下运行，但两种界面的目标文件（可执行文件）各自独立，以Windows版为例，即分为praat.exe和praatcon.exe两个可执行文件，其中后者只能通过命令行方式从控制台调用。
+>Praat最早的版本发布于1993年。起初用户还无法自由地下载使用，但从2003年6月5日的4.1版起，作者取消了专门的授权并开放了绝大部分源代码。进一步，从2004年3月4日的4.2版起，作者开放了全部源代码，使Praat成为采用GNU通用公共许可证授权的开源软件。相隔短则一天，长则月余，作者就会发布最近修订的版本，消除旧的故障，增添新的功能。2007年12月10日发布了5.0版。  
+>Praat目前支持在多种计算机平台上运行，包括：  
+>* 作者为以上平台的用户提供已编译好的目标文件。高级用户还可以在其他操作系统平台上修改并编译源代码后运行Praat程序。
+>* Praat能够在图形和命令行两种用户界面下运行，但两种界面的目标文件（可执行文件）各自独立，以Windows版为例，即分为praat.exe和praatcon.exe两个可执行文件，其中后者只能通过命令行方式从控制台调用。
 
 该部分信息来源于[百度百科-Praat](https://baike.baidu.com/item/praat/7852897?fr=aladdin)。
 
 ## 安装  
-
 Praat官方网站[http://www.fon.hum.uva.nl/praat/](http://www.fon.hum.uva.nl/praat/)，请根据自己的系统下载Windows, Mac, 或者Linux等版本，下载到本地电脑之后，双击打开**Praat.exe**就可以使用，无需安装。另外为了更好的体验IPA等特殊符号的标注，需要将安装页面的**Phonetic and international symbols**也一并安装，具体方法网站都有详细说明。请尽量使用最新版本。官方网站也提供了英文版的使用说明，以及很多的脚本，由于每个人完成实验的设计，目的等都不相同，所以很多脚本需要对Praat脚本语法比较熟悉才能灵活使用。  
 
 ## Praat基本操作
 
-已经对Praat操作熟悉的，可跳过此部分。
+        已经对Praat操作熟悉的，可跳过此部分。
 
 ##### 打开保存
 1.  打开软件，双击已经下载的Praat.exe  
@@ -99,28 +102,321 @@ Praat官方网站[http://www.fon.hum.uva.nl/praat/](http://www.fon.hum.uva.nl/pr
 
 ## 常用脚本  
 
-##### 文件操作  
-1. [`Get_FileNames_of_One_Directory.Praat`](Files/Get_FileNames_of_One_Directory.Praat)：提取一个目录里的文件名，保存为一个文件；
-2. [`Resample_Sound_Files.Praat`](Files/Resample_Sound_Files.Praat)：对音频文件重采样；
-3. [`SegmentLongWAVFilesToSmallOnes.Praat`](Files/SegmentLongWAVFilesToSmallOnes.Praat)：将长文件切分成小文件；  
+##### 01-重采样音频文件  
+* 脚本: [`01-resample_sound_files\Resample_Sound_Files.Praat`](01-resample_sound_files/Resample_Sound_Files.Praat)  
+* 描述: 运行脚本之后，第一个选项可以设置音频的格式，默认为.wav；第二个选项是原始的输入音频文件所在的目录，比如这里设置为wavs_48k目录，请修改为自己电脑相应的目录；第三个选项是重采样之后的音频所在的目录，比如这里设置的是wavs_16k，请修改为自己电脑相应的目录；第四个选项是重采样率，这里设置为16000，其它选项可以有44100, 24000, 22050, 8000等；第五个选项是采样精度，这里无需改动；设置完成，点击OK运行脚本，结果文件在wavs_16k中。
+<div align=center><img width="400" height="255" border="1px" src="images/praat_run_01.png"/></div>
 
-##### 标注内容  
-1. [`Replace_Intervals.Praat`](Replace/Replace_Intervals.Praat)：批量替换标注里的信息；
-2. [`add_tiers.Praat`](Tiers/add_tiers.Praat)：只增加，而且可以增加很多层，以及指定增加的层是否是interval或者point；
-3. [`add_remove_duplicate_set_tier.Praat`](Tiers/add_remove_duplicate_set_tier.Praat)：该脚本可以一次进行增加，删除，复制，修改层名称这四个操作；
+##### 02-获取目录内文件名
+* 脚本: [`02-get_file_names\Get_FileNames_of_One_Directory.Praat`](02-get_file_names\Get_FileNames_of_One_Directory.Praat)
+* 描述: 运行这个脚本，第一个选项可以设置要提取的目录里的文件扩展名，默认为.wav；第二个选项是设置输入目录；第三个选项是要保存的文件名结果文件。  
+>第一个例子是提取01-resample_sound_files/wavs_48k里的文件名。 
+```Javascript
+form Information
+   sentence file_extension .wav
+   comment Directory path of input files:
+   text input_directory E:\003_ProgramLanguage\Praat_Scripts\01-resample_sound_files\wavs_48k\
+   comment Result path:
+   text result_path E:\003_ProgramLanguage\Praat_Scripts\02-get_file_names\file_names_wavs_48k.txt
+endform
+```
+>第二个例子是提取images目录里的文件名，注意这里修改扩展名为.png。
+```Javascript
+form Information
+   sentence file_extension .png
+   comment Directory path of input files:
+   text input_directory E:\003_ProgramLanguage\Praat_Scripts\images\
+   comment Result path:
+   text result_path E:\003_ProgramLanguage\Praat_Scripts\02-get_file_names\file_names_images.txt
+endform
+```
 
-##### 提取数据    
-1. [`Get_Duration_and_Formant.Praat`](Extract/Get_Duration_and_Formant.Praat):提取时长和共振峰  
-2. [`Get_Duration_and_Pitch.Praat`](Extract/Get_Duration_and_Pitch.Praat):提取时长和基频10个点  
-3. [`Get_Duration_From_Sound_Files.praat`](Extract/Get_Duration_From_Sound_Files.Praat):提取目录里所有wavs的总时长  
-4. [`Get_Duration_of_One_Tier.praat`](Extract/Get_Duration_of_One_Tier.Praat):提取某一层的所有interval的时长  
+##### 03-长音频文件切分
+* 脚本: [`03-long_sound_splits\Split_Long_Sound_Files.Praat`](03-long_sound_splits\Split_Long_Sound_Files.Praat)
+* 描述: 将长文件切分成小文件；适用于录音时条件限制，只能保存到一个文件里，在做处理的时候，通过这个脚本可以辅助快速的将长文件切分成一个个的小文件，便于检索和标注。 首先，要把长的音频文件，在Praat里手工标出需要切分的小句，如下例将需要切的部分标出边界，图示的`s`符号自定义，如图空白的部分则不会被切分出来，也可以用具体的语音内容，第二个例子手工标出了具体的语音内容，保存的时候也会将这个内容提取出来保存：
+>第一个例子，需要手工做如下标注：
+<div align=center><img width="400" height="216" border="1px" src="images/praat_run_02.png"/></div> 
 
->DrawVowelMap:根据提取的大量共振峰数据，画出F1, F2的声学元音分布图  
->>`draw_vowel_map.Praat`:根据提取的大量共振峰数据，画出F1, F2的声学元音分布图  
-<div align=center><img width="720" height="480" src="images/vowel.png"/></div>
+>第二个例子，需要手工做如下标注：
+<div align=center><img width="400" height="216" border="1px" src="images/praat_run_03.png"/></div> 
 
-## 实例一_绘制中文声调图
+>第一个例子：切出来的小句子按序号排列。输入要切分的长文件和标注所在的目录**LongWavToDo_1**，输入切分出来的文件所在的目录**small_wavs_1**，输入标注的符号所在的层，一般只有**1**层，这里因为只保存标出来**s**的位置，所以这个**mark_string**设置为**s**，保存的文件名选项**file_mark**设置为**2**，即用原来的文件名带上新的序号，最后的**4**表示序号是几位，这里**4位**表示为**0001**这样子。
+```Javascript
+form dialogue
+	comment Please input the source wav and textgrid files:
+	text input_directory E:\003_ProgramLanguage\Praat_Scripts\03-long_sound_splits\LongWavToDo_1\
+	comment Please input the result wav files:
+	text output_directory E:\003_ProgramLanguage\Praat_Scripts\03-long_sound_splits\small_wavs_1\
+	comment Please input the mark symbols tier:
+	positive tier_number 1
+	sentence mark_string s
+	optionmenu file_mark: 2
+		option FileName_markString_order
+		option FileName_order
+	comment Please input the digits of order：
+	positive limit 4
+endform
+```
+运行之后，查看small_wavs_1目录，可以看到切分出来的文件是这样的，每个文件baizhai是源文件名，后面的1，2，3，4就是需要切分出来的标s的部分，共4部分
+>baozhai_0001.wav
+>baozhai_0002.wav
+>baozhai_0003.wav
+>baozhai_0004.wav
 
-## 实例二_元音分布图
+另外注意，在切分的时候，相对边界在代码里有设置是切分边界前，后各延长0.3秒，用户可自定义设置这个长度
+```Javascript
+##### extend 0.3 seconds at the begin and end boundary
+start = start - 0.3
+end = end + 0.3
+```
 
-## 实例三_句子语调图
+>第二个例子：切出来的小句子文件名里保存相应的内容。输入要切分的长文件和标注所在的目录**LongWavToDo_2**，输入切分出来的文件所在的目录**small_wavs_2**，输入标注的符号所在的层，一般只有**1**层，这里只保存标具体内容的位置，所以这个**mark_string**设置为**空**，保存的文件名选项**file_mark**设置为**1**，即用原来的文件名带上内容再带上新的序号，最后的**4**表示序号是几位，这里**4位**表示为**0001**这样子。
+```Javascript
+form dialogue
+	comment Please input the source wav and textgrid files:
+	text input_directory E:\003_ProgramLanguage\Praat_Scripts\03-long_sound_splits\LongWavToDo_2\
+	comment Please input the result wav files:
+	text output_directory E:\003_ProgramLanguage\Praat_Scripts\03-long_sound_splits\small_wavs_2\
+	comment Please input the mark symbols tier:
+	positive tier_number 1
+	sentence mark_string 
+	optionmenu file_mark: 1
+		option FileName_markString_order
+		option FileName_order
+	comment Please input the digits of order：
+	positive limit 4
+endform
+```
+运行之后，查看small_wavs_2目录，可以看到切分出来的文件是这样的，每个文件000001是源文件名，后面的已经保存了相应的内容共3句话，最后带上了序号1，2，3
+>000001_卡尔普_0001.wav
+>000001_陪外孙_0002.wav
+>000001_玩滑梯_0003.wav
+
+另外注意，在切分的时候，相对边界在代码里有设置是切分边界前，后各延长0.3秒，用户可自定义设置这个长度
+```Javascript
+##### extend 0.3 seconds at the begin and end boundary
+start = start - 0.3
+end = end + 0.3
+```
+
+##### 04-替换标注内容
+* 脚本: [`04-replace_labels\Replace_Intervals.praat`](04-replace_labels\Replace_Intervals.praat)
+* 描述: 替换标注内容，首先建立一个替换列表，将所有列表里的映射全部替换，输入原标注文件所在的目录**old_TextGrid**，再输入替换列表所在的文件路径，**replace_list.txt**，这个文件的格式是：
+>old	new
+>sil	##
+>sp1	sp
+
+第一行是表头，第一列是原来的标注内容，第二列是要替换的内容。第三个选项**reference_tier**表示要替换第几层，这里是替换第**1**层，最后是输入替换后的文件保存路径**new_TextGrid**，另外最后在这个目录下会生成一个**log.txt**，这里面记录了被替换的所有信息。
+```Javascript
+form Information
+	comment Directory path of input files:
+	text input_directory E:\003_ProgramLanguage\Praat_Scripts\04-replace_labels\old_TextGrid\
+    comment Path of map list file:
+	text list_path E:\003_ProgramLanguage\Praat_Scripts\04-replace_labels\replace_list.txt
+	comment Target Tier:
+	positive reference_tier 1
+	comment Path of output result file:
+	text save_path E:\003_ProgramLanguage\Praat_Scripts\04-replace_labels\new_TextGrid\
+endform
+```
+
+##### 05-标注文件增加多层
+* 脚本: [`05-add_some_tiers\add_tiers.Praat`](05-add_some_tiers\add_tiers.Praat)
+* 描述: 可以增加很多层，以及指定增加的层类型是interval还是point：
+    * 指定包括原始TextGrid的输入目录`input_directory`  
+    * 指定需要保存TextGrid的输出目录`output_directory`  
+    * 关于增加选项`add_option`的一些例子说明
+        * `add_option: hello good morning`表示在原来TextGrid的最底部分别增加名称为hello, good, morning的三个层；
+        * `add_option: hello good| morning`表示在原来TextGrid的最底部分别增加名称为hello, good, morning的三个层, 请注意`good`后面的`|`，表示这个层需要增加point层；
+        * `add_option: 2(hello) good 1(morning|)`表示在原来TextGrid的第2层的位置增加名称为hello的interval层，在最底部增加名称为good的层, 在第1层的位置增加名称为morning的point层；
+
+```Javascript
+form dialogue
+	sentence input_directory E:\003_ProgramLanguage\Praat_Scripts\05-add_some_tiers\old_TextGrid\
+	sentence output_directory E:\003_ProgramLanguage\Praat_Scripts\05-add_some_tiers\new_TextGrid\
+	sentence add_option hello good morning|
+endform
+```
+
+##### 06-标注文件修改某层
+* 脚本: [`06-modify_one_tier\add_remove_duplicate_set_tier.Praat`](06-modify_one_tier\add_remove_duplicate_set_tier.Praat)
+* 描述: 该脚本可以一次进行增加，删除，复制，修改层名称这四个操作，但是每一种操作一次只进行一层：
+    * 指定包括原始TextGrid的输入目录`input_directory`  
+    * 指定需要保存TextGrid的输出目录`output_directory`  
+    * 需要增加层，选中`add_option`，以及选择interval或者point，其它选项参考Praat增加层的操作
+    * 需要删除层，选中`remove_option`, 只需提供删除第几层即可
+    * 需要复制层，选中`copy_option`，具体操作参考Praat复制层的操作
+    * 需要修改层的名称，选中`set_option`，具体操作参考Praat设置层名称的操作
+
+```Javascript
+form dialogue
+	sentence input_directory E:\003_ProgramLanguage\Praat_Scripts\06-modify_one_tier\old_TextGrid\
+	sentence output_directory E:\003_ProgramLanguage\Praat_Scripts\06-modify_one_tier\new_TextGrid\
+	comment Do you want to add tier:
+	boolean add_option 1
+	choice select_type: 1
+		option 1. interval tier
+		option 2. point tier
+	integer add_position 1
+	sentence add_tier_name hello
+	comment Do you want to remove tier:
+	boolean remove_option 0
+	integer remove_tier_num 1
+	comment Do you want to duplicate tier:
+	boolean copy_option 0
+	integer tiernum 1
+	integer position 2
+	sentence target_tier_name nice
+	comment Do you want to set tier names:
+	boolean set_option 0
+	integer tiernum 1
+	sentence set_tier_name good
+endform
+```
+##### 07-计算目录里音频总时长
+* 脚本: [`07-compute_total_duration\Get_Duration_From_Sound_Files.praat`](07-compute_total_duration\Get_Duration_From_Sound_Files.praat)
+* 描述: 该脚本计算给定目录里所有音频文件的总时长，可用于统计录音的数据，给出的结果既包括每个文件的时长，也包括最后的总时长。
+    * 这里的输入目录是01例子中的wavs目录**01-resample_sound_files\wavs_48k**
+    * 结果文件在**07-compute_total_duration\duration_result.txt**，结果文件格式为如下，总时长单位也是**秒**：
+    >000001.wav,2.66
+    >000002.wav,2.86
+    >Total: 5.52
+```Javascript
+form dialogue
+	comment Directory path of input files:
+	sentence input_directory E:\003_ProgramLanguage\Praat_Scripts\01-resample_sound_files\wavs_48k\
+	comment Path of output result file:
+	sentence save_result E:\003_ProgramLanguage\Praat_Scripts\07-compute_total_duration\duration_result.txt
+endform
+```
+
+##### 08-提取某一层的时长
+* 脚本: [`08-get_duration_of_one_tier\Get_Duration_of_One_Tier.praat`](08-get_duration_of_one_tier\Get_Duration_of_One_Tier.praat)
+* 描述: 该脚本提取标注里给定某层的所有interval的时长统计，假定我们有如下的标注文件，利用这个脚本可以提取第1层或者第2层的内容及对应的时长:  
+<div align=center><img width="400" height="216" border="1px" src="images/praat_run_04.png"/></div>
+
+* 这里的输入目录是**08-get_duration_of_one_tier\input_data**
+* reference_tier为1表示提取第1层，同理可以提取第2层
+```Javascript
+form Information
+	comment Directory path of input files:
+	text input_directory E:\003_ProgramLanguage\Praat_Scripts\08-get_duration_of_one_tier\input_data\
+	comment Target Tier:
+	positive reference_tier 1
+	comment Path of output result file:
+	text save_result E:\003_ProgramLanguage\Praat_Scripts\08-get_duration_of_one_tier\result_duration_tier_1.txt
+endform
+```
+* 结果文件在**08-get_duration_of_one_tier\result_duration_tier_1.txt**，结果文件格式为如下，单位是**秒**：
+>fileName,IntervalName,duration
+>000001.TextGrid,sil,0.27958612055419324
+>000001.TextGrid,k,0.12670506851255176
+>000001.TextGrid,a2,0.11022310838083771
+>000001.TextGrid,er2,0.09786163828205219
+>000001.TextGrid,p,0.1287653135290161
+>......
+将reference_tier改为2之后，结果文件**08-get_duration_of_one_tier\result_duration_tier_2.txt**如下：
+>fileName,IntervalName,duration
+>000001.TextGrid,卡,0.23692817689338946
+>000001.TextGrid,尔,0.09786163828205219
+>000001.TextGrid,普,0.2853439347802995
+>000001.TextGrid,陪,0.21528012949006559
+>000001.TextGrid,外,0.21235920455136426
+>000001.TextGrid,孙,0.2863740572885316
+>......
+
+##### 09-提取时长和基频
+* 脚本: [`09-get_duration_and_pitch\Get_Duration_and_Pitch.Praat`](09-get_duration_and_pitch\Get_Duration_and_Pitch.Praat)
+* 描述: 该脚本提取标注里音素层(基频在浊音段比较稳定)的所有interval的时长和基频，基频为通过音频文件自动生成Pitch文件，并根据音素边界平均归一化10个点，提取这10个点的值:  
+
+* 第一个参数input_wav_directory，设置输入的wav目录**09-get_duration_and_pitch\input_wav**
+* 第二个参数input_directory，设置输入的TextGrid目录**09-get_duration_and_pitch\input_TextGrid**
+* 当前实例音素层为第**1**层，**reference_tier**设置为**1**
+* 结果文件**save_result**，设置为**09-get_duration_and_pitch\result_duration_pitch.txt**
+```Javascript
+form Information
+	comment Directory path of input wav files:
+	text input_wav_directory E:\003_ProgramLanguage\Praat_Scripts\09-get_duration_and_pitch\input_wav\
+	comment Directory path of input TextGrid files:
+	text input_directory E:\003_ProgramLanguage\Praat_Scripts\09-get_duration_and_pitch\input_TextGrid\
+	comment Target Tier:
+	positive reference_tier 1
+	comment Path of output result file:
+	text save_result E:\003_ProgramLanguage\Praat_Scripts\09-get_duration_and_pitch\result_duration_pitch.txt
+endform
+```
+* 设置完成后，点击**Run**，运行脚本可以得到结果结果文件，请注意可以通过拷贝在**Excel表**里排序的方式，<font color="red">删除非元音部分</font>：
+>fileName	name	duration	Pitch1	Pitch2	Pitch3	Pitch4	Pitch5	Pitch6	Pitch7	Pitch8	Pitch9	Pitch10
+>000001.TextGrid	sil	0.280	262	262	262	262	262	262	262	262	262	262
+>000001.TextGrid	k	0.127	262	262	262	262	262	262	262	262	262	262
+>000001.TextGrid	a2	0.110	262	262	263	265	268	273	278	285	293	303
+>000001.TextGrid	er2	0.098	303	313	322	331	338	341	341	338	333	328
+>000001.TextGrid	p	0.129	328	324	320	318	315	312	310	306	300	291
+>000001.TextGrid	u3	0.157	291	271	247	225	211	204	200	199	198	199
+
+* **扩展实例：利用这个结果画中文普通话的声调图**这句话选自标贝开源数据集，中文内容是`卡尔普陪外孙玩滑梯`，这9个汉字，包括5个2声调，2个1声调，1个3声调，1个4声调，我们将结果数据拷贝到Excel里，`删除非韵母部分`(理论上韵母是主要的声调携带部分)，将多个声调的取平均，这样得到`4个声调的各10个Pitch点的值`，将这10个值在Excel里画一个**带数据标记的拆线图**，则可以得到比较形象的普通话四个声调描述图，由于这里数据量较少，而且是在语流中，四个声调的表现并不象我们常规在教科书里那样，如果学习者有兴趣将数据量增加，该描述图将会越来越准确，参考**09-get_duration_and_pitch\中文声调图.xlsx**
+<div align=center><img width="800" height="298" border="1px" src="images/praat_run_06.png"/></div>
+
+##### 10-提取时长和共振峰
+* 脚本: [`10-get_duration_and_formant\Get_Duration_and_Formant.Praat`](10-get_duration_and_formant\Get_Duration_and_Formant.Praat)
+* 描述: 该脚本提取标注里音素层的所有interval的时长和共振峰，并根据音素边界提取平均值，只提取第1，第2，第3共振峰，即F1, F2, F3:  
+
+* 第一个参数input_wav_directory，设置输入的wav目录**10-get_duration_and_formant\input_wav**
+* 第二个参数input_directory，设置输入的TextGrid目录**10-get_duration_and_formant\input_TextGrid**
+* 当前实例音素层为第**1**层，**reference_tier**设置为**1**
+* 结果文件**save_result**，设置为**10-get_duration_and_formant\result_duration_formant.txt**
+```Javascript
+form Information
+	comment Directory path of input wav files:
+	text input_wav_directory E:\003_ProgramLanguage\Praat_Scripts\10-get_duration_and_formant\input_wav\
+	comment Directory path of input TextGrid files:
+	text input_directory E:\003_ProgramLanguage\Praat_Scripts\10-get_duration_and_formant\input_TextGrid\
+	comment Target Tier:
+	positive reference_tier 1
+	comment Path of output result file:
+	text save_result E:\003_ProgramLanguage\Praat_Scripts\10-get_duration_and_formant\result_duration_formant.txt
+endform
+```
+* 设置完成后，点击**Run**，运行脚本可以得到结果结果文件，请注意可以通过拷贝在**Excel表**里排序的方式，<font color="red">删除非元音部分</font>：
+>fileName	name	duration	F1	F2	F3
+>000001.TextGrid	sil	0.280	1058	2317	3145
+>000001.TextGrid	k	0.127	1202	2000	2792
+>000001.TextGrid	a2	0.110	998	1587	2535
+>000001.TextGrid	er2	0.098	620	1607	2334
+>000001.TextGrid	p	0.129	914	1850	2902
+>000001.TextGrid	u3	0.157	413	984	3334
+>000001.TextGrid	p	0.075	756	1953	2924
+>000001.TextGrid	ei2	0.140	491	2140	3096
+>000001.TextGrid	uai4	0.212	622	1905	3285
+>000001.TextGrid	s	0.095	1004	2089	3029
+* 如果有需要提取第4，第5等共振峰，可修改以下位置：
+```Javascript
+formant1 = Get mean: 1, sTime, eTime, "hertz"
+output$ = output$ + fixed$(formant1, 0) + tab$
+formant2 = Get mean: 2, sTime, eTime, "hertz"
+output$ = output$ + fixed$(formant2, 0) + tab$
+formant3 = Get mean: 3, sTime, eTime, "hertz"
+output$ = output$ + fixed$(formant3, 0)
+```  
+
+##### 11-画元音分布图
+* 脚本: [`11-draw_vowel_map\Draw_Vowel_Map.Praat`](11-draw_vowel_map\Draw_Vowel_Map.Praat)
+* 描述: 根据提取的大量共振峰数据，画出F1, F2的声学元音分布图，即把F1和F2分别作为坐标图里的x轴，y轴:   
+* 需要准备好输入的文件，格式如下，第一行为表头，第一列是元音名称，第二，三列分别是第一，二共振峰
+>label	F1	F2
+>u	320	630
+>a	780	1300
+>o	500	940
+>\as	720	1060
+>\o/	430	1580
+>i	280	2300
+>y	320	1680
+>e	420	2000
+>\yc	420	1540
+* 注意元音名称，有一些转化符号，这部分符号的表示可以参考Praat的**Phonetic symbols**说明
+<div align=center><img width="300" height="349" src="images/praat_run_05.png"/></div>
+
+* 设置完成后，点击**Run**，在Praat的Picture窗口会生成结果分布图，这个图可以在**Picture**点击**Edit**，**Copy to clipboard**再拷贝到其它地方使用
+<div align=center><img width="624" height="457" src="images/vowel.png"/></div>
+
+##### 12-画平行句语调图
