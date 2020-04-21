@@ -1,0 +1,104 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 1.3735378419074005 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "WORD" 
+        xmin = 0 
+        xmax = 1.3735378419074005 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.10661793492028515 
+            text = "rosa" 
+        intervals [2]:
+            xmin = 0.10661793492028515 
+            xmax = 0.36870599837955886 
+            text = "she" 
+        intervals [3]:
+            xmin = 0.36870599837955886 
+            xmax = 0.5141821921939576 
+            text = "is" 
+        intervals [4]:
+            xmin = 0.5141821921939576 
+            xmax = 0.8420809147597455 
+            text = "much" 
+        intervals [5]:
+            xmin = 0.8420809147597455 
+            xmax = 1.004875703075859 
+            text = "too" 
+        intervals [6]:
+            xmin = 1.004875703075859 
+            xmax = 1.3235378419073998 
+            text = "busy" 
+        intervals [7]:
+            xmin = 1.3235378419073998 
+            xmax = 1.3735378419074005 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "PHONE" 
+        xmin = 0 
+        xmax = 1.3735378419074005 
+        intervals: size = 14 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.10661793492028515 
+            text = "ax" 
+        intervals [2]:
+            xmin = 0.10661793492028515 
+            xmax = 0.36870599837955886 
+            text = "sh" 
+        intervals [3]:
+            xmin = 0.36870599837955886 
+            xmax = 0.4633809816555967 
+            text = "ih" 
+        intervals [4]:
+            xmin = 0.4633809816555967 
+            xmax = 0.5141821921939576 
+            text = "z" 
+        intervals [5]:
+            xmin = 0.5141821921939576 
+            xmax = 0.6492672293073278 
+            text = "m" 
+        intervals [6]:
+            xmin = 0.6492672293073278 
+            xmax = 0.7358602018158988 
+            text = "ah" 
+        intervals [7]:
+            xmin = 0.7358602018158988 
+            xmax = 0.8420809147597455 
+            text = "*ch(sh)" 
+        intervals [8]:
+            xmin = 0.8420809147597455 
+            xmax = 0.9356013250690021 
+            text = "t" 
+        intervals [9]:
+            xmin = 0.9356013250690021 
+            xmax = 1.004875703075859 
+            text = "uw" 
+        intervals [10]:
+            xmin = 1.004875703075859 
+            xmax = 1.0411798628406252 
+            text = "(b-)" 
+        intervals [11]:
+            xmin = 1.0411798628406252 
+            xmax = 1.1064781241525816 
+            text = "ih" 
+        intervals [12]:
+            xmin = 1.1064781241525816 
+            xmax = 1.1826799399601233 
+            text = "z" 
+        intervals [13]:
+            xmin = 1.1826799399601233 
+            xmax = 1.3235378419073998 
+            text = "ih" 
+        intervals [14]:
+            xmin = 1.3235378419073998 
+            xmax = 1.3735378419074005 
+            text = "sp" 
