@@ -60,21 +60,21 @@
 1.  打开软件，双击已经下载的`Praat.exe`  
 <div align=center><img width="314" height="417" border="1px" src="images/praat_open.png"/></div>
 
-2. 点击Open, Read from file...，从弹出的对话框里找到要打开的标注文件(.TextGrid)或者音频文件(.wav)，再选择打开，这里可以选择多个文件同时打开
+2. 点击`Open`, `Read from file...`，从弹出的对话框里找到要打开的标注文件(.TextGrid)或者音频文件(.wav)，再选择打开，这里可以选择多个文件同时打开
 <div align=center><img width="314" height="417" border="1px" src="images/praat_open_2.png"/></div>
 
-3. 在没有标注文件的时候，可以选择打开的音频文件，选择右侧的Annotate， To TextGrid...， 可以创建新的标注层
+3. 在没有标注文件的时候，可以选择打开的音频文件，选择右侧的`Annotate`， `To TextGrid...`， 可以创建新的标注文件
 <div align=center><img width="314" height="417" border="1px" src="images/praat_open_3.png"/></div>
 
-4. 如图所示，我们创建两层，一层是word层，一层是phoneme层，此外命名可自定义
+4. 如图所示，我们创建两层，一层是`word`层，一层是`phoneme`层，此处命名可自定义
 <div align=center><img width="314" height="417" border="1px" src="images/praat_open_4.png"/></div>
 
-5. 这时，主窗口就会有一对同样名字的文件，一个是音频文件，一个是标注文件，同时选中这两个文件，再点右侧的View & Edit，这时会打开标注窗口，音频文件在上方，会显示出声波图和频谱图，下方是标注区域，即是新建的TextGrid文件，并有两层，Word和Phoneme层，先用鼠标找到合成的声音边界位置，再用鼠标点击如图位置的小圆点，则会增加一个边界，两个边界之间可以填写标注内容，如图，标注了前三个汉字部分
-<div align=center><img width="600" height="321" border="1px" src="images/praat_open_5.png"/></div>
+5. 这时，主窗口就会有一对同样名字的文件，一个是音频文件`Sound`，一个是标注文件`TextGrid`，同时选中这两个文件，再点右侧的`View & Edit`，这时会打开标注窗口，音频文件在上方，会显示声波图和频谱图，下方是标注区域，即是新建的`TextGrid`文件，并有两层`Word`和`Phoneme`层，先用鼠标找到合成的声音边界位置，再用鼠标点击如图位置的**小圆点**，则会增加一个**边界**，两个边界之间可以填写标注内容，如图前三个汉字部分
+<div align=center><img width="650" height="347" border="1px" src="images/praat_open_5.png"/></div>
 
-<sup>注: 示例所使用数据为[标贝开源女声数据](https://www.data-baker.com/open_source.html)</sup>
+<div align=right><sup>注: 示例所使用数据为[标贝开源女声数据](https://www.data-baker.com/open_source.html)</sup></div>
 
-6. 每一句标注完成之后，回到主窗口，这时的标注文件并未自动保存，需要点击Save, Save as text file...，保存到相应的位置
+6. 每一句标注完成之后，回到主窗口，这时的标注文件并未自动保存，需要点击`Save`, `Save as text file...`，保存到相应的位置
 <div align=center><img width="314" height="417" border="1px" src="images/praat_open_6.png"/></div>
 
 7. 标注文件可以采用重复以上步骤二次打开，再次修改等操作，其它详细的操作，都可以参考社科院熊子瑜老师的《Praat 语音软件使用手册》
