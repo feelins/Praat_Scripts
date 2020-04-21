@@ -194,7 +194,7 @@ end = end + 0.3
 ```
 
 >第二个例子：切出来的小句子文件名里保存相应的内容。输入要切分的长文件和标注所在的目录**LongWavToDo_2**，输入切分出来的文件所在的目录**small_wavs_2**，输入标注的符号所在的层，一般只有**1**层，这里只保存标具体内容的位置，所以这个**mark_string**设置为**空**，保存的文件名选项**file_mark**设置为**1**，即用原来的文件名带上内容再带上新的序号，最后的**4**表示序号是几位，这里**4位**表示为**0001**这样子。
-```Javascript
+```
 form dialogue
 	comment Please input the source wav and textgrid files:
 	text input_directory E:\003_ProgramLanguage\Praat_Scripts\03-long_sound_splits\LongWavToDo_2\
@@ -383,13 +383,15 @@ form Information
 endform
 ```
 * 设置完成后，点击`Run`，运行脚本可以得到结果结果文件，请注意可以通过拷贝在**Excel表**里排序的方式，<font color="red">删除非元音部分</font>：
->fileName	name	duration	Pitch1	Pitch2	Pitch3	Pitch4	Pitch5	Pitch6	Pitch7	Pitch8	Pitch9	Pitch10
->000001.TextGrid	sil	0.280	262	262	262	262	262	262	262	262	262	262
->000001.TextGrid	k	0.127	262	262	262	262	262	262	262	262	262	262
->000001.TextGrid	a2	0.110	262	262	263	265	268	273	278	285	293	303
->000001.TextGrid	er2	0.098	303	313	322	331	338	341	341	338	333	328
->000001.TextGrid	p	0.129	328	324	320	318	315	312	310	306	300	291
->000001.TextGrid	u3	0.157	291	271	247	225	211	204	200	199	198	199
+```
+fileName	name	duration	Pitch1	Pitch2	Pitch3	Pitch4	Pitch5	Pitch6	Pitch7	Pitch8	Pitch9	Pitch10
+000001.TextGrid	sil	0.280	262	262	262	262	262	262	262	262	262	262
+000001.TextGrid	k	0.127	262	262	262	262	262	262	262	262	262	262
+000001.TextGrid	a2	0.110	262	262	263	265	268	273	278	285	293	303
+000001.TextGrid	er2	0.098	303	313	322	331	338	341	341	338	333	328
+000001.TextGrid	p	0.129	328	324	320	318	315	312	310	306	300	291
+000001.TextGrid	u3	0.157	291	271	247	225	211	204	200	199	198	199
+```
 
 * **扩展实例：利用这个结果画中文普通话的声调图**这句话选自标贝开源数据集，中文内容是`卡尔普陪外孙玩滑梯`，这9个汉字，包括5个2声调，2个1声调，1个3声调，1个4声调，我们将结果数据拷贝到Excel里，`删除非韵母部分`(理论上韵母是主要的声调携带部分)，将多个声调的取平均，这样得到`4个声调的各10个Pitch点的值`，将这10个值在Excel里画一个`带数据标记的拆线图`，则可以得到比较形象的普通话四个声调描述图，由于这里数据量较少，而且是在语流中，四个声调的表现并不象我们常规在教科书里那样，如果学习者有兴趣将数据量增加，该描述图将会越来越准确，参考`09-get_duration_and_pitch\中文声调图.xlsx`
 <div align=center><img width="800" height="298" border="1px" src="images/praat_run_06.png"/></div>
