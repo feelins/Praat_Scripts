@@ -16,9 +16,9 @@
 
 form dialogue
 	comment Directory path of input files:
-	sentence input_directory /home/shaopf/test/wav/
+	sentence input_directory E:\003_ProgramLanguage\Praat_Scripts\01-resample_sound_files\wavs_48k\
 	comment Path of output result file:
-	sentence save_result /home/shaopf/test/duration_result.txt
+	sentence save_result E:\003_ProgramLanguage\Praat_Scripts\07-compute_total_duration\duration_result.txt
 endform
 
 if (praatVersion < 6001)
