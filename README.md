@@ -573,7 +573,7 @@ endform
 <div align=center><img width="650" height="351" src="images/praat_run_11.png"/></div>
 
 ## 相关工作
-[Praat官方网站](http://www.fon.hum.uva.nl/praat/)
-[个人CSDN博客](https://blog.csdn.net/shaopengfei)
-[部分数据来自，标贝开源女声数据](https://www.data-baker.com/open_source.html)
-[部分数据来自](http://www.phon.ox.ac.uk/files/apps/IViE/)
+1. [Praat官方网站](http://www.fon.hum.uva.nl/praat/)
+2. [个人CSDN博客](https://blog.csdn.net/shaopengfei)
+3. [部分数据来自，标贝开源女声数据](https://www.data-baker.com/open_source.html)
+4. [部分数据来自](http://www.phon.ox.ac.uk/files/apps/IViE/)
