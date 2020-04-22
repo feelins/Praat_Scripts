@@ -33,6 +33,7 @@
     * [10-提取时长和共振峰](#10-提取时长和共振峰)
     * [11-画元音分布图](#11-画元音分布图)
     * [12-画平行句语调图](#12-画平行句语调图)
+	* [13-切除句子首尾静音段](#13-切除句子首尾静音段)
  
 
 ## 背景  
@@ -501,5 +502,72 @@ j-rea5-m2_016.TextGrid	127	128	130	130	130	130	129	127	123	121		121	121	121	120	
 
 * 在Excel里画折线图，得到如下的结果
 <div align=center><img width="600" height="352" src="images/praat_run_08.png"/></div>
+
+##### 13-切除句子首尾静音段
+* 脚本: [`13-cut_silence\Cut_Wav_TextGrid.Praat`](13-cut_silence\Cut_Wav_TextGrid.Praat)
+* 描述: 在处理一些录音音频文件的时候，有时候会遇到你的音频文件每一句前后都会有比较长的静音段，如下图所示。这里只是演示一下，实际情况可能更糟糕，这时候在标注、打开检索的时候，都会比较浪费时间，这个脚本功能就是能将图中红框部分切除，保留少量的静音段，这个值是可以自定义的。有两种实现方式：
+	* 第一种是人工已经进行了标注，可以比较准确；
+	* 第二种没有进行人工标注，将大量的音频进行裁剪如何操作？这要用到`Praat`的一个自动检测静音段的功能，经过验证效果还是可以的；  
+<div align=center><img width="650" height="347" src="images/praat_run_09.png"/></div>
+
+>第一种情况：我们已经有大量的音频，并且有相应的标注，这时候可以精确定位每一句开始，结束的静音段；
+* 第一个参数，是输入的`wav`音频目录`First\old_wavs`；
+* 第二个参数，是输入的`TextGrid`目录`First\old_textgrid`；
+<sup>注意，由于要对源文件进行切分，两种文件分开更好，而且一定！一定！一定！做好备份。</sup>
+
+* 第三个参数，选择是否有人工标注，代码里设置为`1`，表示，`有`；
+* 第四个参数，选择保留的静音段时长，如果静音段为`0.3`，这里设置为`0.1`，那么前面`0.2`长度会被切掉；如果静音段长度为`0.05`，这里设置为`0.1`，那么这个静音段将不做处理；
+* 第五个参数，是裁剪后`wavs`保存目录`First\new_wavs`；
+* 第六个参数，是裁剪后`TextGrid`保存目录`First\new_textgrid`；
+<sup>脚本会自动创建这两个新的目录</sup>
+```
+form Dialogue_Cut
+	comment Directory path of input WAV files：
+	text input_wav_path E:\003_ProgramLanguage\Praat_Scripts\13-cut_silence\First\old_wavs\
+	comment Directory path of input TextGrid files:
+	text input_textgrid_path E:\003_ProgramLanguage\Praat_Scripts\13-cut_silence\First\old_textgrid\
+	comment Do you have TextGrid files:
+	boolean hasTextGrid 1
+	comment Duration do you want to leave(second):
+	real splitValue 0.1
+	comment Directory path of ouput WAV files：
+	text output_wav_path E:\003_ProgramLanguage\Praat_Scripts\13-cut_silence\First\new_wavs\
+	comment Directory path of output TextGrid files:
+	text output_textgrid_path E:\003_ProgramLanguage\Praat_Scripts\13-cut_silence\First\new_textgrid\
+endform
+```
+
+* 设置完成后，点`Run`，运行脚本，得到的结果如下，首、尾的静音段只剩下了`0.1秒`，`wav`和`TextGrid`同时被裁剪；
+<div align=center><img width="650" height="351" src="images/praat_run_10.png"/></div>
+
+>第二种情况：我们已经有大量的音频，但是没有相应的标注，这时候利用`Praat`的检测静音段功能，进行裁剪，这个功能见下图；
+<div align=center><img width="514" height="309" src="images/praat_run_12.png"/></div>
+
+* 第一个参数，是输入的`wav`音频目录`Second\old_wavs`；
+* 第二个参数，是输入的`TextGrid`目录，`不需要设置`；
+<sup>注意，由于要对源文件进行切分，一定！一定！一定！做好备份。</sup>
+
+* 第三个参数，选择是否有人工标注，代码里设置为`0`，表示，`没有`；
+* 第四个参数，选择保留的静音段时长，如果静音段为`0.3`，这里设置为`0.1`，那么前面`0.2`长度会被切掉；如果静音段长度为`0.05`，这里设置为`0.1`，那么这个静音段将不做处理；
+* 第五个参数，是裁剪后`wavs`保存目录`Second\new_wavs`；
+* 第六个参数，是裁剪后`TextGrid`保存目录，`不需要设置`；
+```
+form Dialogue_Cut
+	comment Directory path of input WAV files：
+	text input_wav_path E:\003_ProgramLanguage\Praat_Scripts\13-cut_silence\Second\old_wavs\
+	comment Directory path of input TextGrid files:
+	text input_textgrid_path -
+	comment Do you have TextGrid files:
+	boolean hasTextGrid 0
+	comment Duration do you want to leave(second):
+	real splitValue 0.1
+	comment Directory path of ouput WAV files：
+	text output_wav_path E:\003_ProgramLanguage\Praat_Scripts\13-cut_silence\Second\new_wavs\
+	comment Directory path of output TextGrid files:
+	text output_textgrid_path -
+endform
+```
+* 设置完成后，点`Run`，运行脚本，得到的结果如下，首、尾的静音段只剩下了`0.1秒`，`wav`被裁剪；
+<div align=center><img width="650" height="351" src="images/praat_run_11.png"/></div>
 
 # 相关工作
