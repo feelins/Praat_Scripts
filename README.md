@@ -1,4 +1,4 @@
-# Praat_Scripts 
+# Praat_Scripts Praat脚本
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
@@ -7,13 +7,14 @@
 该项目包括以下内容：
 
 1. `Praat`基本操作；
-2. `Praat`对文件，包括标注文件、音频文件的操作；
-3. `Praat`对具体的标注信息的操作，比如`tier`, `interval`修改，增加，删除等操作；
+2. `Praat`对文件，包括标注文件`TextGrid`、音频文件`wav`的操作；
+3. `Praat`对具体的标注信息的操作，比如`tier`, `interval`替换、增加、删除等操作；
 4. 使用`Praat`提取主要的声学参数，`时长`，`基频`，`共振峰`；
+5. 如何利用这些参数，作简单的声调、语调图；
 
-希望能够对想通过`Praat`入门实验语音学的初学者有所帮助，更多实用的`Praat`脚本仍然更新中。  
+希望能够对`Praat`入门的实验语音学初学者有所帮助，更多实用的`Praat脚本`持续更新中。  
 
-## 目录  
+# 目录  
 
 * [背景](#背景)
 * [安装](#安装)
@@ -34,12 +35,13 @@
     * [11-画元音分布图](#11-画元音分布图)
     * [12-画平行句语调图](#12-画平行句语调图)
 	* [13-切除句子首尾静音段](#13-切除句子首尾静音段)
+* [相关工作](#相关工作)
  
 
 ## 背景  
 
 ##### 命名  
->`Praat`在荷兰语中是说话或交谈的意思，而`doing phonetics by computer`即使用计算机研究语音学。作为软件的名称，简便起见，合起来翻译作`Praat`语音学软件。  
+>`Praat`在荷兰语中是说话或交谈的意思，而`doing phonetics by computer`即使用计算机研究语音学。作为软件的名称，简便起见，合起来翻译作`Praat语音学软件`。  
 
 ##### 作者  
 >`Praat`的作者是荷兰阿姆斯特丹大学人文学院语音科学研究所的主席保罗·博尔斯马（*Paul Boersma*）教授和大卫·威宁克（*David Weenink*）助教授。  
@@ -53,7 +55,7 @@
 该部分信息来源于[百度百科-Praat](https://baike.baidu.com/item/praat/7852897?fr=aladdin)。
 
 ## 安装  
-`Praat`官方网站[http://www.fon.hum.uva.nl/praat/](http://www.fon.hum.uva.nl/praat/)，请根据自己的系统下载`Windows`, `Mac`, 或者`Linux`等版本，下载到本地电脑之后，双击打开**Praat.exe**就可以使用，无需安装。另外为了更好的体验`IPA`等特殊符号的标注，需要将安装页面的**Phonetic and international symbols**也一并安装，具体方法网站都有详细说明。请尽量使用最新版本。官方网站也提供了英文版的使用说明，以及很多的脚本，由于每个人完成实验的设计，目的等都不相同，所以很多脚本需要对`Praat`脚本语法比较熟悉才能灵活使用。  
+`Praat`官方网站[http://www.fon.hum.uva.nl/praat/](http://www.fon.hum.uva.nl/praat/)，请根据自己的系统下载`Windows`, `Mac`, 或者`Linux`等版本，下载到本地电脑之后，双击打开**Praat.exe**就可以使用，无需安装。另外为了更好的体验`IPA`等特殊符号的标注，需要将安装页面的**Phonetic and international symbols**也一并安装，具体方法网站都有详细说明。请尽量使用最新版本。官方网站也提供了英文版的使用说明，以及很多脚本，但由于每个人完成实验的设计，目的等都不相同，所以很多脚本需要对`Praat`脚本的语法比较熟悉才能灵活使用。  
 
 ## Praat基本操作
 
@@ -78,7 +80,7 @@
 6. 每一句标注完成之后，回到主窗口，这时的标注文件并未自动保存，需要点击`Save`, `Save as text file...`，保存到相应的位置
 <div align=center><img width="314" height="417" border="1px" src="images/praat_open_6.png"/></div>
 
-7. 标注文件可以采用重复以上步骤二次打开，再次修改等操作，其它详细的操作，都可以参考社科院熊子瑜老师的《Praat语音软件使用手册》
+7. 标注文件可以采用重复以上步骤二次打开，再次修改等操作，其它详细的操作，都可以参考社科院**熊子瑜老师的《Praat语音软件使用手册》**
 
 #### 脚本运行
 
@@ -544,7 +546,7 @@ endform
 <div align=center><img width="514" height="309" src="images/praat_run_12.png"/></div>
 
 * 第一个参数，是输入的`wav`音频目录`Second\old_wavs`；
-* 第二个参数，是输入的`TextGrid`目录，`不需要设置`；
+* 第二个参数，是输入的`TextGrid`目录，`不需要设置`； 
 <sup>注意，由于要对源文件进行切分，一定！一定！一定！做好备份。</sup>
 
 * 第三个参数，选择是否有人工标注，代码里设置为`0`，表示，`没有`；
@@ -570,4 +572,8 @@ endform
 * 设置完成后，点`Run`，运行脚本，得到的结果如下，首、尾的静音段只剩下了`0.1秒`，`wav`被裁剪；
 <div align=center><img width="650" height="351" src="images/praat_run_11.png"/></div>
 
-# 相关工作
+## 相关工作
+[Praat官方网站](http://www.fon.hum.uva.nl/praat/)
+[个人CSDN博客](https://blog.csdn.net/shaopengfei)
+[部分数据来自，标贝开源女声数据](https://www.data-baker.com/open_source.html)
+[部分数据来自](http://www.phon.ox.ac.uk/files/apps/IViE/)
