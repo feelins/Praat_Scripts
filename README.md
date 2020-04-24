@@ -14,6 +14,16 @@
 
 希望能够对`Praat`入门的实验语音学初学者有所帮助，更多实用的`Praat脚本`持续更新中。  
 
+# 如何使用github上Praat代码
+
+[https://github.com/feelins/Praat_Scripts](https://github.com/feelins/Praat_Scripts)
+
+如果日常对代码、脚本操作比较熟练的可通过下载、安装、配置`github for windows`在自己的电脑上通过`git clone`将代码下载到本机，并可以跟主站及时更新代码。如下图**1**位置所示。
+
+<div align=center><img width="650" height="296" border="1px" src="images/github_des.png"/></div>
+
+如果对此操作并不熟悉，也可以通过点击上图**2**位置`Download ZIP`直接将本站所有代码下载，并解压，可直接使用。使用前请详细阅读本页每个脚本的说明。如果有任何错误、问题都可以通过脚本里的邮箱咨询。
+
 # 目录  
 
 * [背景](#背景)
