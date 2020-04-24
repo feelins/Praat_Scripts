@@ -114,7 +114,7 @@
 ## Praat常用脚本  
 
 ##### 01-重采样音频文件  
-* 脚本: [`01-resample_sound_files\Resample_Sound_Files.Praat`](01-resample_sound_files/Resample_Sound_Files.Praat) 
+* 脚本: [`01-resample_sound_files/Resample_Sound_Files.Praat`](01-resample_sound_files/Resample_Sound_Files.Praat) 
 * 描述: 对给定目录里的音频，重新采样。
 * 第一个选项可以设置音频的格式，默认为`.wav`；
 * 第二个选项是原始的输入音频文件所在的目录，比如这里设置为`wavs_48k`目录，请修改为自己电脑相应的目录；
@@ -137,7 +137,7 @@ endform
 <div align=left><sup>注: 可以直接在脚本里直接修改相应的目录，参数再Run，也可以先Run之后输入</sup></div>
 
 ##### 02-获取目录内文件名
-* 脚本: [`02-get_file_names\Get_FileNames_of_One_Directory.Praat`](02-get_file_names\Get_FileNames_of_One_Directory.Praat)
+* 脚本: [`02-get_file_names/Get_FileNames_of_One_Directory.Praat`](02-get_file_names/Get_FileNames_of_One_Directory.Praat)
 * 描述: 提取一个目录里所有文件名，并保存，代码简单，只是为了让初学者更熟悉脚本。
 * 第一个选项可以设置要提取的目录里的文件扩展名，默认为`.wav`；
 * 第二个选项是设置输入目录`01-resample_sound_files\wavs_48k`；
@@ -164,7 +164,7 @@ endform
 ```
 
 ##### 03-长音频文件切分
-* 脚本: [`03-long_sound_splits\Split_Long_Sound_Files.Praat`](03-long_sound_splits\Split_Long_Sound_Files.Praat)
+* 脚本: [`03-long_sound_splits/Split_Long_Sound_Files.Praat`](03-long_sound_splits/Split_Long_Sound_Files.Praat)
 * 描述: 将长文件切分成小文件；适用于录音条件限制，只能保存到一个文件里，在做处理的时候，通过这个脚本可以辅助快速的将长文件切分成一个个的小文件，便于检索和标注。 
 * 首先，要把长的音频文件，在`Praat`里手工标出需要切分的小句，如下例将需要切的部分标出边界，图示的`s`符号自定义，如图空白的部分则不会被切分出来，也可以用具体的语音内容；
 * 第二个例子手工标出了具体的语音内容，保存的时候也会将这个内容提取出来保存；
@@ -238,7 +238,7 @@ end = end + 0.3
 ```
 
 ##### 04-替换标注内容
-* 脚本: [`04-replace_labels\Replace_Intervals.praat`](04-replace_labels\Replace_Intervals.praat)
+* 脚本: [`04-replace_labels/Replace_Intervals.praat`](04-replace_labels/Replace_Intervals.praat)
 * 描述: 替换标注内容，首先建立一个替换列表，将所有列表里的映射全部替换，输入原标注文件所在的目录**old_TextGrid**，再输入替换列表所在的文件路径，**replace_list.txt**，这个文件的格式是，第一行是表头，第一列是原来的标注内容，第二列是要替换的内容：
 ```
 old	new
@@ -262,7 +262,7 @@ endform
 ```
 
 ##### 05-标注文件增加多层
-* 脚本: [`05-add_some_tiers\add_tiers.Praat`](05-add_some_tiers\add_tiers.Praat)
+* 脚本: [`05-add_some_tiers/add_tiers.Praat`](05-add_some_tiers/add_tiers.Praat)
 * 描述: 可以增加很多层，以及指定增加的层类型是`interval`还是`point`：
 * 指定包括原始`TextGrid`的输入目录`input_directory`  
 * 指定需要保存`TextGrid`的输出目录`output_directory`  
@@ -280,7 +280,7 @@ endform
 ```
 
 ##### 06-标注文件修改某层
-* 脚本: [`06-modify_one_tier\add_remove_duplicate_set_tier.Praat`](06-modify_one_tier\add_remove_duplicate_set_tier.Praat)
+* 脚本: [`06-modify_one_tier/add_remove_duplicate_set_tier.Praat`](06-modify_one_tier/add_remove_duplicate_set_tier.Praat)
 * 描述: 该脚本可以一次进行增加，删除，复制，修改层名称这四个操作，但是每一种操作一次只进行一层：
 * 指定包括原始`TextGrid`的输入目录`input_directory`  
 * 指定需要保存`TextGrid`的输出目录`output_directory`  
@@ -316,7 +316,7 @@ endform
 ```
 
 ##### 07-计算目录里音频总时长
-* 脚本: [`07-compute_total_duration\Get_Duration_From_Sound_Files.praat`](07-compute_total_duration\Get_Duration_From_Sound_Files.praat)
+* 脚本: [`07-compute_total_duration/Get_Duration_From_Sound_Files.praat`](07-compute_total_duration/Get_Duration_From_Sound_Files.praat)
 * 描述: 该脚本计算给定目录里所有音频文件的总时长，可用于统计录音的数据，给出的结果既包括每个文件的时长，也包括最后的总时长。
 * 这里的输入目录是`01`例子中的`wavs`目录`01-resample_sound_files\wavs_48k`
 * 结果文件在`07-compute_total_duration\duration_result.txt`，结果文件格式为如下，总时长单位也是`秒`：
@@ -336,7 +336,7 @@ endform
 ```
 
 ##### 08-提取某一层的时长
-* 脚本: [`08-get_duration_of_one_tier\Get_Duration_of_One_Tier.praat`](08-get_duration_of_one_tier\Get_Duration_of_One_Tier.praat)
+* 脚本: [`08-get_duration_of_one_tier/Get_Duration_of_One_Tier.praat`](08-get_duration_of_one_tier/Get_Duration_of_One_Tier.praat)
 * 描述: 该脚本提取标注里给定某层的所有`interval`的时长统计，假定我们有如下的标注文件，利用这个脚本可以提取第`1`层或者第`2`层的内容及对应的时长:  
 <div align=center><img width="400" height="216" border="1px" src="images/praat_run_04.png"/></div>
 
@@ -376,7 +376,7 @@ fileName,IntervalName,duration
 ```
 
 ##### 09-提取时长和基频
-* 脚本: [`09-get_duration_and_pitch\Get_Duration_and_Pitch.Praat`](09-get_duration_and_pitch\Get_Duration_and_Pitch.Praat)
+* 脚本: [`09-get_duration_and_pitch/Get_Duration_and_Pitch.Praat`](09-get_duration_and_pitch/Get_Duration_and_Pitch.Praat)
 * 描述: 该脚本提取标注里音素层(基频在浊音段比较稳定)的所有`interval`的时长和基频，基频为通过音频文件自动生成`Pitch`文件，并根据音素边界平均归一化`10个点`，提取这`10个点`的值:  
 
 * 第一个参数`input_wav_directory`，设置输入的`wav`目录`09-get_duration_and_pitch\input_wav`
@@ -410,7 +410,7 @@ fileName	name	duration	Pitch1	Pitch2	Pitch3	Pitch4	Pitch5	Pitch6	Pitch7	Pitch8	P
 <div align=center><img width="800" height="298" border="1px" src="images/praat_run_06.png"/></div>
 
 ##### 10-提取时长和共振峰
-* 脚本: [`10-get_duration_and_formant\Get_Duration_and_Formant.Praat`](10-get_duration_and_formant\Get_Duration_and_Formant.Praat)
+* 脚本: [`10-get_duration_and_formant/Get_Duration_and_Formant.Praat`](10-get_duration_and_formant/Get_Duration_and_Formant.Praat)
 * 描述: 该脚本提取标注里音素层的所有`interval`的时长和共振峰，并根据音素边界提取平均值，只提取第1，第2，第3共振峰，即`F1, F2, F3`:  
 
 * 第一个参数`input_wav_directory`，设置输入的`wav`目录`10-get_duration_and_formant\input_wav`
@@ -477,7 +477,7 @@ e	420	2000
 <div align=center><img width="624" height="457" src="images/vowel.png"/></div>
 
 ##### 12-画平行句语调图
-* 脚本: [`12-intonation_pattern\Get_Duration_and_Pitch_Sentence.Praat`](12-intonation_pattern\Get_Duration_and_Pitch_Sentence.Praat)
+* 脚本: [`12-intonation_pattern/Get_Duration_and_Pitch_Sentence.Praat`](12-intonation_pattern/Get_Duration_and_Pitch_Sentence.Praat)
 * 描述: 这个脚本是[09-提取时长和基频](#09-提取时长和基频)的一个变化，`09`中提取的基频是一个音节一行，而这里需要对多个同样内容的句子，提取的基频序列，画出对比的语调图，所以每一句提取的所有基频需要在同一行，适用的情况如下，给定例子目录里有5句话，是`5个人`的语音，是同样的内容`She is much too busy!`，语料来源于[http://www.phon.ox.ac.uk/files/apps/IViE/](http://www.phon.ox.ac.uk/files/apps/IViE/)，该网站有一个很多人读的`Cinderella的语料`，由很多不同英国方言的人语音组成。这些句子都被标注了音素边界，如下图是两句话的示例。  
 <div align=center><img width="600" height="380" src="images/praat_run_07.png"/></div>
 
@@ -516,7 +516,7 @@ j-rea5-m2_016.TextGrid	127	128	130	130	130	130	129	127	123	121		121	121	121	120	
 <div align=center><img width="600" height="352" src="images/praat_run_08.png"/></div>
 
 ##### 13-切除句子首尾静音段
-* 脚本: [`13-cut_silence\Cut_Wav_TextGrid.Praat`](13-cut_silence\Cut_Wav_TextGrid.Praat)
+* 脚本: [`13-cut_silence/Cut_Wav_TextGrid.Praat`](13-cut_silence/Cut_Wav_TextGrid.Praat)
 * 描述: 在处理一些录音音频文件的时候，有时候会遇到你的音频文件每一句前后都会有比较长的静音段，如下图所示。这里只是演示一下，实际情况可能更糟糕，这时候在标注、打开检索的时候，都会比较浪费时间，这个脚本功能就是能将图中红框部分切除，保留少量的静音段，这个值是可以自定义的。有两种实现方式：
 	* 第一种是人工已经进行了标注，可以比较准确；
 	* 第二种没有进行人工标注，将大量的音频进行裁剪如何操作？这要用到`Praat`的一个自动检测静音段的功能，经过验证效果还是可以的；  
