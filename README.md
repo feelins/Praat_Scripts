@@ -45,6 +45,7 @@
     * [11-画元音分布图](#11-画元音分布图)
     * [12-画平行句语调图](#12-画平行句语调图)
 	* [13-切除句子首尾静音段](#13-切除句子首尾静音段)
+	* [14-删除选择区域内的所有边界](#14-删除选择区域内的所有边界)
 * [相关工作](#相关工作)
  
 
@@ -581,6 +582,33 @@ endform
 ```
 * 设置完成后，点`Run`，运行脚本，得到的结果如下，首、尾的静音段只剩下了`0.1秒`，`wav`被裁剪；
 <div align=center><img width="650" height="351" src="images/praat_run_11.png"/></div>
+
+##### 14-删除选择区域内的所有边界
+* 脚本: [`14-del_selected_boundaries/Delete_Selected_Boundary.Praat`](14-del_selected_boundaries/Delete_Selected_Boundary.Praat)
+* 描述: 在标注的过程中，有时候需要修改连续的一部分边界，这时候想将这一部分边界条，全部删除，而Praat在删除边界条boundary的时候不是很友好，因为要精确选择这个边界条，并且按Boundary, Remove，或者用快捷键Alt+Backspace，这个操作非常繁琐，这里演示的是将一个脚本链接到一个动态按钮上，这样在标注的时候，选择了需要处理的一段区域之后，通过点这个按钮，达到批量删除这一段的所有边界。
+>处理之前是这样的，我们目标是删除如图红框内的所有第1层的边界：
+<div align=center><img width="800" height="430" src="images/praat_run_13.png"/></div>
+
+>通过我们放置在Boundary菜单上的一个动态按钮，点击之后：
+<div align=center><img width="800" height="430" src="images/praat_run_15.png"/></div>
+
+>处理之后是这样的，紫色框内的第1层所有边界，包括内容已经被清空：
+<div align=center><img width="800" height="430" src="images/praat_run_14.png"/></div>
+
+* 实现方法是要将这个脚本链接到自定义的一个动态按钮：
+* window用户，找到c:\Users\<your-name>\Praat\，在这里新建一个目录plugin_Queak，如下：C:\Users\<your-name>\Praat\plugin_Queak，这里的<your-name>是指的你登录的用户名，如登录的用户名为shao，这里的目录是：
+<div align=center><img width="723" height="127" src="images/praat_run_16.png"/></div>
+
+* 对于Mac用户来说，找到`/Users/<your-name>/Praat`，操作同上。
+* 然后在plugin_Queak目录里新建一个文件，名称为setup.Praat，注意扩展名，必须是.Praat，在这个文件里写入这样的内容:
+
+```
+	Add menu command: "TextGridEditor", "Boundary", "Remove all boundary...", "", 0, "E:\003_ProgramLanguage\Praat_Scripts\14-del_selected_boundaries\Delete_Selected_Boundary.Praat"
+```
+* 最后的路径，请注意根据自己的电脑Delete_Selected_Boundary.Praat所在的目录修改
+* plugin_Queak包括里面的setup.Praat已经在14-del_selected_boundaries目录下，可以直接拷贝使用，当然务必修改setup.Praat最后的路径。
+* 最后，重新打开Praat，打开一个声音和标注文件，在编辑窗口里，选择一部分区域，会发现在Boundary菜单下，多了一个菜单，名称是Remove all boundary...，选择一下，可以看到这个区域内的所有边界和内容都被清空了。
+
 
 ## 相关工作
 1. [Praat官方网站](http://www.fon.hum.uva.nl/praat/)
