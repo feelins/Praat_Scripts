@@ -603,7 +603,7 @@ endform
 * 然后在`plugin_Queak`目录里新建一个文件，名称为`setup.Praat`，注意扩展名，必须是`.Praat`，在这个文件里写入这样的内容:
 
 ```
-	Add menu command: "TextGridEditor", "Boundary", "Remove all boundary...", "", 0, "E:\003_ProgramLanguage\Praat_Scripts\14-del_selected_boundaries\Delete_Selected_Boundary.Praat"
+Add menu command: "TextGridEditor", "Boundary", "Remove all boundary...", "", 0, "E:\003_ProgramLanguage\Praat_Scripts\14-del_selected_boundaries\Delete_Selected_Boundary.Praat"
 ```
 * 最后的路径，请注意根据自己的电脑`Delete_Selected_Boundary.Praat`所在的目录修改
 * `plugin_Queak`包括里面的`setup.Praat`已经在`14-del_selected_boundaries`目录下，可以直接拷贝使用，务必修改`setup.Praat`最后的路径。
