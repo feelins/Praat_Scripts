@@ -585,29 +585,30 @@ endform
 
 ##### 14-删除选择区域内的所有边界
 * 脚本: [`14-del_selected_boundaries/Delete_Selected_Boundary.Praat`](14-del_selected_boundaries/Delete_Selected_Boundary.Praat)
-* 描述: 在标注的过程中，有时候需要修改连续的一部分边界，这时候想将这一部分边界条，全部删除，而Praat在删除边界条boundary的时候不是很友好，因为要精确选择这个边界条，并且按Boundary, Remove，或者用快捷键Alt+Backspace，这个操作非常繁琐，这里演示的是将一个脚本链接到一个动态按钮上，这样在标注的时候，选择了需要处理的一段区域之后，通过点这个按钮，达到批量删除这一段的所有边界。
->处理之前是这样的，我们目标是删除如图红框内的所有第1层的边界：
+* 描述: 在标注的过程中，有时候需要修改连续的一部分边界，这时候想将这一部分边界条，全部删除，而`Praat`在删除边界条`boundary`的时候不是很友好，因为要精确选择这个边界条，并且按`Boundary, Remove`，或者用快捷键`Alt+Backspace`，这个操作非常繁琐，这里演示的是将一个脚本链接到一个动态按钮上，这样在标注的时候，选择了需要处理的一段区域之后，通过点这个按钮，达到批量删除这一段的所有边界。
+>处理之前是这样的，我们目标是删除如图红框内的所有第`1`层的边界：
 <div align=center><img width="800" height="430" src="images/praat_run_13.png"/></div>
 
->通过我们放置在Boundary菜单上的一个动态按钮，点击之后：
+>通过我们放置在`Boundary`菜单上的一个动态按钮，点击之后：
 <div align=center><img width="800" height="430" src="images/praat_run_15.png"/></div>
 
->处理之后是这样的，紫色框内的第1层所有边界，包括内容已经被清空：
+>处理之后是这样的，紫色框内的第`1`层所有边界，包括内容已经被清空：
 <div align=center><img width="800" height="430" src="images/praat_run_14.png"/></div>
 
 * 实现方法是要将这个脚本链接到自定义的一个动态按钮：
-* window用户，找到c:\Users\<your-name>\Praat\，在这里新建一个目录plugin_Queak，如下：C:\Users\<your-name>\Praat\plugin_Queak，这里的<your-name>是指的你登录的用户名，如登录的用户名为shao，这里的目录是：
+* `window`用户，找到`c:\Users\<your-name>\Praat\`，在这里新建一个目录`plugin_Queak`，如下：`C:\Users\<your-name>\Praat\plugin_Queak`，这里的`<your-name>`是指的你登录的用户名，如登录的用户名为`shao`，这里的目录是：
 <div align=center><img width="723" height="127" src="images/praat_run_16.png"/></div>
 
-* 对于Mac用户来说，找到`/Users/<your-name>/Praat`，操作同上。
-* 然后在plugin_Queak目录里新建一个文件，名称为setup.Praat，注意扩展名，必须是.Praat，在这个文件里写入这样的内容:
+* 对于`Mac`用户来说，找到`/Users/<your-name>/Praat`，操作同上。
+* 然后在`plugin_Queak`目录里新建一个文件，名称为`setup.Praat`，注意扩展名，必须是`.Praat`，在这个文件里写入这样的内容:
 
 ```
 	Add menu command: "TextGridEditor", "Boundary", "Remove all boundary...", "", 0, "E:\003_ProgramLanguage\Praat_Scripts\14-del_selected_boundaries\Delete_Selected_Boundary.Praat"
 ```
-* 最后的路径，请注意根据自己的电脑Delete_Selected_Boundary.Praat所在的目录修改
-* plugin_Queak包括里面的setup.Praat已经在14-del_selected_boundaries目录下，可以直接拷贝使用，当然务必修改setup.Praat最后的路径。
-* 最后，重新打开Praat，打开一个声音和标注文件，在编辑窗口里，选择一部分区域，会发现在Boundary菜单下，多了一个菜单，名称是Remove all boundary...，选择一下，可以看到这个区域内的所有边界和内容都被清空了。
+* 最后的路径，请注意根据自己的电脑`Delete_Selected_Boundary.Praat`所在的目录修改
+* `plugin_Queak`包括里面的`setup.Praat`已经在`14-del_selected_boundaries`目录下，可以直接拷贝使用，务必修改`setup.Praat`最后的路径。
+* 最后，重新打开`Praat`，打开一个声音和标注文件，在编辑窗口里，选择一部分区域，会发现在`Boundary`菜单下，多了一个菜单，名称是`Remove all boundary...`，选择一下，可以看到这个区域内的所有边界和内容都被清空了。
+* 此例标注数据，可以使用`09-get_duration_and_pitch`目录里的数据。
 
 
 ## 相关工作
