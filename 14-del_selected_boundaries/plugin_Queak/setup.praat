@@ -1,0 +1,1 @@
+Add menu command: "TextGridEditor", "Boundary", "Remove all boundary...", "", 0, "E:\003_ProgramLanguage\Praat_Scripts\14-del_selected_boundaries\Delete_Selected_Boundary.Praat"
