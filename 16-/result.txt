@@ -1,0 +1,1 @@
+fileName	sum_v	sum_c	mean_v	mean_c	delta_v	delta_c	percent_v	varco_v	varco_c	nPVI_v	nPVI_c	rPVI_v	rPVI_c
