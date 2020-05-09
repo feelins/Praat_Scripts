@@ -610,6 +610,21 @@ Add menu command: "TextGridEditor", "Boundary", "Remove all boundary...", "", 0,
 * 最后，重新打开`Praat`，打开一个声音和标注文件，在编辑窗口里，选择一部分区域，会发现在`Boundary`菜单下，多了一个菜单，名称是`Remove all boundary...`，选择一下，可以看到这个区域内的所有边界和内容都被清空了。
 * 此例标注数据，可以使用`09-get_duration_and_pitch`目录里的数据。
 
+##### 16-计算描述节奏的VC参数
+* 脚本: [`16-compute_VC/Compute_Rythms_By_VC.Praat`](16-compute_VC、Compute_Rythms_By_VC.Praat)
+* 描述: 在韵律研究中，有很多学者使用VC参数相关的参数来描述节奏，VC指的是元音、辅音，这一批参数全部是用在时长的计算，具体的公式在此不作讨论，有兴趣的朋友可查阅相关的论文。
+* 这个脚本是用最新版的Praat 6.1.13，因为用到了一些新的功能；
+* 请先在Praat里对语音标注好V, C的分类；
+* 示例仍然来自标贝开源数据，笔者手工标注了两句话；
+* 脚本会在源数据目录里生成Table_V和Table_C，主要是为了记录V, C的时长，便于检索，最终结果会在脚本所在的目录里生成result.txt；
+```
+fileName	sum_v	sum_c	mean_v	mean_c	delta_v	delta_c	percent_v	varco_v	varco_c	nPVI_v	nPVI_c	rPVI_v	rPVI_c
+000001.TextGrid	1.466	0.650	0.163	0.108	0.040	0.025	0.693	24.638	23.298	18.320	25.173	2.864	29.312
+000002.TextGrid	2.003	0.358	0.223	0.072	0.061	0.040	0.848	27.325	55.389	29.583	53.806	6.873	59.165
+```
+* 脚本运行时，指定V，C分类所在的层级；
+* 参考文献：Gibbon, Dafydd, and Ulrike Gut. "Measuring speech rhythm." Seventh European Conference on Speech Communication and Technology. 2001.
+
 
 ## 相关工作
 1. [Praat官方网站](http://www.fon.hum.uva.nl/praat/)
