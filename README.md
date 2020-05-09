@@ -612,21 +612,31 @@ Add menu command: "TextGridEditor", "Boundary", "Remove all boundary...", "", 0,
 
 ##### 16-计算描述节奏的VC参数
 * 脚本: [`16-compute_VC/Compute_Rythms_By_VC.Praat`](16-compute_VC/Compute_Rythms_By_VC.Praat)
-* 描述: 在韵律研究中，有很多学者使用VC参数相关的参数来描述节奏，VC指的是元音、辅音，这一批参数全部是用在时长的计算，具体的公式在此不作讨论，有兴趣的朋友可查阅相关的论文。
-* 这个脚本是用最新版的Praat 6.1.13，因为用到了一些新的功能；
-* 请先在Praat里对语音标注好V, C的分类；
+* 描述: 在韵律研究中，有很多学者使用 `VC`参数相关的参数来描述节奏，`VC`指的是元音、辅音，这一批参数全部是用在时长的计算，具体的公式在此不作讨论，有兴趣的朋友可查阅相关的论文。
+* 这个脚本是用最新版的`Praat 6.1.13`，因为用到了一些新的功能；
+* 请先在`Praat`里对语音标注好`V, C`的分类；
 * 示例仍然来自标贝开源数据，笔者手工标注了两句话；
 <div align=center><img width="800" height="425" src="images/praat_run_17.png"/></div>
+<div align=left><sup>注: 笔者不是专业做理论的，只是随便标注，请勿追究。</sup></div>
 
-* 脚本运行时，指定V，C分类所在的层级；
-* 脚本会在源数据目录里生成Table_V和Table_C，主要是为了记录V, C的时长，便于检索，最终结果会在脚本所在的目录里生成result.txt，这两句的结果如下；
+* 脚本运行时，指定`V，C`分类所在的层级；
+* 脚本会在源数据目录里生成`Table_V`和`Table_C`，主要是为了记录`V, C`的时长，便于检索，最终结果会在脚本所在的目录里生成`result.txt`，这两句的结果如下；
 ```
-fileName	sum_v	sum_c	mean_v	mean_c	delta_v	delta_c	percent_v	varco_v	varco_c	nPVI_v	nPVI_c	rPVI_v	rPVI_c
+fileName	sum_V	sum_C	mean_V	mean_C	delta_V	delta_C	percent_V	varco_V	varco_C	nPVI_V	nPVI_C	rPVI_V	rPVI_C
 000001.TextGrid	1.466	0.650	0.163	0.108	0.040	0.025	0.693	24.638	23.298	18.320	25.173	2.864	29.312
 000002.TextGrid	2.003	0.358	0.223	0.072	0.061	0.040	0.848	27.325	55.389	29.583	53.806	6.873	59.165
 ```
 * 参数解释：
->> sum_v: 这一句里所有V的时长的和;
+>> `sum_V`: 这一句里所有V的时长总和;
+>> `sum_C`: 这一句里所有C的时长总和;
+>> `mean_V`: 这一句里所有V的时长平均值;
+>> `mean_C`: 这一句里所有C的时长平均值;
+>> `delta_V`: 这一句里所有V的时长方差(standard deviation);
+>> `delta_C`: 这一句里所有C的时长方差(standard deviation);
+>> `percent_V`: 这一句城V占的百分比;
+>> `varco_V=100*(delta_V/mean_V)`, 有些论文里称为变异指数;
+>> `varco_C=100*(delta_C/mean_C)`, 有些论文里称为变异指数;
+>> `PVI`可参考下面的论文;
 
 * 参考文献：Gibbon, Dafydd, and Ulrike Gut. "Measuring speech rhythm." Seventh European Conference on Speech Communication and Technology. 2001.
 
