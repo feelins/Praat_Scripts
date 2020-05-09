@@ -627,16 +627,16 @@ fileName	sum_V	sum_C	mean_V	mean_C	delta_V	delta_C	percent_V	varco_V	varco_C	nPV
 000002.TextGrid	2.003	0.358	0.223	0.072	0.061	0.040	0.848	27.325	55.389	29.583	53.806	6.873	59.165
 ```
 * 参数解释：
->> `sum_V`: 这一句里所有V的时长总和;
->> `sum_C`: 这一句里所有C的时长总和;
->> `mean_V`: 这一句里所有V的时长平均值;
->> `mean_C`: 这一句里所有C的时长平均值;
->> `delta_V`: 这一句里所有V的时长方差(standard deviation);
->> `delta_C`: 这一句里所有C的时长方差(standard deviation);
->> `percent_V`: 这一句城V占的百分比;
->> `varco_V=100*(delta_V/mean_V)`, 有些论文里称为变异指数;
->> `varco_C=100*(delta_C/mean_C)`, 有些论文里称为变异指数;
->> `PVI`可参考下面的论文;
+>> `sum_V`: 这一句里所有V的时长总和;  
+>> `sum_C`: 这一句里所有C的时长总和;  
+>> `mean_V`: 这一句里所有V的时长平均值;  
+>> `mean_C`: 这一句里所有C的时长平均值;  
+>> `delta_V`: 这一句里所有V的时长方差(standard deviation);  
+>> `delta_C`: 这一句里所有C的时长方差(standard deviation);  
+>> `percent_V`: 这一句城V占的百分比;  
+>> `varco_V=100*(delta_V/mean_V)`, 有些论文里称为变异指数;  
+>> `varco_C=100*(delta_C/mean_C)`, 有些论文里称为变异指数;  
+>> `PVI`可参考下面的论文;  
 
 * 参考文献：Gibbon, Dafydd, and Ulrike Gut. "Measuring speech rhythm." Seventh European Conference on Speech Communication and Technology. 2001.
 
