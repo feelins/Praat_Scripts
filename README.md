@@ -616,7 +616,7 @@ Add menu command: "TextGridEditor", "Boundary", "Remove all boundary...", "", 0,
 * 这个脚本是用最新版的Praat 6.1.13，因为用到了一些新的功能；
 * 请先在Praat里对语音标注好V, C的分类；
 * 示例仍然来自标贝开源数据，笔者手工标注了两句话；
-<div align=center><img width="800" height="425" src="images/praat_run_16.png"/></div>
+<div align=center><img width="800" height="425" src="images/praat_run_17.png"/></div>
 
 * 脚本运行时，指定V，C分类所在的层级；
 * 脚本会在源数据目录里生成Table_V和Table_C，主要是为了记录V, C的时长，便于检索，最终结果会在脚本所在的目录里生成result.txt，这两句的结果如下；
