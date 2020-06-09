@@ -1,0 +1,220 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.6462585034 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "PhonAlign" 
+        xmin = 0 
+        xmax = 3.646259 
+        intervals: size = 40 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.19852291537582792 
+            text = "" 
+        intervals [2]:
+            xmin = 0.19852291537582792 
+            xmax = 0.35 
+            text = "O:" 
+        intervals [3]:
+            xmin = 0.35 
+            xmax = 0.48 
+            text = "T" 
+        intervals [4]:
+            xmin = 0.48 
+            xmax = 0.5800000000000001 
+            text = "3:" 
+        intervals [5]:
+            xmin = 0.5800000000000001 
+            xmax = 0.68 
+            text = "r" 
+        intervals [6]:
+            xmin = 0.68 
+            xmax = 0.73 
+            text = "V" 
+        intervals [7]:
+            xmin = 0.73 
+            xmax = 0.84 
+            text = "v" 
+        intervals [8]:
+            xmin = 0.84 
+            xmax = 0.88 
+            text = "D" 
+        intervals [9]:
+            xmin = 0.88 
+            xmax = 0.93 
+            text = "@" 
+        intervals [10]:
+            xmin = 0.93 
+            xmax = 1.01 
+            text = "d" 
+        intervals [11]:
+            xmin = 1.01 
+            xmax = 1.075 
+            text = "e" 
+        intervals [12]:
+            xmin = 1.075 
+            xmax = 1.14 
+            text = "I" 
+        intervals [13]:
+            xmin = 1.14 
+            xmax = 1.21 
+            text = "n" 
+        intervals [14]:
+            xmin = 1.21 
+            xmax = 1.27 
+            text = "dZ" 
+        intervals [15]:
+            xmin = 1.27 
+            xmax = 1.295 
+            text = "3:" 
+        intervals [16]:
+            xmin = 1.295 
+            xmax = 1.32 
+            text = "r" 
+        intervals [17]:
+            xmin = 1.32 
+            xmax = 1.45 
+            text = "t" 
+        intervals [18]:
+            xmin = 1.45 
+            xmax = 1.5 
+            text = "r\" 
+        intervals [19]:
+            xmin = 1.5 
+            xmax = 1.565 
+            text = "e" 
+        intervals [20]:
+            xmin = 1.565 
+            xmax = 1.63 
+            text = "I" 
+        intervals [21]:
+            xmin = 1.63 
+            xmax = 1.82 
+            text = "l" 
+        intervals [22]:
+            xmin = 1.82 
+            xmax = 1.98 
+            text = "f" 
+        intervals [23]:
+            xmin = 1.98 
+            xmax = 2.02 
+            text = "I" 
+        intervals [24]:
+            xmin = 2.02 
+            xmax = 2.11 
+            text = "l" 
+        intervals [25]:
+            xmin = 2.11 
+            xmax = 2.15 
+            text = "@" 
+        intervals [26]:
+            xmin = 2.15 
+            xmax = 2.23 
+            text = "p" 
+        intervals [27]:
+            xmin = 2.23 
+            xmax = 2.34 
+            text = "s" 
+        intervals [28]:
+            xmin = 2.34 
+            xmax = 2.38 
+            text = "t" 
+        intervals [29]:
+            xmin = 2.38 
+            xmax = 2.51 
+            text = "i:" 
+        intervals [30]:
+            xmin = 2.51 
+            xmax = 2.68 
+            text = "l" 
+        intervals [31]:
+            xmin = 2.68 
+            xmax = 2.79 
+            text = "z" 
+        intervals [32]:
+            xmin = 2.79 
+            xmax = 2.89 
+            text = "E" 
+        intervals [33]:
+            xmin = 2.89 
+            xmax = 2.97 
+            text = "t" 
+        intervals [34]:
+            xmin = 2.97 
+            xmax = 3.04 
+            text = "s" 
+        intervals [35]:
+            xmin = 3.04 
+            xmax = 3.13 
+            text = "E" 
+        intervals [36]:
+            xmin = 3.13 
+            xmax = 3.17 
+            text = "4" 
+        intervals [37]:
+            xmin = 3.17 
+            xmax = 3.295 
+            text = "3:" 
+        intervals [38]:
+            xmin = 3.295 
+            xmax = 3.42 
+            text = "r" 
+        intervals [39]:
+            xmin = 3.42 
+            xmax = 3.46 
+            text = "@" 
+        intervals [40]:
+            xmin = 3.46 
+            xmax = 3.646259 
+            text = "#" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "TokensAlign" 
+        xmin = 0 
+        xmax = 3.646259 
+        intervals: size = 10 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.19852291537582792 
+            text = "" 
+        intervals [2]:
+            xmin = 0.19852291537582792 
+            xmax = 0.68 
+            text = "author" 
+        intervals [3]:
+            xmin = 0.68 
+            xmax = 0.84 
+            text = "of" 
+        intervals [4]:
+            xmin = 0.84 
+            xmax = 0.93 
+            text = "the" 
+        intervals [5]:
+            xmin = 0.93 
+            xmax = 1.32 
+            text = "danger" 
+        intervals [6]:
+            xmin = 1.32 
+            xmax = 1.82 
+            text = "trail" 
+        intervals [7]:
+            xmin = 1.82 
+            xmax = 2.23 
+            text = "philip" 
+        intervals [8]:
+            xmin = 2.23 
+            xmax = 2.79 
+            text = "steels" 
+        intervals [9]:
+            xmin = 2.79 
+            xmax = 3.46 
+            text = "etc" 
+        intervals [10]:
+            xmin = 3.46 
+            xmax = 3.646259 
+            text = "#" 

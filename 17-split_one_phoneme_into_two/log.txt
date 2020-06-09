@@ -1,0 +1,5 @@
+cmu_us_arctic_slt_a0001.TextGrid,4,3:r->3:+r
+cmu_us_arctic_slt_a0001.TextGrid,11,eI->e+I
+cmu_us_arctic_slt_a0001.TextGrid,15,3:r->3:+r
+cmu_us_arctic_slt_a0001.TextGrid,19,eI->e+I
+cmu_us_arctic_slt_a0001.TextGrid,37,3:r->3:+r

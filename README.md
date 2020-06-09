@@ -46,6 +46,7 @@
     * [12-画平行句语调图](#12-画平行句语调图)
 	* [13-切除句子首尾静音段](#13-切除句子首尾静音段)
 	* [14-删除选择区域内的所有边界](#14-删除选择区域内的所有边界)
+	* [16-计算描述节奏的VC参数](#16-计算描述节奏的VC参数)
 * [相关工作](#相关工作)
  
 
@@ -639,6 +640,33 @@ fileName	sum_V	sum_C	mean_V	mean_C	delta_V	delta_C	percent_V	varco_V	varco_C	nPV
 >> `PVI`可参考下面的论文;  
 
 * 参考文献：Gibbon, Dafydd, and Ulrike Gut. "Measuring speech rhythm." Seventh European Conference on Speech Communication and Technology. 2001.
+
+
+##### 17-拆分音素
+* 脚本: [`17-split_one_phoneme_into_two/Split_One_Phoneme_into_Two.praat`](17-split_one_phoneme_into_two/Split_One_Phoneme_into_Two.praat)
+* 描述: 在标注过程中，一批任务标完之后，可能会对有一些音素重新定义，这时候需要批量将一个音素拆分成两个音素，比如对于双元音，`au`，拆分成`a`和`u`，当然扩展开来，也可以拆成多个音素，本脚本只讨论拆成两个音素的情况。
+* 这个脚本是用最新版的`Praat 6.1.13`；
+* 示例来自CMU开源数据(http://www.festvox.org/cmu_arctic)，对于音素的标注是使用的SPPAS工具自动标注，里面对于英语标注用的符号是sampa标注体系(https://www.phon.ucl.ac.uk/home/sampa/english.htm)，拆分前后想达到的效果如下:
+<div align=center><img width="800" height="360" src="images/praat_run_18.png"/></div>
+<div align=center><img width="800" height="382" src="images/praat_run_19.png"/></div>
+
+* 首先制定一个需要拆分的音素，以及拆分之后的音素组成的列表文件，放在`17-split_one_phoneme_into_two/split_list.txt`，意思是`eI`拆分成`e`和`I`：
+```
+old	new
+eI	e+I
+3:r	3:+r
+```
+* 脚本运行时，指定输入、输出目录，音素所在的层，以及上述列表文件的路径；
+<div align=center><img width="500" height="307" src="images/praat_run_20.png"/></div>
+
+* 运行完成会在当前目录里生成一个log.txt，这里面记录了进行了拆分的音素所在的文件，位置；
+```
+cmu_us_arctic_slt_a0001.TextGrid,4,3:r->3:+r
+cmu_us_arctic_slt_a0001.TextGrid,11,eI->e+I
+cmu_us_arctic_slt_a0001.TextGrid,15,3:r->3:+r
+cmu_us_arctic_slt_a0001.TextGrid,19,eI->e+I
+cmu_us_arctic_slt_a0001.TextGrid,37,3:r->3:+r
+```
 
 
 ## 相关工作
