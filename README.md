@@ -646,7 +646,7 @@ fileName	sum_V	sum_C	mean_V	mean_C	delta_V	delta_C	percent_V	varco_V	varco_C	nPV
 * 脚本: [`17-split_one_phoneme_into_two/Split_One_Phoneme_into_Two.praat`](17-split_one_phoneme_into_two/Split_One_Phoneme_into_Two.praat)
 * 描述: 在标注过程中，一批任务标完之后，可能会对有一些音素重新定义，这时候需要批量将一个音素拆分成两个音素，比如对于双元音，`au`，拆分成`a`和`u`，当然扩展开来，也可以拆成多个音素，本脚本只讨论拆成两个音素的情况。
 * 这个脚本是用最新版的`Praat 6.1.13`；
-* 示例来自CMU开源数据(http://www.festvox.org/cmu_arctic)，对于音素的标注是使用的SPPAS工具自动标注，里面对于英语标注用的符号是sampa标注体系(https://www.phon.ucl.ac.uk/home/sampa/english.htm)，拆分前后想达到的效果如下:
+* 示例来自[CMU](http://www.festvox.org/cmu_arctic)开源数据，对于音素的标注是使用的SPPAS工具自动标注，里面对于英语标注用的符号是[sampa](https://www.phon.ucl.ac.uk/home/sampa/english.htm)标注体系，拆分前后想达到的效果如下:
 <div align=center><img width="800" height="360" src="images/praat_run_18.png"/></div>
 <div align=center><img width="800" height="382" src="images/praat_run_19.png"/></div>
 
