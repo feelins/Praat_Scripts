@@ -668,6 +668,12 @@ cmu_us_arctic_slt_a0001.TextGrid,19,eI->e+I
 cmu_us_arctic_slt_a0001.TextGrid,37,3:r->3:+r
 ```
 
+##### 18-调整音量
+* 脚本: [`18-adjust_peak/Adjust_Sound_Peak.Praat`](18-adjust_peak/Adjust_Sound_Peak.Praat)
+* 描述: 批量调整音量。
+* 这个脚本是用最新版的`Praat 6.1.13`；
+* 示例来自[CMU](http://www.festvox.org/cmu_arctic)开源数据:
+
 
 ## 相关工作
 1. [Praat官方网站](http://www.fon.hum.uva.nl/praat/)
