@@ -676,6 +676,12 @@ cmu_us_arctic_slt_a0001.TextGrid,37,3:r->3:+r
 * 这个脚本是用最新版的`Praat 6.1.13`；
 * 示例来自[CMU](http://www.festvox.org/cmu_arctic)开源数据:
 
+##### 19-双通道变单通道
+* 脚本: [`19-save_one_channel_sound_files/Save_Channel_Sound_Files.Praat`](19-save_one_channel_sound_files/Save_Channel_Sound_Files.Praat)
+* 描述: 批量转换为单通道。
+* 这个脚本是用最新版的`Praat 6.1.13`；
+* 示例来自[CMU](http://www.festvox.org/cmu_arctic)开源数据:
+
 
 ## 相关工作
 1. [Praat官方网站](http://www.fon.hum.uva.nl/praat/)
