@@ -3,10 +3,9 @@
 # (See the Praat manual for details on Channels.)
 # 
 # This script is distributed under the GNU General Public License.
-# Copyright 2019.03.15 feelins[feipengshao@163.com] 
+# Copyright 2020.08.20 feelins[feipengshao@163.com] 
 
 form ReSample sound files
-   sentence Sound_file_extension .wav
    comment Directory path of input files:
    text input_directory  wavs_2_channels/
    comment Directory path of output files:
