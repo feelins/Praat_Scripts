@@ -32,7 +32,7 @@
     * [打开保存](#打开保存)
     * [脚本运行](#脚本运行)
 * [Praat常用脚本](#常用操作)
-    * [01-重采样音频文件](01-resample_sound_files\Resample_Sound_Files.Praat)
+    * [01-重采样音频文件](01-resample_sound_files/Resample_Sound_Files.Praat)
 		* [CSDN详情阅读](https://blog.csdn.net/shaopengfei/article/details/108514990)
     * [02-获取目录内文件名](#02-获取目录内文件名)
     * [03-长音频文件切分](#03-长音频文件切分)
@@ -51,7 +51,7 @@
 	* [17-拆分音素](#17-拆分音素)
 	* [18-调整音量](#18-调整音量)
 	* [19-双通道变单通道](#19-双通道变单通道)
-	* [20-基本信息统计](20-stats_basic_infomation\Get_basic_infos.praat)
+	* [20-基本信息统计](20-stats_basic_infomation/Get_basic_infos.praat)
 		* [CSDN原文阅读](https://blog.csdn.net/shaopengfei/article/details/108533610)
 * [相关工作](#相关工作)
  
