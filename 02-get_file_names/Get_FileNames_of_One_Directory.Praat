@@ -7,9 +7,9 @@
 form Information
    sentence file_extension .png
    comment Directory path of input files:
-   text input_directory E:\003_ProgramLanguage\Praat_Scripts\images\
+   text input_directory images\
    comment Result path:
-   text result_path E:\003_ProgramLanguage\Praat_Scripts\02-get_file_names\file_names_images.txt
+   text result_path file_names_images.txt
 endform
 
 if (praatVersion < 6001)
