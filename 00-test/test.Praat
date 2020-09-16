@@ -1,1 +1,0 @@
-writeInfoLine: "Hello World!"
