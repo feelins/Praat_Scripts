@@ -54,6 +54,8 @@
 	* [19-双通道变单通道](#19-双通道变单通道)
 	* [20-基本信息统计](20-stats_basic_infomation/Get_basic_infos.praat)
 		* [CSDN原文阅读](https://blog.csdn.net/shaopengfei/article/details/108533610)
+	* [21-获取一个目录里的指定的部分文件](21-get_selected_files/Get_Files_of_Selected_List.Praat)
+		* [CSDN原文阅读](https://blog.csdn.net/shaopengfei/article/details/108758499)
 * [相关工作](#相关工作)
  
 
