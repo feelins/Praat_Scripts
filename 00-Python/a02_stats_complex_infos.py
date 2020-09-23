@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-'''
+"""
 @File    :   a02_stats_complex_infos.py
 @Time    :   2020/09/21 19:48:56
-@Author  :   shaopf 
+@Author  :   pfshao 
 @Version :   1.0
 @Contact :   feipengshao@163.com
 @License :   (C)Copyright 2019-2020
 @Desc    :   stats some complex infos in TextGrids
-'''
+"""
 
 import textgrid as tg
 import os
