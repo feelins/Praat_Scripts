@@ -17,7 +17,7 @@
 # 000001.TextGrid	ei2	0.140	219	224	225	225	224	227	233	242	254	267
 
 form Information
-	comment Directory path of input wav files:
+	comment Directory path of input WAV files or PichTier files:
 	text input_wav_directory E:\003_ProgramLanguage\Praat_Scripts\09-get_duration_and_pitch\input_PitchTier\
 	comment Directory path of input TextGrid files:
 	text input_directory E:\003_ProgramLanguage\Praat_Scripts\09-get_duration_and_pitch\input_TextGrid\
