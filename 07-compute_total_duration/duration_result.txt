@@ -1,3 +1,5 @@
-000001.wav,2.66
-000002.wav,2.86
-Total: 5.52
+baozhai.wav,35.5553125
+Total wavs: 35.5553125
+  
+baozhai.TextGrid,28.16666713270619
+Total TextGrids: 28.16666713270619
