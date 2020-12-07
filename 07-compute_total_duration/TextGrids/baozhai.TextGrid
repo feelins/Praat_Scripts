@@ -23,7 +23,7 @@ item []:
         intervals [3]:
             xmin = 9.296323891768374 
             xmax = 13.833576539853023 
-            text = "s" 
+            text = "" 
         intervals [4]:
             xmin = 13.833576539853023 
             xmax = 21.78417521677199 
@@ -35,8 +35,8 @@ item []:
         intervals [6]:
             xmin = 27.799156938315402 
             xmax = 30.65054965752456 
-            text = "s" 
+            text = "" 
         intervals [7]:
             xmin = 30.65054965752456 
             xmax = 35.5553125 
-            text = "s" 
+            text = "7" 
