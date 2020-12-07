@@ -6,9 +6,9 @@
 
 form dialogue
 	comment Please input the source wav and textgrid files:
-	text input_directory E:\003_ProgramLanguage\Praat_Scripts\03-long_sound_splits\LongWavToDo_1\
+	text input_directory LongWavToDo_1\
 	comment Please input the result wav files:
-	text output_directory E:\003_ProgramLanguage\Praat_Scripts\03-long_sound_splits\small_wavs_1\
+	text output_directory small_wavs_1\
 	comment Please input the mark symbols tier:
 	positive tier_number 1
 	sentence mark_string 
