@@ -4,7 +4,7 @@
 # 提取的10个点，是在Interval时长归一化的10个点
 # 
 # This script is distributed under the GNU General Public License.
-# Copyright 2019.06.17 feelins[feipengshao@163.com]
+# Copyright 2020.12.18 [feipengshao@163.com]
 # [result]:
 # fileName	name	duration	Pitch1	Pitch2	Pitch3	Pitch4	Pitch5	Pitch6	Pitch7	Pitch8	Pitch9	Pitch10
 # 000001.TextGrid	sil	0.280	262	262	262	262	262	262	262	262	262	262
@@ -17,14 +17,16 @@
 # 000001.TextGrid	ei2	0.140	219	224	225	225	224	227	233	242	254	267
 
 form Information
-	comment Directory path of input WAV files or PichTier files:
-	text input_wav_directory E:\003_ProgramLanguage\Praat_Scripts\09-get_duration_and_pitch\input_PitchTier\
+	comment Directory path of input WAV files:
+	text input_wav_directory input_wav\
+	comment Directory path of input PichTier files:
+	text input_pitchtier_directory input_PitchTier\
 	comment Directory path of input TextGrid files:
-	text input_directory E:\003_ProgramLanguage\Praat_Scripts\09-get_duration_and_pitch\input_TextGrid\
+	text input_directory input_TextGrid\
 	comment Target Tier:
 	positive reference_tier 1
 	comment Path of output result file:
-	text save_result E:\003_ProgramLanguage\Praat_Scripts\09-get_duration_and_pitch\result_duration_pitch.txt
+	text save_result result_duration_pitch.txt
 endform
 
 if (praatVersion < 6001)
