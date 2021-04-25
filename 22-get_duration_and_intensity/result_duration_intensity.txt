@@ -1,0 +1,12 @@
+fileName	name	duration	intensity1	intensity2	intensity3	intensity4	intensity5	intensity6	intensity7	intensity8	intensity9	intensity10	meanIntensity
+000001.TextGrid		0.280	--undefined--	23	22	22	23	25	22	18	39	33	24.710
+000001.TextGrid	卡	0.237	33	43	59	59	60	67	78	80	79	77	64.425
+000001.TextGrid	尔	0.098	77	76	77	77	76	73	69	62	51	42	69.098
+000001.TextGrid	普	0.285	42	46	54	55	67	72	76	75	74	53	62.895
+000001.TextGrid	陪	0.215	53	48	53	61	68	72	72	72	72	67	64.003
+000001.TextGrid	外	0.212	67	65	72	74	75	74	70	70	70	64	70.754
+000001.TextGrid	孙	0.286	64	66	67	67	72	71	70	69	68	68	68.359
+000001.TextGrid	玩	0.181	68	69	71	73	71	70	70	68	68	61	69.386
+000001.TextGrid	滑	0.262	61	48	48	63	75	76	76	71	68	46	64.340
+000001.TextGrid	梯	0.339	46	54	56	55	69	71	71	69	64	42	60.946
+000001.TextGrid		0.264	42	17	13	13	12	12	13	12	--undefined--	--undefined--	14.801
