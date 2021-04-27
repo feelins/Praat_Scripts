@@ -1,0 +1,140 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 2.66 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "word" 
+        xmin = 0 
+        xmax = 2.66 
+        intervals: size = 11 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.32200000000000006 
+            text = "" 
+        intervals [2]:
+            xmin = 0.32200000000000006 
+            xmax = 0.5513333333333335 
+            text = "卡k a2" 
+        intervals [3]:
+            xmin = 0.5513333333333335 
+            xmax = 0.7806666666666667 
+            text = "尔er2" 
+        intervals [4]:
+            xmin = 0.7806666666666667 
+            xmax = 1.01 
+            text = "普p u3" 
+        intervals [5]:
+            xmin = 1.01 
+            xmax = 1.2393333333333334 
+            text = "陪p ei2" 
+        intervals [6]:
+            xmin = 1.2393333333333334 
+            xmax = 1.4686666666666668 
+            text = "外w ai4" 
+        intervals [7]:
+            xmin = 1.4686666666666668 
+            xmax = 1.698 
+            text = "孙s un1" 
+        intervals [8]:
+            xmin = 1.698 
+            xmax = 1.9273333333333333 
+            text = "玩w an2" 
+        intervals [9]:
+            xmin = 1.9273333333333333 
+            xmax = 2.1566666666666667 
+            text = "滑h ua2" 
+        intervals [10]:
+            xmin = 2.1566666666666667 
+            xmax = 2.386 
+            text = "梯t i1" 
+        intervals [11]:
+            xmin = 2.386 
+            xmax = 2.66 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "phon" 
+        xmin = 0 
+        xmax = 2.66 
+        intervals: size = 19 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.32200000000000006 
+            text = "" 
+        intervals [2]:
+            xmin = 0.32200000000000006 
+            xmax = 0.43666666666666676 
+            text = "k" 
+        intervals [3]:
+            xmin = 0.43666666666666676 
+            xmax = 0.5513333333333335 
+            text = "a2" 
+        intervals [4]:
+            xmin = 0.5513333333333335 
+            xmax = 0.7806666666666667 
+            text = "er2" 
+        intervals [5]:
+            xmin = 0.7806666666666667 
+            xmax = 0.8953333333333333 
+            text = "p" 
+        intervals [6]:
+            xmin = 0.8953333333333333 
+            xmax = 1.01 
+            text = "u3" 
+        intervals [7]:
+            xmin = 1.01 
+            xmax = 1.1246666666666667 
+            text = "p" 
+        intervals [8]:
+            xmin = 1.1246666666666667 
+            xmax = 1.2393333333333334 
+            text = "ei2" 
+        intervals [9]:
+            xmin = 1.2393333333333334 
+            xmax = 1.354 
+            text = "w" 
+        intervals [10]:
+            xmin = 1.354 
+            xmax = 1.4686666666666668 
+            text = "ai4" 
+        intervals [11]:
+            xmin = 1.4686666666666668 
+            xmax = 1.5833333333333335 
+            text = "s" 
+        intervals [12]:
+            xmin = 1.5833333333333335 
+            xmax = 1.698 
+            text = "un1" 
+        intervals [13]:
+            xmin = 1.698 
+            xmax = 1.8126666666666666 
+            text = "w" 
+        intervals [14]:
+            xmin = 1.8126666666666666 
+            xmax = 1.9273333333333333 
+            text = "an2" 
+        intervals [15]:
+            xmin = 1.9273333333333333 
+            xmax = 2.042 
+            text = "h" 
+        intervals [16]:
+            xmin = 2.042 
+            xmax = 2.1566666666666667 
+            text = "ua2" 
+        intervals [17]:
+            xmin = 2.1566666666666667 
+            xmax = 2.2713333333333336 
+            text = "t" 
+        intervals [18]:
+            xmin = 2.2713333333333336 
+            xmax = 2.386 
+            text = "i1" 
+        intervals [19]:
+            xmin = 2.386 
+            xmax = 2.66 
+            text = "" 
