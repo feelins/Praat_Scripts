@@ -1,0 +1,176 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 1.0435 
+tiers? <exists> 
+size = 4 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phons" 
+        xmin = 0 
+        xmax = 1.0435 
+        intervals: size = 12 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.05357540179746169 
+            text = "<SIL>" 
+        intervals [2]:
+            xmin = 0.05357540179746169 
+            xmax = 0.13606390005235589 
+            text = "Th" 
+        intervals [3]:
+            xmin = 0.13606390005235589 
+            xmax = 0.24197527136240154 
+            text = "a" 
+        intervals [4]:
+            xmin = 0.24197527136240154 
+            xmax = 0.33382761108261816 
+            text = "ts" 
+        intervals [5]:
+            xmin = 0.33382761108261816 
+            xmax = 0.3741301683067948 
+            text = "wh" 
+        intervals [6]:
+            xmin = 0.3741301683067948 
+            xmax = 0.41818180062159255 
+            text = "a" 
+        intervals [7]:
+            xmin = 0.41818180062159255 
+            xmax = 0.43569921715280446 
+            text = "t" 
+        intervals [8]:
+            xmin = 0.43569921715280446 
+            xmax = 0.563407 
+            text = "I" 
+        intervals [9]:
+            xmin = 0.563407 
+            xmax = 0.6928015510095871 
+            text = "th" 
+        intervals [10]:
+            xmin = 0.6928015510095871 
+            xmax = 0.8212073728633592 
+            text = "ough" 
+        intervals [11]:
+            xmin = 0.8212073728633592 
+            xmax = 0.945005 
+            text = "t" 
+        intervals [12]:
+            xmin = 0.945005 
+            xmax = 1.0435 
+            text = "<SIL>" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "phons" 
+        xmin = 0 
+        xmax = 1.0435 
+        intervals: size = 12 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.05357540179746169 
+            text = "" 
+        intervals [2]:
+            xmin = 0.05357540179746169 
+            xmax = 0.13606390005235589 
+            text = "" 
+        intervals [3]:
+            xmin = 0.13606390005235589 
+            xmax = 0.24197527136240154 
+            text = "H*" 
+        intervals [4]:
+            xmin = 0.24197527136240154 
+            xmax = 0.33382761108261816 
+            text = "" 
+        intervals [5]:
+            xmin = 0.33382761108261816 
+            xmax = 0.3741301683067948 
+            text = "" 
+        intervals [6]:
+            xmin = 0.3741301683067948 
+            xmax = 0.41818180062159255 
+            text = "" 
+        intervals [7]:
+            xmin = 0.41818180062159255 
+            xmax = 0.43569921715280446 
+            text = "" 
+        intervals [8]:
+            xmin = 0.43569921715280446 
+            xmax = 0.563407 
+            text = "" 
+        intervals [9]:
+            xmin = 0.563407 
+            xmax = 0.6928015510095871 
+            text = "" 
+        intervals [10]:
+            xmin = 0.6928015510095871 
+            xmax = 0.8212073728633592 
+            text = "H*" 
+        intervals [11]:
+            xmin = 0.8212073728633592 
+            xmax = 0.945005 
+            text = "L-L%" 
+        intervals [12]:
+            xmin = 0.945005 
+            xmax = 1.0435 
+            text = "" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 1.0435 
+        intervals: size = 6 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.05357540179746169 
+            text = "<SIL>" 
+        intervals [2]:
+            xmin = 0.05357540179746169 
+            xmax = 0.33382761108261816 
+            text = "That's" 
+        intervals [3]:
+            xmin = 0.33382761108261816 
+            xmax = 0.43569921715280446 
+            text = "what" 
+        intervals [4]:
+            xmin = 0.43569921715280446 
+            xmax = 0.563407 
+            text = "I" 
+        intervals [5]:
+            xmin = 0.563407 
+            xmax = 0.945005 
+            text = "thought" 
+        intervals [6]:
+            xmin = 0.945005 
+            xmax = 1.0435 
+            text = "<SIL>" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 1.0435 
+        intervals: size = 6 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.05357540179746169 
+            text = "" 
+        intervals [2]:
+            xmin = 0.05357540179746169 
+            xmax = 0.33382761108261816 
+            text = "1" 
+        intervals [3]:
+            xmin = 0.33382761108261816 
+            xmax = 0.43569921715280446 
+            text = "" 
+        intervals [4]:
+            xmin = 0.43569921715280446 
+            xmax = 0.563407 
+            text = "" 
+        intervals [5]:
+            xmin = 0.563407 
+            xmax = 0.945005 
+            text = "4" 
+        intervals [6]:
+            xmin = 0.945005 
+            xmax = 1.0435 
+            text = "" 
