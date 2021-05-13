@@ -1,5 +1,5 @@
 # This Praat script will change the sample rate of all sound files in a given directory
-# and save files with the new rate to another directory.
+# and save files with the new rate to another directory..
 # (See the Praat manual for details on resampling.)
 # 
 # This script is distributed under the GNU General Public License.
