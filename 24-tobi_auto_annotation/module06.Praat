@@ -7,8 +7,8 @@
 
 
 form dialogue
-	sentence input_directory /home/shaopengfei/PyToBI/praatScripts/data/
-	sentence output_directory /home/shaopengfei/PyToBI/praatScripts/data_out/
+	sentence input_directory data/
+	sentence output_directory data_out/
 endform
 
 createDirectory: output_directory$

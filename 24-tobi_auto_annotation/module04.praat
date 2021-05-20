@@ -26,7 +26,7 @@ appendInfoLine: "Exporting TextGrid with words and phones alignment"
 
 clearinfo
 form Parameters
-	text directory /home/shaopengfei/PyToBI/praatScripts/data/
+	text directory data/
 endform
 Create Strings as file list: "fileList", directory$ + "/*.TextGrid"
 fileNum = Get number of strings
