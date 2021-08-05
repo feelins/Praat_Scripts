@@ -57,7 +57,6 @@ for idir to numberOfDirs
 	if select_merge_option = 2
 		for txtIndex from 1 to totalLines
 			curTxt$ = txt$[txtIndex]
-			pause 'curTxt$'
 			findFiles = 0
 			for ifile to numberOfFiles
 				select Strings fileList
