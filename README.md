@@ -69,6 +69,8 @@ Please read the description of each script on this page before use. If there are
 * [23-auto_annotation_01](23-auto_annotation_01/simple_auto_annotation.Praat)  
 * [24-tobi_auto_annotation](24-tobi_auto_annotation)  
 * [25-merge_tiers_of_different_dir](25_merge_tiers_of_different_dir/Merge_tiers_of_different_TextGrids.praat)  
+* [26-auto_annotation_02](26_Easy_align/homepage.txt)
+* [28_merge_sound_files](28_merge_sound_files/combo_sound_files.Praat)
 
 # Run Script
 
