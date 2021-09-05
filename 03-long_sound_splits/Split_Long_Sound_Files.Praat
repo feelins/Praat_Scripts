@@ -1,7 +1,9 @@
 # This Praat script will split long wav files into small ones. 
 # 
 # This script is distributed under the GNU General Public License.
+# 博客说明：https://blog.csdn.net/shaopengfei/article/details/109097404
 # Copyright 2020.04.17 feelins[feipengshao@163.com] 
+
 
 
 form dialogue
