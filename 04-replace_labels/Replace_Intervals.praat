@@ -41,26 +41,26 @@ fileNum = Get number of strings
 for file from 1 to fileNum
 	selectObject: "Strings fileList"
 	fileName$ = Get string: file
-    	Read from file: input_directory$ + fileName$
-    	objectName$ = selected$ ("TextGrid", 1)
-    	intervalNums = Get number of intervals: reference_tier
+    Read from file: input_directory$ + fileName$
+    objectName$ = selected$ ("TextGrid", 1)
+    intervalNums = Get number of intervals: reference_tier
 	for interval from 1 to intervalNums
 		selectObject: "TextGrid " + objectName$
 		start = Get start time of interval: reference_tier, interval
 		end = Get end time of interval: reference_tier, interval
 		duration = end - start
 		intervalName$ = Get label of interval: reference_tier, interval
-        	for nt from 1 to numOfTableRows
+        for nt from 1 to numOfTableRows
 			curOldContent$ = tableOld$['nt']
-            		curNewContent$ = tableNew$['nt']
-		    	if intervalName$ = curOldContent$
-			    	Set interval text: reference_tier, interval, curNewContent$
-                		appendFileLine: save_log$, fileName$, ",", interval, ",", curOldContent$, "->", curNewContent$
-		    	endif
+            curNewContent$ = tableNew$['nt']
+		    if intervalName$ = curOldContent$
+			    Set interval text: reference_tier, interval, curNewContent$
+                appendFileLine: save_log$, fileName$, ",", interval, ",", curOldContent$, "->", curNewContent$
+		    endif
 		endfor
 	endfor
 	selectObject: "TextGrid " + objectName$
-    	Save as text file: save_path$ + fileName$
+    Save as text file: save_path$ + fileName$
 	Remove
 endfor
 select Strings fileList
