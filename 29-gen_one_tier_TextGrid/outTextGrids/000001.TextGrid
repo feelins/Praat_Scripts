@@ -1,0 +1,18 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 2.66 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "script" 
+        xmin = 0 
+        xmax = 2.66 
+        intervals: size = 1 
+        intervals [1]:
+            xmin = 0 
+            xmax = 2.66 
+            text = "我在检查这句话的内容" 
