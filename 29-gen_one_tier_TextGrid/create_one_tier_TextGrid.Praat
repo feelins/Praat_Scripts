@@ -21,16 +21,18 @@ clearinfo
 # 如果新目录不存在，自动创建
 createDirectory: output_textgrid_path$
 
-Read Table from tab-separated file: input_text_path$
-Rename: "TableList"
-numOfTableRows = Get number of rows
-for nt from 1 to numOfTableRows
+if input_text_path$ <> ""
+	Read Table from tab-separated file: input_text_path$
+	Rename: "TableList"
+	numOfTableRows = Get number of rows
+	for nt from 1 to numOfTableRows
+		selectObject: "Table TableList"
+		tablefilename$['nt'] = Get value: nt, "filename"
+		tablesentence$['nt'] = Get value: nt, "sentence"
+	endfor
 	selectObject: "Table TableList"
-	tablefilename$['nt'] = Get value: nt, "filename"
-	tablesentence$['nt'] = Get value: nt, "sentence"
-endfor
-selectObject: "Table TableList"
-Remove
+	Remove
+endif
 
 Create Strings as file list: "fileList", input_wav_path$ + "*.wav"
 numOfFiles = Get number of strings
@@ -43,13 +45,17 @@ for ifile from 1 to numOfFiles
 	Read from file: wavFullPath$
 	simpleNameNoBlank$ = selected$("Sound",1)
 	To TextGrid: "script", ""
-	for nt from 1 to numOfTableRows
-		curName$ = tablefilename$['nt']
-		curTxt$ = tablesentence$['nt']
-		if curName$ = simpleNameNoBlank$
-			Set interval text: 1, 1, curTxt$
-		endif
-	endfor
+	if input_text_path$ <> ""
+		for nt from 1 to numOfTableRows
+			curName$ = tablefilename$['nt']
+			curTxt$ = tablesentence$['nt']
+			if curName$ = simpleNameNoBlank$
+				Set interval text: 1, 1, curTxt$
+			endif
+		endfor
+	else
+		Set interval text: 1, 1, ""
+	endif
 
 	selectObject: "TextGrid " + simpleNameNoBlank$
 	Save as text file: output_textgrid_path$ + simpleName$ + ".TextGrid"
