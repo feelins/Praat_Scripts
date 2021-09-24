@@ -7,7 +7,7 @@
 
 
 
-form Dialogue_Cut
+form Dialogue_GenTextGrid
 	comment Directory path of input WAV files：
 	text input_wav_path wavs\
 	comment Path of input Txt file:
