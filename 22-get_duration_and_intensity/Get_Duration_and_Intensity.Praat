@@ -48,6 +48,7 @@ for iFile from 1 to numberOfFiles
 		output$ = fileName$ + tab$ + labelOfInterval$ + tab$ + fixed$(duration, 3) + tab$
 
 		stepTime = duration / 9
+		if labelOfInterval$ <> ""
 		for i from 1 to 10
 			selectObject: "Intensity " + objectName$
 			tmpTime = sTime + stepTime * (i - 1)
