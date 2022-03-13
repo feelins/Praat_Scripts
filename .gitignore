@@ -1,0 +1,7 @@
+data/CMU_Demo/CMU_Demo/
+data/Biaobei_Demo/Biaobei_Demo/
+.idea/
+
+23-auto_annotation_01/english_lower.dict
+23-auto_annotation_01/english.dict
+24-tobi_auto_annotation/__pycache__/textGrid.cpython-39.pyc
