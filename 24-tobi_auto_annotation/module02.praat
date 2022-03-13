@@ -111,6 +111,9 @@ endfor
 # Save temporal file
 selectObject: text$
 Write to text file: directory$ + basename$ + "_mod2.TextGridd"
+select all
+minusObject: "Strings fileList"
+Remove
 endfor
 # clean Menu
 select all

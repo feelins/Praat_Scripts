@@ -112,10 +112,12 @@ Write to binary file: directory$ + basename$ + ".Intensity"
 
 selectObject: pitch$
 Write to binary file: directory$ + basename$ + ".Pitch"
+select all
+minusObject: "Strings fileList"
+Remove
 endfor
 # clean Menu
-select all
-Remove
+
 appendInfoLine: "····························································"
 appendInfoLine: "END OF MODULE 1 !"
 appendInfoLine: "····························································"
