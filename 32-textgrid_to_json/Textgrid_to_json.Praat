@@ -4,7 +4,7 @@
 # This script is distributed under the GNU General Public License.
 # Copyright 2022.03.13 feelins[feipengshao@163.com] 
 
-form ReSample sound files
+form info
    	comment Directory path of input files:
    	text input_directory  textgrids/
    	comment Directory path of output files:
