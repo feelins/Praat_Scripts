@@ -27,7 +27,7 @@ for ifile from 1 to numberOfFiles
 	objectName$ = selected$("TextGrid", 1)
 	jsonFile$ = output_directory$ + objectName$ + ".json"
 	deleteFile: jsonFile$
-	numberOfIntervals = Get number of intervals: 1
+	
 	appendFileLine: jsonFile$, "{"
 	appendFileLine: jsonFile$, tab$ + """tiers"":["
 	totalTierNum = Get number of tiers
@@ -35,12 +35,13 @@ for ifile from 1 to numberOfFiles
 		tierName$ = Get tier name: iTier
 		appendFileLine: jsonFile$, tab$ + tab$ + "{""name"":""" + tierName$ + ""","
 		appendFileLine: jsonFile$, tab$ + tab$ + """intervals"":["
+		numberOfIntervals = Get number of intervals: iTier
 		for iInterval from 1 to numberOfIntervals
 			selectObject: "TextGrid " + objectName$
-			sTime = Get start point: 1, iInterval
-			eTime = Get end point: 1, iInterval
+			sTime = Get start point: iTier, iInterval
+			eTime = Get end point: iTier, iInterval
 
-			labelOfInterval$ = Get label of interval: 1, iInterval
+			labelOfInterval$ = Get label of interval: iTier, iInterval
 			output$ = "{""xmin"":" + fixed$(sTime, decimalNum) + ",""xmax"":" + fixed$(eTime, decimalNum) + ",""text"":""" + labelOfInterval$ + """}"
 			if iInterval <> numberOfIntervals
 				output$ = output$ + ","
