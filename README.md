@@ -89,3 +89,15 @@ After mastering the basic operation of `Praat`, you need to know how to run a sc
 <div align=center><img width="650" height="488" border="1px" src="images/praat_open_9.png"/></div>
 
 
+# Citing these scripts
+
+Cite the project
+```
+@misc{PraatScripts,
+	Author = {Pengfei Shao},
+	Keywords = {scripts, Praat, corpus, analysis, annotation, acoustic},
+	Note = {Retrieved 4.4.2022. [Website] <\url{https://github.com/feelins/Praat_Scripts/}>},
+	Title = {{Praat Scripts --- Some basic praat scripts}},
+	Year = {2016}
+}
+```
