@@ -287,6 +287,9 @@ endfor
 
 # Save changes to directory
 Write to text file: directory$ + basename$ + "_mod3.TextGridd"
+select all
+minusObject: "Strings fileList"
+Remove
 endfor
 # clean Menu
 select all

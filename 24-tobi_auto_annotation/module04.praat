@@ -364,7 +364,10 @@ endfor
 
 # Save changes to directory
 selectObject: merged$
-Write to text file: directory$ + basename$ + "_mod4.TextGridd"  
+Write to text file: directory$ + basename$ + "_mod4.TextGridd"
+select all
+minusObject: "Strings fileList"
+Remove
 endfor
 #clean Menu
 select all
