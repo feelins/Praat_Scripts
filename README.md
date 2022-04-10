@@ -96,8 +96,10 @@ Cite the project
 @misc{PraatScripts,
 	Author = {Pengfei Shao},
 	Keywords = {scripts, Praat, corpus, analysis, annotation, acoustic},
-	Note = {Retrieved 4.4.2022. [Website] <\url{https://github.com/feelins/Praat_Scripts/}>},
+	Note = {[Website] <\url{https://github.com/feelins/Praat_Scripts/}>},
 	Title = {{Praat Scripts --- Some basic praat scripts}},
 	Year = {2016}
 }
 ```
+
+> Pengfei Shao. Praat Scripts — Some basic praat scripts, 2016. [Website]¡https://github.com/feelins/Praat_Scripts¿.
