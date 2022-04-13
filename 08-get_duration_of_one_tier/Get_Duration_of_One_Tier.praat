@@ -30,7 +30,7 @@ if (praatVersion < 6001)
 	exit
 endif
 
-writeFileLine: save_result$, "fileName", ",", "IntervalName", ",", "duration"
+writeFileLine: save_result$, "fileName", ",", "IntervalName", ",", "duration", ",", "start", ",", "end"
 Create Strings as file list: "fileList", input_directory$ + "*.TextGrid"
 fileNumber = Get number of strings
 for file from 1 to fileNumber
@@ -46,7 +46,7 @@ for file from 1 to fileNumber
 		duration = end - start
 		intervalName$ = Get label of interval: reference_tier, interval
 		if intervalName$ <> ""
-			appendFileLine: save_result$, fileName$, ",", intervalName$, ",", duration
+			appendFileLine: save_result$, fileName$, ",", intervalName$, ",", duration, ",", start, ",", end 
 		endif
 	endfor
 	selectObject: "TextGrid " + objectName$
