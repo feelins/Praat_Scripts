@@ -1,0 +1,70 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 5.320666666666666 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "silences" 
+        xmin = 0 
+        xmax = 5.320666666666666 
+        intervals: size = 14 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.32033333333333336 
+            text = "sp1" 
+        intervals [2]:
+            xmin = 0.32033333333333336 
+            xmax = 0.6003333333333334 
+            text = "sounding" 
+        intervals [3]:
+            xmin = 0.6003333333333334 
+            xmax = 0.7123333333333334 
+            text = "sp1" 
+        intervals [4]:
+            xmin = 0.7123333333333334 
+            xmax = 2.0563333333333333 
+            text = "sounding" 
+        intervals [5]:
+            xmin = 2.0563333333333333 
+            xmax = 2.1843333333333335 
+            text = "sp1" 
+        intervals [6]:
+            xmin = 2.1843333333333335 
+            xmax = 2.384333333333333 
+            text = "sounding" 
+        intervals [7]:
+            xmin = 2.384333333333333 
+            xmax = 2.684333333333333 
+            text = "sp1" 
+        intervals [8]:
+            xmin = 2.684333333333333 
+            xmax = 2.984333333333333 
+            text = "sp1" 
+        intervals [9]:
+            xmin = 2.984333333333333 
+            xmax = 3.2643333333333326 
+            text = "sounding" 
+        intervals [10]:
+            xmin = 3.2643333333333326 
+            xmax = 3.3923333333333328 
+            text = "sp1" 
+        intervals [11]:
+            xmin = 3.3923333333333328 
+            xmax = 4.7123333333333335 
+            text = "sounding" 
+        intervals [12]:
+            xmin = 4.7123333333333335 
+            xmax = 4.848333333333333 
+            text = "sp1" 
+        intervals [13]:
+            xmin = 4.848333333333333 
+            xmax = 5.040333333333333 
+            text = "sounding" 
+        intervals [14]:
+            xmin = 5.040333333333333 
+            xmax = 5.320666666666666 
+            text = "sp1" 
