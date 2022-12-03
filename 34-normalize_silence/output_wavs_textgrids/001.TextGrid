@@ -15,56 +15,56 @@ item []:
         intervals [1]:
             xmin = 0 
             xmax = 0.32033333333333336 
-            text = "sp" 
+            text = "#" 
         intervals [2]:
             xmin = 0.32033333333333336 
             xmax = 0.6003333333333334 
-            text = "sounding" 
+            text = "" 
         intervals [3]:
             xmin = 0.6003333333333334 
             xmax = 0.7123333333333334 
-            text = "sp" 
+            text = "" 
         intervals [4]:
             xmin = 0.7123333333333334 
             xmax = 2.0563333333333333 
-            text = "sounding" 
+            text = "" 
         intervals [5]:
             xmin = 2.0563333333333333 
             xmax = 2.1843333333333335 
-            text = "sp" 
+            text = "" 
         intervals [6]:
             xmin = 2.1843333333333335 
             xmax = 2.384333333333333 
-            text = "sounding" 
+            text = "" 
         intervals [7]:
             xmin = 2.384333333333333 
             xmax = 2.684333333333333 
-            text = "sp" 
+            text = "#" 
         intervals [8]:
             xmin = 2.684333333333333 
             xmax = 2.984333333333333 
-            text = "sp" 
+            text = "#" 
         intervals [9]:
             xmin = 2.984333333333333 
             xmax = 3.2643333333333326 
-            text = "sounding" 
+            text = "" 
         intervals [10]:
             xmin = 3.2643333333333326 
             xmax = 3.3923333333333328 
-            text = "sp" 
+            text = "" 
         intervals [11]:
             xmin = 3.3923333333333328 
             xmax = 4.7123333333333335 
-            text = "sounding" 
+            text = "" 
         intervals [12]:
             xmin = 4.7123333333333335 
             xmax = 4.848333333333333 
-            text = "sp" 
+            text = "" 
         intervals [13]:
             xmin = 4.848333333333333 
             xmax = 5.040333333333333 
-            text = "sounding" 
+            text = "" 
         intervals [14]:
             xmin = 5.040333333333333 
             xmax = 5.320666666666666 
-            text = "sp" 
+            text = "#" 
