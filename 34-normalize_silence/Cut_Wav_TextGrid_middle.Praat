@@ -111,8 +111,8 @@ for ifile from 1 to numOfFiles
 	durationB = endTime - startTime
 	newStart = startTime
 	if durationB > checkValue
-		newStart = endTime - splitValue
-		checkstr$ = checkstr$ + string$(durationB-splitValue) + tab$
+		newStart = endTime - checkValue
+		checkstr$ = checkstr$ + string$(durationB-checkValue) + tab$
 	else
 		checkstr$ = checkstr$ + string$(0) + tab$
 	endif
@@ -124,8 +124,8 @@ for ifile from 1 to numOfFiles
 	durationE = endTime - startTime
 	newEnd = endTime
 	if durationE > checkValue
-		newEnd = startTime + splitValue
-		checkstr$ = checkstr$ + string$(durationE-splitValue) + tab$
+		newEnd = startTime + checkValue
+		checkstr$ = checkstr$ + string$(durationE-checkValue) + tab$
 	else
 		checkstr$ = checkstr$ + string$(0) + tab$
 	endif
