@@ -51,6 +51,10 @@ for idir to numberOfDirs
 		Concatenate
 		save_file$ = sound_directory$ + "/" + dirname$ + ".wav"
 		Save as WAV file: save_file$
+		select all
+		minus Strings fileList
+		minus Strings directoryList
+		Remove
 	endif
 	
 	# second option
@@ -74,6 +78,10 @@ for idir to numberOfDirs
 				save_file$ = sound_directory$ + "/" + dirname$ + "_" + curTxt$ + ".wav"
 				Save as WAV file: save_file$
 			endif
+			select all
+			minus Strings fileList
+			minus Strings directoryList
+			Remove
 		endfor
 	endif
 	select all
