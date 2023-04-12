@@ -97,7 +97,7 @@ for ifile from 1 to numOfFiles
 			Insert boundary: 1, tmpTime
 		endif
 		tmpInterval = Get interval at time: 1, tmpTime
-		if tmpTime <> totalDur
+		if mt <> totalNum
 			tmpInterval = tmpInterval - 1
 		endif
 		tmpValue$ = txtValue$['mt']
@@ -122,11 +122,11 @@ for ifile from 1 to numOfFiles
 		stepPhonTime = (thisEnd - thisStart) / resultPhonIndex
 		for kt from 1 to resultPhonIndex
 			thisTmpTime = thisStart + stepPhonTime * kt
-			if thisTmpTime <> totalDur
+			if kt <> resultPhonIndex
 				Insert boundary: 2, thisTmpTime
 			endif
 			tmpInterval2 = Get interval at time: 2, thisTmpTime
-			if thisTmpTime <> totalDur
+			if kt <> resultPhonIndex
 				tmpInterval2 = tmpInterval2 - 1
 			endif
 			thisTmpValue$ = resultPhons$['kt']
