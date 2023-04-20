@@ -265,7 +265,7 @@ for w to totintWord
 		featw4$ = "slope" + intFeat$ + slopeTend$ + endFeat$
 		labeltextw$ = lab$ + startFeatLine$ + featw1$ + featw2$ + featw3$ + featw4$
 		
-		labw$ = Set interval text: 5, w, labeltextw$
+		Set interval text: 5, w, labeltextw$
 		
 
 #################################
