@@ -1,0 +1,132 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 2.74 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "Phon" 
+        xmin = 0 
+        xmax = 2.74 
+        intervals: size = 16 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.301726346975054 
+            text = "sil" 
+        intervals [2]:
+            xmin = 0.301726346975054 
+            xmax = 0.4433836824210052 
+            text = "ie3" 
+        intervals [3]:
+            xmin = 0.4433836824210052 
+            xmax = 0.5431274242331356 
+            text = "k" 
+        intervals [4]:
+            xmin = 0.5431274242331356 
+            xmax = 0.6323043762277725 
+            text = "e2" 
+        intervals [5]:
+            xmin = 0.6323043762277725 
+            xmax = 0.9007635962114853 
+            text = "i3" 
+        intervals [6]:
+            xmin = 0.9007635962114853 
+            xmax = 0.9506354671175504 
+            text = "g" 
+        intervals [7]:
+            xmin = 0.9506354671175504 
+            xmax = 1.115212128364826 
+            text = "ei3" 
+        intervals [8]:
+            xmin = 1.115212128364826 
+            xmax = 1.149697996544552 
+            text = "b" 
+        intervals [9]:
+            xmin = 1.149697996544552 
+            xmax = 1.2990762854871505 
+            text = "en2" 
+        intervals [10]:
+            xmin = 1.2990762854871505 
+            xmax = 1.4788759702540377 
+            text = "uei3" 
+        intervals [11]:
+            xmin = 1.4788759702540377 
+            xmax = 1.695 
+            text = "van2" 
+        intervals [12]:
+            xmin = 1.695 
+            xmax = 1.797939677739475 
+            text = "f" 
+        intervals [13]:
+            xmin = 1.797939677739475 
+            xmax = 2.000428005565688 
+            text = "an3" 
+        intervals [14]:
+            xmin = 2.000428005565688 
+            xmax = 2.223790321006682 
+            text = "ing4" 
+        intervals [15]:
+            xmin = 2.223790321006682 
+            xmax = 2.4906577412490862 
+            text = "iou5" 
+        intervals [16]:
+            xmin = 2.4906577412490862 
+            xmax = 2.74 
+            text = "sil" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "Word" 
+        xmin = 0 
+        xmax = 2.74 
+        intervals: size = 12 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.301726346975054 
+            text = "" 
+        intervals [2]:
+            xmin = 0.301726346975054 
+            xmax = 0.4433836824210052 
+            text = "也1" 
+        intervals [3]:
+            xmin = 0.4433836824210052 
+            xmax = 0.6323043762277725 
+            text = "可" 
+        intervals [4]:
+            xmin = 0.6323043762277725 
+            xmax = 0.9007635962114853 
+            text = "以2" 
+        intervals [5]:
+            xmin = 0.9007635962114853 
+            xmax = 1.115212128364826 
+            text = "给1" 
+        intervals [6]:
+            xmin = 1.115212128364826 
+            xmax = 1.2990762854871505 
+            text = "本" 
+        intervals [7]:
+            xmin = 1.2990762854871505 
+            xmax = 1.4788759702540377 
+            text = "委" 
+        intervals [8]:
+            xmin = 1.4788759702540377 
+            xmax = 1.695 
+            text = "员1" 
+        intervals [9]:
+            xmin = 1.695 
+            xmax = 2.000428005565688 
+            text = "反" 
+        intervals [10]:
+            xmin = 2.000428005565688 
+            xmax = 2.223790321006682 
+            text = "映" 
+        intervals [11]:
+            xmin = 2.223790321006682 
+            xmax = 2.4906577412490862 
+            text = "哟4。" 
+        intervals [12]:
+            xmin = 2.4906577412490862 
+            xmax = 2.74 
+            text = "" 

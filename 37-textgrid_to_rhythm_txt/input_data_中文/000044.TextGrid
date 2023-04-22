@@ -1,0 +1,128 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 2.45 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "Phon" 
+        xmin = 0 
+        xmax = 2.45 
+        intervals: size = 17 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.27278392855060724 
+            text = "sil" 
+        intervals [2]:
+            xmin = 0.27278392855060724 
+            xmax = 0.3643428435915023 
+            text = "h" 
+        intervals [3]:
+            xmin = 0.3643428435915023 
+            xmax = 0.502392813938137 
+            text = "uan1" 
+        intervals [4]:
+            xmin = 0.502392813938137 
+            xmax = 0.57355259246733 
+            text = "sh" 
+        intervals [5]:
+            xmin = 0.57355259246733 
+            xmax = 0.7082817731492689 
+            text = "eng1" 
+        intervals [6]:
+            xmin = 0.7082817731492689 
+            xmax = 0.7865866703983172 
+            text = "x" 
+        intervals [7]:
+            xmin = 0.7865866703983172 
+            xmax = 0.9378125667339685 
+            text = "iao4" 
+        intervals [8]:
+            xmin = 0.9378125667339685 
+            xmax = 1.2262468690389645 
+            text = "v3" 
+        intervals [9]:
+            xmin = 1.2262468690389645 
+            xmax = 1.334045986895051 
+            text = "s" 
+        intervals [10]:
+            xmin = 1.334045986895051 
+            xmax = 1.4682238716453235 
+            text = "a2" 
+        intervals [11]:
+            xmin = 1.4682238716453235 
+            xmax = 1.5270492885627898 
+            text = "m" 
+        intervals [12]:
+            xmin = 1.5270492885627898 
+            xmax = 1.6833175050379632 
+            text = "an3" 
+        intervals [13]:
+            xmin = 1.6833175050379632 
+            xmax = 1.77914600679061 
+            text = "c" 
+        intervals [14]:
+            xmin = 1.77914600679061 
+            xmax = 1.9145302643555286 
+            text = "uen1" 
+        intervals [15]:
+            xmin = 1.9145302643555286 
+            xmax = 1.9529565447612929 
+            text = "zh" 
+        intervals [16]:
+            xmin = 1.9529565447612929 
+            xmax = 2.23307310991389 
+            text = "uang1" 
+        intervals [17]:
+            xmin = 2.23307310991389 
+            xmax = 2.45 
+            text = "sil" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "Word" 
+        xmin = 0 
+        xmax = 2.45 
+        intervals: size = 10 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.27278392855060724 
+            text = "" 
+        intervals [2]:
+            xmin = 0.27278392855060724 
+            xmax = 0.502392813938137 
+            text = "欢" 
+        intervals [3]:
+            xmin = 0.502392813938137 
+            xmax = 0.7082817731492689 
+            text = "声1" 
+        intervals [4]:
+            xmin = 0.7082817731492689 
+            xmax = 0.9378125667339685 
+            text = "笑" 
+        intervals [5]:
+            xmin = 0.9378125667339685 
+            xmax = 1.2262468690389645 
+            text = "语2" 
+        intervals [6]:
+            xmin = 1.2262468690389645 
+            xmax = 1.4682238716453235 
+            text = "洒" 
+        intervals [7]:
+            xmin = 1.4682238716453235 
+            xmax = 1.6833175050379632 
+            text = "满1" 
+        intervals [8]:
+            xmin = 1.6833175050379632 
+            xmax = 1.9145302643555286 
+            text = "村" 
+        intervals [9]:
+            xmin = 1.9145302643555286 
+            xmax = 2.23307310991389 
+            text = "庄4。" 
+        intervals [10]:
+            xmin = 2.23307310991389 
+            xmax = 2.45 
+            text = "" 

@@ -1,0 +1,300 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 5.62 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "Phon" 
+        xmin = 0 
+        xmax = 5.62 
+        intervals: size = 43 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.29061171130899693 
+            text = "sil" 
+        intervals [2]:
+            xmin = 0.29061171130899693 
+            xmax = 0.32978734774988494 
+            text = "n" 
+        intervals [3]:
+            xmin = 0.32978734774988494 
+            xmax = 0.46 
+            text = "u2" 
+        intervals [4]:
+            xmin = 0.46 
+            xmax = 0.697603045444889 
+            text = "er3" 
+        intervals [5]:
+            xmin = 0.697603045444889 
+            xmax = 0.7509254394894311 
+            text = "b" 
+        intervals [6]:
+            xmin = 0.7509254394894311 
+            xmax = 0.8553938033317992 
+            text = "ie2" 
+        intervals [7]:
+            xmin = 0.8553938033317992 
+            xmax = 1.0262431066990052 
+            text = "er3" 
+        intervals [8]:
+            xmin = 1.0262431066990052 
+            xmax = 1.0610658946464613 
+            text = "d" 
+        intervals [9]:
+            xmin = 1.0610658946464613 
+            xmax = 1.1970924100662113 
+            text = "e2" 
+        intervals [10]:
+            xmin = 1.1970924100662113 
+            xmax = 1.3969143915459534 
+            text = "ie1" 
+        intervals [11]:
+            xmin = 1.3969143915459534 
+            xmax = 1.7320837255402177 
+            text = "ua2" 
+        intervals [12]:
+            xmin = 1.7320837255402177 
+            xmax = 1.8724630894533998 
+            text = "q" 
+        intervals [13]:
+            xmin = 1.8724630894533998 
+            xmax = 2.025 
+            text = "ing3" 
+        intervals [14]:
+            xmin = 2.025 
+            xmax = 2.0694294837811977 
+            text = "zh" 
+        intervals [15]:
+            xmin = 2.0694294837811977 
+            xmax = 2.167365837898248 
+            text = "ou1" 
+        intervals [16]:
+            xmin = 2.167365837898248 
+            xmax = 2.348009050375676 
+            text = "iong3" 
+        intervals [17]:
+            xmin = 2.348009050375676 
+            xmax = 2.435066020244316 
+            text = "k" 
+        intervals [18]:
+            xmin = 2.435066020244316 
+            xmax = 2.675 
+            text = "ang1" 
+        intervals [19]:
+            xmin = 2.675 
+            xmax = 2.7462946875247045 
+            text = "zh" 
+        intervals [20]:
+            xmin = 2.7462946875247045 
+            xmax = 2.92 
+            text = "uan3" 
+        intervals [21]:
+            xmin = 2.92 
+            xmax = 2.9483996079777297 
+            text = "d" 
+        intervals [22]:
+            xmin = 2.9483996079777297 
+            xmax = 3.1377485174420223 
+            text = "a2" 
+        intervals [23]:
+            xmin = 3.1377485174420223 
+            xmax = 3.186718062993132 
+            text = "d" 
+        intervals [24]:
+            xmin = 3.186718062993132 
+            xmax = 3.381508033074214 
+            text = "uei4" 
+        intervals [25]:
+            xmin = 3.381508033074214 
+            xmax = 3.53 
+            text = "u2" 
+        intervals [26]:
+            xmin = 3.53 
+            xmax = 3.568680518291791 
+            text = "b" 
+        intervals [27]:
+            xmin = 3.568680518291791 
+            xmax = 3.7246397262090336 
+            text = "ang1" 
+        intervals [28]:
+            xmin = 3.7246397262090336 
+            xmax = 3.76490357477328 
+            text = "g" 
+        intervals [29]:
+            xmin = 3.76490357477328 
+            xmax = 3.893312605329524 
+            text = "uo2" 
+        intervals [30]:
+            xmin = 3.893312605329524 
+            xmax = 4.035 
+            text = "uei3" 
+        intervals [31]:
+            xmin = 4.035 
+            xmax = 4.19254429398489 
+            text = "van2" 
+        intervals [32]:
+            xmin = 4.19254429398489 
+            xmax = 4.239337415289284 
+            text = "zh" 
+        intervals [33]:
+            xmin = 4.239337415289284 
+            xmax = 4.395 
+            text = "ang3" 
+        intervals [34]:
+            xmin = 4.395 
+            xmax = 4.427598112630218 
+            text = "d" 
+        intervals [35]:
+            xmin = 4.427598112630218 
+            xmax = 4.525 
+            text = "e5" 
+        intervals [36]:
+            xmin = 4.525 
+            xmax = 4.6354466281915965 
+            text = "q" 
+        intervals [37]:
+            xmin = 4.6354466281915965 
+            xmax = 4.721415385936878 
+            text = "in1" 
+        intervals [38]:
+            xmin = 4.721415385936878 
+            xmax = 4.78017884059821 
+            text = "q" 
+        intervals [39]:
+            xmin = 4.78017884059821 
+            xmax = 4.881636392538118 
+            text = "ie4" 
+        intervals [40]:
+            xmin = 4.881636392538118 
+            xmax = 5.08 
+            text = "uen4" 
+        intervals [41]:
+            xmin = 5.08 
+            xmax = 5.178718302214852 
+            text = "h" 
+        intervals [42]:
+            xmin = 5.178718302214852 
+            xmax = 5.381622470612187 
+            text = "ou4" 
+        intervals [43]:
+            xmin = 5.381622470612187 
+            xmax = 5.62 
+            text = "sil" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "Word" 
+        xmin = 0 
+        xmax = 5.62 
+        intervals: size = 27 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.29061171130899693 
+            text = "" 
+        intervals [2]:
+            xmin = 0.29061171130899693 
+            xmax = 0.46 
+            text = "努" 
+        intervals [3]:
+            xmin = 0.46 
+            xmax = 0.697603045444889 
+            text = "尔2" 
+        intervals [4]:
+            xmin = 0.697603045444889 
+            xmax = 0.8553938033317992 
+            text = "别" 
+        intervals [5]:
+            xmin = 0.8553938033317992 
+            xmax = 1.0262431066990052 
+            text = "尔" 
+        intervals [6]:
+            xmin = 1.0262431066990052 
+            xmax = 1.1970924100662113 
+            text = "德1" 
+        intervals [7]:
+            xmin = 1.1970924100662113 
+            xmax = 1.3969143915459534 
+            text = "耶" 
+        intervals [8]:
+            xmin = 1.3969143915459534 
+            xmax = 1.7320837255402177 
+            text = "娃2" 
+        intervals [9]:
+            xmin = 1.7320837255402177 
+            xmax = 2.025 
+            text = "请1" 
+        intervals [10]:
+            xmin = 2.025 
+            xmax = 2.167365837898248 
+            text = "周" 
+        intervals [11]:
+            xmin = 2.167365837898248 
+            xmax = 2.348009050375676 
+            text = "永" 
+        intervals [12]:
+            xmin = 2.348009050375676 
+            xmax = 2.675 
+            text = "康2" 
+        intervals [13]:
+            xmin = 2.675 
+            xmax = 2.92 
+            text = "转" 
+        intervals [14]:
+            xmin = 2.92 
+            xmax = 3.1377485174420223 
+            text = "达1" 
+        intervals [15]:
+            xmin = 3.1377485174420223 
+            xmax = 3.381508033074214 
+            text = "对1" 
+        intervals [16]:
+            xmin = 3.381508033074214 
+            xmax = 3.53 
+            text = "吴" 
+        intervals [17]:
+            xmin = 3.53 
+            xmax = 3.7246397262090336 
+            text = "邦" 
+        intervals [18]:
+            xmin = 3.7246397262090336 
+            xmax = 3.893312605329524 
+            text = "国1" 
+        intervals [19]:
+            xmin = 3.893312605329524 
+            xmax = 4.035 
+            text = "委" 
+        intervals [20]:
+            xmin = 4.035 
+            xmax = 4.19254429398489 
+            text = "员" 
+        intervals [21]:
+            xmin = 4.19254429398489 
+            xmax = 4.395 
+            text = "长" 
+        intervals [22]:
+            xmin = 4.395 
+            xmax = 4.525 
+            text = "的1" 
+        intervals [23]:
+            xmin = 4.525 
+            xmax = 4.721415385936878 
+            text = "亲" 
+        intervals [24]:
+            xmin = 4.721415385936878 
+            xmax = 4.881636392538118 
+            text = "切1" 
+        intervals [25]:
+            xmin = 4.881636392538118 
+            xmax = 5.08 
+            text = "问" 
+        intervals [26]:
+            xmin = 5.08 
+            xmax = 5.381622470612187 
+            text = "候4。" 
+        intervals [27]:
+            xmin = 5.381622470612187 
+            xmax = 5.62 
+            text = "" 

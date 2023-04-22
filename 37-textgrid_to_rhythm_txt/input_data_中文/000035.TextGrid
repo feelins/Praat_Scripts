@@ -1,0 +1,152 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.34 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "Phon" 
+        xmin = 0 
+        xmax = 3.34 
+        intervals: size = 20 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.305 
+            text = "sil" 
+        intervals [2]:
+            xmin = 0.305 
+            xmax = 0.5049047920773981 
+            text = "in2" 
+        intervals [3]:
+            xmin = 0.5049047920773981 
+            xmax = 0.631017346515666 
+            text = "ch" 
+        intervals [4]:
+            xmin = 0.631017346515666 
+            xmax = 0.7163858449046475 
+            text = "iii1" 
+        intervals [5]:
+            xmin = 0.7163858449046475 
+            xmax = 0.7888197223256014 
+            text = "m" 
+        intervals [6]:
+            xmin = 0.7888197223256014 
+            xmax = 0.9704461378052192 
+            text = "ao3" 
+        intervals [7]:
+            xmin = 0.9704461378052192 
+            xmax = 1.0144238490965125 
+            text = "l" 
+        intervals [8]:
+            xmin = 1.0144238490965125 
+            xmax = 1.3468436079748185 
+            text = "iang2" 
+        intervals [9]:
+            xmin = 1.3468436079748185 
+            xmax = 1.4614437263993705 
+            text = "sp1" 
+        intervals [10]:
+            xmin = 1.4614437263993705 
+            xmax = 1.5849693566440328 
+            text = "u2" 
+        intervals [11]:
+            xmin = 1.5849693566440328 
+            xmax = 1.7691843229241013 
+            text = "i4" 
+        intervals [12]:
+            xmin = 1.7691843229241013 
+            xmax = 2.0634453233398813 
+            text = "v2" 
+        intervals [13]:
+            xmin = 2.0634453233398813 
+            xmax = 2.311143314877607 
+            text = "in3" 
+        intervals [14]:
+            xmin = 2.311143314877607 
+            xmax = 2.3693491092337307 
+            text = "zh" 
+        intervals [15]:
+            xmin = 2.3693491092337307 
+            xmax = 2.5240736971617195 
+            text = "en4" 
+        intervals [16]:
+            xmin = 2.5240736971617195 
+            xmax = 2.602328154018285 
+            text = "zh" 
+        intervals [17]:
+            xmin = 2.602328154018285 
+            xmax = 2.71291916329492 
+            text = "iii2" 
+        intervals [18]:
+            xmin = 2.71291916329492 
+            xmax = 2.8424020135547146 
+            text = "k" 
+        intervals [19]:
+            xmin = 2.8424020135547146 
+            xmax = 3.102889890206416 
+            text = "e3" 
+        intervals [20]:
+            xmin = 3.102889890206416 
+            xmax = 3.34 
+            text = "sil" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "Word" 
+        xmin = 0 
+        xmax = 3.34 
+        intervals: size = 13 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.305 
+            text = "" 
+        intervals [2]:
+            xmin = 0.305 
+            xmax = 0.5049047920773981 
+            text = "寅" 
+        intervals [3]:
+            xmin = 0.5049047920773981 
+            xmax = 0.7163858449046475 
+            text = "吃1" 
+        intervals [4]:
+            xmin = 0.7163858449046475 
+            xmax = 0.9704461378052192 
+            text = "卯" 
+        intervals [5]:
+            xmin = 0.9704461378052192 
+            xmax = 1.4614437263993705 
+            text = "粮3，" 
+        intervals [6]:
+            xmin = 1.4614437263993705 
+            xmax = 1.5849693566440328 
+            text = "无" 
+        intervals [7]:
+            xmin = 1.5849693566440328 
+            xmax = 1.7691843229241013 
+            text = "异" 
+        intervals [8]:
+            xmin = 1.7691843229241013 
+            xmax = 2.0634453233398813 
+            text = "于2" 
+        intervals [9]:
+            xmin = 2.0634453233398813 
+            xmax = 2.311143314877607 
+            text = "饮" 
+        intervals [10]:
+            xmin = 2.311143314877607 
+            xmax = 2.5240736971617195 
+            text = "鸩1" 
+        intervals [11]:
+            xmin = 2.5240736971617195 
+            xmax = 2.71291916329492 
+            text = "止" 
+        intervals [12]:
+            xmin = 2.71291916329492 
+            xmax = 3.102889890206416 
+            text = "渴4。" 
+        intervals [13]:
+            xmin = 3.102889890206416 
+            xmax = 3.34 
+            text = "" 

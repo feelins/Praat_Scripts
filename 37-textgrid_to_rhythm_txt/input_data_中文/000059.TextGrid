@@ -1,0 +1,140 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.6 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "Phon" 
+        xmin = 0 
+        xmax = 3.6 
+        intervals: size = 17 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.295 
+            text = "sil" 
+        intervals [2]:
+            xmin = 0.295 
+            xmax = 0.6490236051085723 
+            text = "uo2" 
+        intervals [3]:
+            xmin = 0.6490236051085723 
+            xmax = 0.9222771546606736 
+            text = "uo3" 
+        intervals [4]:
+            xmin = 0.9222771546606736 
+            xmax = 1.2457201316815285 
+            text = "uo2" 
+        intervals [5]:
+            xmin = 1.2457201316815285 
+            xmax = 1.5454625457310276 
+            text = "uo3" 
+        intervals [6]:
+            xmin = 1.5454625457310276 
+            xmax = 1.8596664374513188 
+            text = "uo2" 
+        intervals [7]:
+            xmin = 1.8596664374513188 
+            xmax = 2.125 
+            text = "uo3" 
+        intervals [8]:
+            xmin = 2.125 
+            xmax = 2.24 
+            text = "h" 
+        intervals [9]:
+            xmin = 2.24 
+            xmax = 2.3908378781622917 
+            text = "e2" 
+        intervals [10]:
+            xmin = 2.3908378781622917 
+            xmax = 2.51735892965394 
+            text = "p" 
+        intervals [11]:
+            xmin = 2.51735892965394 
+            xmax = 2.7139341872398903 
+            text = "ang4" 
+        intervals [12]:
+            xmin = 2.7139341872398903 
+            xmax = 2.7808534238648948 
+            text = "z" 
+        intervals [13]:
+            xmin = 2.7808534238648948 
+            xmax = 2.8688488864018553 
+            text = "ii5" 
+        intervals [14]:
+            xmin = 2.8688488864018553 
+            xmax = 3.0222054703341574 
+            text = "i4" 
+        intervals [15]:
+            xmin = 3.0222054703341574 
+            xmax = 3.1671971496883335 
+            text = "q" 
+        intervals [16]:
+            xmin = 3.1671971496883335 
+            xmax = 3.3634912248430195 
+            text = "i3" 
+        intervals [17]:
+            xmin = 3.3634912248430195 
+            xmax = 3.6 
+            text = "sil" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "Word" 
+        xmin = 0 
+        xmax = 3.6 
+        intervals: size = 13 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.295 
+            text = "" 
+        intervals [2]:
+            xmin = 0.295 
+            xmax = 0.6490236051085723 
+            text = "我" 
+        intervals [3]:
+            xmin = 0.6490236051085723 
+            xmax = 0.9222771546606736 
+            text = "我1" 
+        intervals [4]:
+            xmin = 0.9222771546606736 
+            xmax = 1.2457201316815285 
+            text = "我" 
+        intervals [5]:
+            xmin = 1.2457201316815285 
+            xmax = 1.5454625457310276 
+            text = "我1" 
+        intervals [6]:
+            xmin = 1.5454625457310276 
+            xmax = 1.8596664374513188 
+            text = "我" 
+        intervals [7]:
+            xmin = 1.8596664374513188 
+            xmax = 2.125 
+            text = "我1" 
+        intervals [8]:
+            xmin = 2.125 
+            xmax = 2.3908378781622917 
+            text = "和1" 
+        intervals [9]:
+            xmin = 2.3908378781622917 
+            xmax = 2.7139341872398903 
+            text = "胖" 
+        intervals [10]:
+            xmin = 2.7139341872398903 
+            xmax = 2.8688488864018553 
+            text = "子1" 
+        intervals [11]:
+            xmin = 2.8688488864018553 
+            xmax = 3.0222054703341574 
+            text = "一" 
+        intervals [12]:
+            xmin = 3.0222054703341574 
+            xmax = 3.3634912248430195 
+            text = "起4。" 
+        intervals [13]:
+            xmin = 3.3634912248430195 
+            xmax = 3.6 
+            text = "" 

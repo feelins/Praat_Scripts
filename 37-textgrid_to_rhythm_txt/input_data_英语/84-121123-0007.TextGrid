@@ -1,0 +1,108 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 2 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 2 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.5 
+            text = "" 
+        intervals [2]:
+            xmin = 0.5 
+            xmax = 0.69 
+            text = "what" 
+        intervals [3]:
+            xmin = 0.69 
+            xmax = 0.78 
+            text = "do" 
+        intervals [4]:
+            xmin = 0.78 
+            xmax = 0.87 
+            text = "you" 
+        intervals [5]:
+            xmin = 0.87 
+            xmax = 1.12 
+            text = "mean" 
+        intervals [6]:
+            xmin = 1.12 
+            xmax = 1.5 
+            text = "sir" 
+        intervals [7]:
+            xmin = 1.5 
+            xmax = 2 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 2 
+        intervals: size = 15 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.5 
+            text = "" 
+        intervals [2]:
+            xmin = 0.5 
+            xmax = 0.54 
+            text = "HH" 
+        intervals [3]:
+            xmin = 0.54 
+            xmax = 0.58 
+            text = "W" 
+        intervals [4]:
+            xmin = 0.58 
+            xmax = 0.65 
+            text = "AH1" 
+        intervals [5]:
+            xmin = 0.65 
+            xmax = 0.69 
+            text = "T" 
+        intervals [6]:
+            xmin = 0.69 
+            xmax = 0.74 
+            text = "D" 
+        intervals [7]:
+            xmin = 0.74 
+            xmax = 0.78 
+            text = "UW1" 
+        intervals [8]:
+            xmin = 0.78 
+            xmax = 0.83 
+            text = "Y" 
+        intervals [9]:
+            xmin = 0.83 
+            xmax = 0.87 
+            text = "UW1" 
+        intervals [10]:
+            xmin = 0.87 
+            xmax = 0.92 
+            text = "M" 
+        intervals [11]:
+            xmin = 0.92 
+            xmax = 1.03 
+            text = "IY1" 
+        intervals [12]:
+            xmin = 1.03 
+            xmax = 1.12 
+            text = "N" 
+        intervals [13]:
+            xmin = 1.12 
+            xmax = 1.24 
+            text = "S" 
+        intervals [14]:
+            xmin = 1.24 
+            xmax = 1.5 
+            text = "ER1" 
+        intervals [15]:
+            xmin = 1.5 
+            xmax = 2 
+            text = "" 

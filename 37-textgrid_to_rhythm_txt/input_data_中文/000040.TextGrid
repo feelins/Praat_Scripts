@@ -1,0 +1,160 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.25 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "Phon" 
+        xmin = 0 
+        xmax = 3.25 
+        intervals: size = 22 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.2679291296155817 
+            text = "sil" 
+        intervals [2]:
+            xmin = 0.2679291296155817 
+            xmax = 0.31323902941376175 
+            text = "d" 
+        intervals [3]:
+            xmin = 0.31323902941376175 
+            xmax = 0.4730822870351192 
+            text = "ian4" 
+        intervals [4]:
+            xmin = 0.4730822870351192 
+            xmax = 0.6203394613792044 
+            text = "ing2" 
+        intervals [5]:
+            xmin = 0.6203394613792044 
+            xmax = 0.719769519269655 
+            text = "h" 
+        intervals [6]:
+            xmin = 0.719769519269655 
+            xmax = 0.8859058185296486 
+            text = "ai3" 
+        intervals [7]:
+            xmin = 0.8859058185296486 
+            xmax = 0.9312157183278286 
+            text = "b" 
+        intervals [8]:
+            xmin = 0.9312157183278286 
+            xmax = 1.17 
+            text = "ao4" 
+        intervals [9]:
+            xmin = 1.17 
+            xmax = 1.3233572276641947 
+            text = "sp1" 
+        intervals [10]:
+            xmin = 1.3233572276641947 
+            xmax = 1.4290803271932815 
+            text = "p" 
+        intervals [11]:
+            xmin = 1.4290803271932815 
+            xmax = 1.542353493912611 
+            text = "in2" 
+        intervals [12]:
+            xmin = 1.542353493912611 
+            xmax = 1.5763359187612458 
+            text = "m" 
+        intervals [13]:
+            xmin = 1.5763359187612458 
+            xmax = 1.7349205680548758 
+            text = "in2" 
+        intervals [14]:
+            xmin = 1.7349205680548758 
+            xmax = 1.831833409289872 
+            text = "k" 
+        intervals [15]:
+            xmin = 1.831833409289872 
+            xmax = 2.0640928336096502 
+            text = "u1" 
+        intervals [16]:
+            xmin = 2.0640928336096502 
+            xmax = 2.1094027334078302 
+            text = "b" 
+        intervals [17]:
+            xmin = 2.1094027334078302 
+            xmax = 2.2823996091076055 
+            text = "ai3" 
+        intervals [18]:
+            xmin = 2.2823996091076055 
+            xmax = 2.489748246975334 
+            text = "uan4" 
+        intervals [19]:
+            xmin = 2.489748246975334 
+            xmax = 2.5671526591305582 
+            text = "f" 
+        intervals [20]:
+            xmin = 2.5671526591305582 
+            xmax = 2.665911762196017 
+            text = "u4" 
+        intervals [21]:
+            xmin = 2.665911762196017 
+            xmax = 2.985 
+            text = "ueng1" 
+        intervals [22]:
+            xmin = 2.985 
+            xmax = 3.25 
+            text = "sil" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "Word" 
+        xmin = 0 
+        xmax = 3.25 
+        intervals: size = 13 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.2679291296155817 
+            text = "" 
+        intervals [2]:
+            xmin = 0.2679291296155817 
+            xmax = 0.4730822870351192 
+            text = "电" 
+        intervals [3]:
+            xmin = 0.4730822870351192 
+            xmax = 0.6203394613792044 
+            text = "影1" 
+        intervals [4]:
+            xmin = 0.6203394613792044 
+            xmax = 0.8859058185296486 
+            text = "海" 
+        intervals [5]:
+            xmin = 0.8859058185296486 
+            xmax = 1.3233572276641947 
+            text = "报3" 
+        intervals [6]:
+            xmin = 1.3233572276641947 
+            xmax = 1.542353493912611 
+            text = "“贫" 
+        intervals [7]:
+            xmin = 1.542353493912611 
+            xmax = 1.7349205680548758 
+            text = "民" 
+        intervals [8]:
+            xmin = 1.7349205680548758 
+            xmax = 2.0640928336096502 
+            text = "窟2" 
+        intervals [9]:
+            xmin = 2.0640928336096502 
+            xmax = 2.2823996091076055 
+            text = "百" 
+        intervals [10]:
+            xmin = 2.2823996091076055 
+            xmax = 2.489748246975334 
+            text = "万1" 
+        intervals [11]:
+            xmin = 2.489748246975334 
+            xmax = 2.665911762196017 
+            text = "富" 
+        intervals [12]:
+            xmin = 2.665911762196017 
+            xmax = 2.985 
+            text = "翁4”。" 
+        intervals [13]:
+            xmin = 2.985 
+            xmax = 3.25 
+            text = "" 

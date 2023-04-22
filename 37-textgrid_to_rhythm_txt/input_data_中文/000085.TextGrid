@@ -1,0 +1,188 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.94 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "Phon" 
+        xmin = 0 
+        xmax = 3.94 
+        intervals: size = 26 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.3076647842853098 
+            text = "sil" 
+        intervals [2]:
+            xmin = 0.3076647842853098 
+            xmax = 0.39921401772368387 
+            text = "x" 
+        intervals [3]:
+            xmin = 0.39921401772368387 
+            xmax = 0.5235683931441419 
+            text = "ian4" 
+        intervals [4]:
+            xmin = 0.5235683931441419 
+            xmax = 0.5594251762408384 
+            text = "z" 
+        intervals [5]:
+            xmin = 0.5594251762408384 
+            xmax = 0.7226879758726055 
+            text = "ai4" 
+        intervals [6]:
+            xmin = 0.7226879758726055 
+            xmax = 0.8233921326548169 
+            text = "sh" 
+        intervals [7]:
+            xmin = 0.8233921326548169 
+            xmax = 1.0426529948881826 
+            text = "iii4" 
+        intervals [8]:
+            xmin = 1.0426529948881826 
+            xmax = 1.0861388807714103 
+            text = "d" 
+        intervals [9]:
+            xmin = 1.0861388807714103 
+            xmax = 1.368398713101982 
+            text = "aor4" 
+        intervals [10]:
+            xmin = 1.368398713101982 
+            xmax = 1.5453938977495052 
+            text = "ve4" 
+        intervals [11]:
+            xmin = 1.5453938977495052 
+            xmax = 1.6140558228282857 
+            text = "z" 
+        intervals [12]:
+            xmin = 1.6140558228282857 
+            xmax = 1.7353585571341312 
+            text = "ou3" 
+        intervals [13]:
+            xmin = 1.7353585571341312 
+            xmax = 1.9 
+            text = "ve4" 
+        intervals [14]:
+            xmin = 1.9 
+            xmax = 2.0082104290248033 
+            text = "k" 
+        intervals [15]:
+            xmin = 2.0082104290248033 
+            xmax = 2.24242388457131 
+            text = "uan1" 
+        intervals [16]:
+            xmin = 2.24242388457131 
+            xmax = 2.3622007983198494 
+            text = "sp1" 
+        intervals [17]:
+            xmin = 2.3622007983198494 
+            xmax = 2.4186466094247137 
+            text = "r" 
+        intervals [18]:
+            xmin = 2.4186466094247137 
+            xmax = 2.533083151222681 
+            text = "en2" 
+        intervals [19]:
+            xmin = 2.533083151222681 
+            xmax = 2.6528600649712204 
+            text = "q" 
+        intervals [20]:
+            xmin = 2.6528600649712204 
+            xmax = 2.836970851047534 
+            text = "i4" 
+        intervals [21]:
+            xmin = 2.836970851047534 
+            xmax = 3.0429566262838756 
+            text = "ve4" 
+        intervals [22]:
+            xmin = 3.0429566262838756 
+            xmax = 3.0917828841176753 
+            text = "g" 
+        intervals [23]:
+            xmin = 3.0917828841176753 
+            xmax = 3.2504756433331394 
+            text = "ao3" 
+        intervals [24]:
+            xmin = 3.2504756433331394 
+            xmax = 3.4436942839733806 
+            text = "ve4" 
+        intervals [25]:
+            xmin = 3.4436942839733806 
+            xmax = 3.6992692273221746 
+            text = "uang4" 
+        intervals [26]:
+            xmin = 3.6992692273221746 
+            xmax = 3.94 
+            text = "sil" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "Word" 
+        xmin = 0 
+        xmax = 3.94 
+        intervals: size = 16 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.3076647842853098 
+            text = "" 
+        intervals [2]:
+            xmin = 0.3076647842853098 
+            xmax = 0.5235683931441419 
+            text = "现" 
+        intervals [3]:
+            xmin = 0.5235683931441419 
+            xmax = 0.7226879758726055 
+            text = "在" 
+        intervals [4]:
+            xmin = 0.7226879758726055 
+            xmax = 1.0426529948881826 
+            text = "是2" 
+        intervals [5]:
+            xmin = 1.0426529948881826 
+            xmax = 1.368398713101982 
+            text = "道儿2" 
+        intervals [6]:
+            xmin = 1.368398713101982 
+            xmax = 1.5453938977495052 
+            text = "越" 
+        intervals [7]:
+            xmin = 1.5453938977495052 
+            xmax = 1.7353585571341312 
+            text = "走1" 
+        intervals [8]:
+            xmin = 1.7353585571341312 
+            xmax = 1.9 
+            text = "越" 
+        intervals [9]:
+            xmin = 1.9 
+            xmax = 2.3622007983198494 
+            text = "宽3，" 
+        intervals [10]:
+            xmin = 2.3622007983198494 
+            xmax = 2.533083151222681 
+            text = "人" 
+        intervals [11]:
+            xmin = 2.533083151222681 
+            xmax = 2.836970851047534 
+            text = "气2" 
+        intervals [12]:
+            xmin = 2.836970851047534 
+            xmax = 3.0429566262838756 
+            text = "越" 
+        intervals [13]:
+            xmin = 3.0429566262838756 
+            xmax = 3.2504756433331394 
+            text = "搞1" 
+        intervals [14]:
+            xmin = 3.2504756433331394 
+            xmax = 3.4436942839733806 
+            text = "越" 
+        intervals [15]:
+            xmin = 3.4436942839733806 
+            xmax = 3.6992692273221746 
+            text = "旺4。" 
+        intervals [16]:
+            xmin = 3.6992692273221746 
+            xmax = 3.94 
+            text = "" 

@@ -1,0 +1,144 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 2.84 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "Phon" 
+        xmin = 0 
+        xmax = 2.84 
+        intervals: size = 19 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.3056650354985823 
+            text = "sil" 
+        intervals [2]:
+            xmin = 0.3056650354985823 
+            xmax = 0.44204396125009593 
+            text = "i3" 
+        intervals [3]:
+            xmin = 0.44204396125009593 
+            xmax = 0.5344296851462826 
+            text = "x" 
+        intervals [4]:
+            xmin = 0.5344296851462826 
+            xmax = 0.7780420404201558 
+            text = "ia4" 
+        intervals [5]:
+            xmin = 0.7780420404201558 
+            xmax = 1.0009372522486235 
+            text = "uei2" 
+        intervals [6]:
+            xmin = 1.0009372522486235 
+            xmax = 1.132366942791413 
+            text = "x" 
+        intervals [7]:
+            xmin = 1.132366942791413 
+            xmax = 1.2522484178471789 
+            text = "ve1" 
+        intervals [8]:
+            xmin = 1.2522484178471789 
+            xmax = 1.322952318827352 
+            text = "m" 
+        intervals [9]:
+            xmin = 1.322952318827352 
+            xmax = 1.5242212173154728 
+            text = "an2" 
+        intervals [10]:
+            xmin = 1.5242212173154728 
+            xmax = 1.5951602553071875 
+            text = "z" 
+        intervals [11]:
+            xmin = 1.5951602553071875 
+            xmax = 1.754235660609684 
+            text = "ii5" 
+        intervals [12]:
+            xmin = 1.754235660609684 
+            xmax = 1.8097770779520344 
+            text = "g" 
+        intervals [13]:
+            xmin = 1.8097770779520344 
+            xmax = 1.9544047290514217 
+            text = "uan1" 
+        intervals [14]:
+            xmin = 1.9544047290514217 
+            xmax = 1.9835502252805757 
+            text = "d" 
+        intervals [15]:
+            xmin = 1.9835502252805757 
+            xmax = 2.125 
+            text = "ian3" 
+        intervals [16]:
+            xmin = 2.125 
+            xmax = 2.1700469419411976 
+            text = "zh" 
+        intervals [17]:
+            xmin = 2.1700469419411976 
+            xmax = 2.3314045655150255 
+            text = "ai1" 
+        intervals [18]:
+            xmin = 2.3314045655150255 
+            xmax = 2.5934680449301517 
+            text = "iao4" 
+        intervals [19]:
+            xmin = 2.5934680449301517 
+            xmax = 2.84 
+            text = "sil" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "Word" 
+        xmin = 0 
+        xmax = 2.84 
+        intervals: size = 12 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.3056650354985823 
+            text = "" 
+        intervals [2]:
+            xmin = 0.3056650354985823 
+            xmax = 0.44204396125009593 
+            text = "以" 
+        intervals [3]:
+            xmin = 0.44204396125009593 
+            xmax = 0.7780420404201558 
+            text = "下2" 
+        intervals [4]:
+            xmin = 0.7780420404201558 
+            xmax = 1.0009372522486235 
+            text = "为1" 
+        intervals [5]:
+            xmin = 1.0009372522486235 
+            xmax = 1.2522484178471789 
+            text = "薛" 
+        intervals [6]:
+            xmin = 1.2522484178471789 
+            xmax = 1.5242212173154728 
+            text = "蛮" 
+        intervals [7]:
+            xmin = 1.5242212173154728 
+            xmax = 1.754235660609684 
+            text = "子2" 
+        intervals [8]:
+            xmin = 1.754235660609684 
+            xmax = 1.9544047290514217 
+            text = "观" 
+        intervals [9]:
+            xmin = 1.9544047290514217 
+            xmax = 2.125 
+            text = "点1" 
+        intervals [10]:
+            xmin = 2.125 
+            xmax = 2.3314045655150255 
+            text = "摘" 
+        intervals [11]:
+            xmin = 2.3314045655150255 
+            xmax = 2.5934680449301517 
+            text = "要4。" 
+        intervals [12]:
+            xmin = 2.5934680449301517 
+            xmax = 2.84 
+            text = "" 
