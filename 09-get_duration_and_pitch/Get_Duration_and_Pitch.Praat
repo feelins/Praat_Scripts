@@ -45,7 +45,7 @@ for iFile from 1 to numberOfFiles
 	Read from file: textGridFileName$
 	objectName$ = selected$ ("TextGrid", 1)
 	wavFileName$ = input_wav_directory$ + objectName$ + ".wav"
-	pitchTierName$ = input_wav_directory$ + objectName$ + ".PitchTier"
+	pitchTierName$ = input_pitchtier_directory$ + objectName$ + ".PitchTier"
 	if fileReadable(pitchTierName$)
 		Read from file: pitchTierName$
 	else
