@@ -45,7 +45,7 @@ item []:
         intervals [4]:
             xmin = 0.45908333333333334 
             xmax = 0.5738541666666667 
-            text = "p" 
+            text = "" 
         intervals [5]:
             xmin = 0.5738541666666667 
             xmax = 0.688625 

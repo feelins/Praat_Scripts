@@ -15,6 +15,11 @@ form Dialogue_Auto
 	text output_textgrid_path TextGrid\
 endform
 
+if (praatVersion < 6309)
+	printline Requires Praat version 6.3.09 or higher. Please upgrade your Praat version 
+	exit
+endif
+
 
 # 如果新目录不存在，自动创建
 createDirectory: output_textgrid_path$
@@ -42,44 +47,11 @@ for ifile from 1 to numOfFiles
 	textGridFullPath$ = output_textgrid_path$ + simpleName$ + ".TextGrid"
 	labelPath$ = input_label_path$ + simpleName$ + ".txt"
 	
-
 	Read from file: wavFullPath$
-
+	totalDur = Get total duration
 
 	objectName$ = selected$("Sound", 1)
-	To TextGrid (silences): 100, 0, -25, 0.1, 0.1, "", "sounding"
-	intervalNums = Get number of intervals: 1
-	#pause 'intervalNums'
-	firstTime = 0
-	totalDur = Get total duration
-	lastTime = totalDur
-	if intervalNums >= 3
-		firstlab$ = Get label of interval: 1, 1
-		lastlab$ = Get label of interval: 1, intervalNums
-		if firstlab$ = ""
-			firstTime = Get end time of interval: 1, 1
-		endif
-		if lastlab$ = ""
-			lastTime = Get start time of interval: 1, intervalNums
-		endif
-	endif
-	selectObject: "TextGrid " + objectName$
-	Remove
-
-	selectObject: "Sound " + objectName$
-	To TextGrid: "word phon", ""
-	
-	if firstTime <> 0
-		Insert boundary: 1, firstTime
-		Insert boundary: 2, firstTime
-	endif
-	if lastTime <> totalDur
-		Insert boundary: 1, lastTime
-	endif
-	
-	#Insert boundary: 2, lastTime
-
-	
+	To TextGrid: "word phon", ""	
 	Read Table from whitespace-separated file: labelPath$
 	totalNum = Get number of rows
 	for mt from 1 to totalNum
@@ -89,47 +61,43 @@ for ifile from 1 to numOfFiles
 	selectObject: "Table " + objectName$
 	Remove
 
-	stepTime = (lastTime - firstTime) / totalNum
+	stepTime = totalDur / totalNum
+	beginTime = 0
 	for mt from 1 to totalNum
 		selectObject: "TextGrid " + objectName$
-		tmpTime = firstTime + stepTime * mt
+		tmpTime = beginTime + stepTime * mt
 	 	if mt <> totalNum
 			Insert boundary: 1, tmpTime
+			Insert boundary: 2, tmpTime
 		endif
 		tmpInterval = Get interval at time: 1, tmpTime
-		if mt <> totalNum
+		if tmpTime <> totalDur
 			tmpInterval = tmpInterval - 1
 		endif
 		tmpValue$ = txtValue$['mt']
 		Set interval text: 1, tmpInterval, tmpValue$ + wordPhon$[tmpValue$]
 		tmpWordPhon$ = wordPhon$[tmpValue$]
-		resultPhonIndex = 1
-		repeat
-			blankMark = index(tmpWordPhon$, " ")
-			if blankMark <> 0
-				resultPhons$[resultPhonIndex] = left$(tmpWordPhon$, blankMark - 1)
-				tmptmp$ = left$(tmpWordPhon$, blankMark - 1)
-				tmpWordPhon$ = right$(tmpWordPhon$, length(tmpWordPhon$) - blankMark)
-				resultPhonIndex = resultPhonIndex + 1
-			endif
-		until blankMark = 0
-		#resultPhonIndex = resultPhonIndex - 1
-		resultPhons$[resultPhonIndex] = tmpWordPhon$
+		phons$# = splitByWhitespace$#(tmpWordPhon$)
+		phonsSize = size(phons$#)
+		
 		thisStart = Get start time of interval: 1, tmpInterval
 		thisEnd = Get end time of interval: 1, tmpInterval
 		
 
-		stepPhonTime = (thisEnd - thisStart) / resultPhonIndex
-		for kt from 1 to resultPhonIndex
+		stepPhonTime = (thisEnd - thisStart) / phonsSize
+		#pause 'resultPhonIndex'
+		for kt from 1 to phonsSize
 			thisTmpTime = thisStart + stepPhonTime * kt
-			if kt <> resultPhonIndex
+			if kt <> phonsSize
 				Insert boundary: 2, thisTmpTime
 			endif
 			tmpInterval2 = Get interval at time: 2, thisTmpTime
-			if kt <> resultPhonIndex
+			if thisTmpTime <> totalDur
 				tmpInterval2 = tmpInterval2 - 1
 			endif
-			thisTmpValue$ = resultPhons$['kt']
+			thisTmpValue$ = phons$#['kt']
+			pause 'tmpInterval2', 'thisTmpTime', 'thisTmpValue$', 'kt', 'phonsSize'
+			
 			Set interval text: 2, tmpInterval2, thisTmpValue$
 		endfor
 	endfor
