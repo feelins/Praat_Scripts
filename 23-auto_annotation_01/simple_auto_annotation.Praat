@@ -42,7 +42,6 @@ for ifile from 1 to numOfFiles
 	selectObject: "Strings fileList"
 	fileName$ = Get string: ifile
 	simpleName$ = fileName$ - ".wav"
-	#writeInfoLine: simpleName$
 	wavFullPath$ = input_wav_path$ + simpleName$ + ".wav"
 	textGridFullPath$ = output_textgrid_path$ + simpleName$ + ".TextGrid"
 	labelPath$ = input_label_path$ + simpleName$ + ".txt"
@@ -85,7 +84,6 @@ for ifile from 1 to numOfFiles
 		
 
 		stepPhonTime = (thisEnd - thisStart) / phonsSize
-		#pause 'resultPhonIndex'
 		for kt from 1 to phonsSize
 			thisTmpTime = thisStart + stepPhonTime * kt
 			if kt <> phonsSize
@@ -96,7 +94,6 @@ for ifile from 1 to numOfFiles
 				tmpInterval2 = tmpInterval2 - 1
 			endif
 			thisTmpValue$ = phons$#['kt']
-			pause 'tmpInterval2', 'thisTmpTime', 'thisTmpValue$', 'kt', 'phonsSize'
 			
 			Set interval text: 2, tmpInterval2, thisTmpValue$
 		endfor
