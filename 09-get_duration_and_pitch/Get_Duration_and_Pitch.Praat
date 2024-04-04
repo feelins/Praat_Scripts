@@ -73,18 +73,20 @@ for iFile from 1 to numberOfFiles
 		duration = eTime-sTime
 
 		labelOfInterval$ = Get label of interval: reference_tier, iInterval
-		output$ = fileName$ + tab$ + labelOfInterval$ + tab$ + fixed$(duration, 3) + tab$
-		stepTime = duration / 9
-		for i from 1 to 10
-			selectObject: "PitchTier " + objectName$
-			tmpTime = sTime + stepTime * (i - 1)
-			pitchValue = Get value at time: tmpTime
-			output$ = output$ + fixed$(pitchValue, 0)
-			if i <> 10
-				output$ = output$ + tab$
-			endif
-		endfor
-		appendFileLine: save_result$, output$
+		if labelOfInterval$ <> ""
+			output$ = fileName$ + tab$ + labelOfInterval$ + tab$ + fixed$(duration, 3) + tab$
+			stepTime = duration / 9
+			for i from 1 to 10
+				selectObject: "PitchTier " + objectName$
+				tmpTime = sTime + stepTime * (i - 1)
+				pitchValue = Get value at time: tmpTime
+				output$ = output$ + fixed$(pitchValue, 0)
+				if i <> 10
+					output$ = output$ + tab$
+				endif
+			endfor
+			appendFileLine: save_result$, output$
+		endif	
 	endfor
 	
 	selectObject: "TextGrid " + objectName$
