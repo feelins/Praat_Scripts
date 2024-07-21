@@ -35,6 +35,8 @@ if (praatVersion < 6001)
 	exit
 endif
 
+createDirectory: output_directory$
+
 Create Strings as file list: "fileList", input_directory$ + "*.TextGrid"
 numOfFiles = Get number of strings
 for ifile from 1 to numOfFiles
